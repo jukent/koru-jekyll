@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  web:
+    env_file: .env
+    build:
+      context: .
+      args:
+        REGISTRY: ${REGISTRY}
+        AUTH: ${AUTH}
+        EMAIL: ${EMAIL}
+        ALWAYS_AUTH: ${ALWAYS_AUTH}
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    container_name: jekyll-koru
+    image: jekyll-koru:latest
+    stdin_open: true

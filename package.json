@@ -1,0 +1,22 @@
+{
+  "name": "jekyll-koru",
+  "version": "1.0.0",
+  "description": "Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NCAR/jekyll-koru.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NCAR/jekyll-koru/issues"
+  },
+  "homepage": "https://github.com/NCAR/jekyll-koru#readme",
+  "dependencies": {
+    "koru-base": "^2.1.16"
+  }
+}
