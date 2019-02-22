@@ -18,5 +18,9 @@
   "homepage": "https://github.com/NCAR/jekyll-koru#readme",
   "dependencies": {
     "koru-base": "^2.1.16"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^4.0.0"
   }
 }

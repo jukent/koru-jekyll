@@ -10,13 +10,15 @@ ENV AUTH ${AUTH}
 ENV EMAIL ${EMAIL}
 ENV ALWAYS_AUTH ${ALWAYS_AUTH}
 
-COPY /_includes /project/_includes
+#COPY /_includes /project/_includes
 COPY /_layouts /project/_layouts
-COPY /_sass /project/_sass
-COPY /assets /project/assets
-COPY package.json package-lock.json index.md Gemfile Gemfile.lock jekyll-koru.gemspec /project/
+#COPY /_sass /project/_sass
+#COPY /assets /project/assets
+COPY package.json package-lock.json gulpfile.js index.md Gemfile jekyll-koru.gemspec /project/
 
 WORKDIR /project
+
+RUN mkdir assets
 
 RUN npm config set registry $REGISTRY
 RUN npm config set _auth $AUTH
@@ -24,6 +26,8 @@ RUN npm config set email $EMAIL
 RUN npm config set always-auth $ALWAYS_AUTH
 
 RUN npm install
+RUN npm install -g gulp-cli
+RUN gulp
 
 #FROM jekyll/builder:3.8.5
 #
