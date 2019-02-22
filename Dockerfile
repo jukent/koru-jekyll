@@ -11,21 +11,13 @@ ENV EMAIL ${EMAIL}
 ENV ALWAYS_AUTH ${ALWAYS_AUTH}
 
 COPY /_layouts /project/_layouts
-COPY package.json package-lock.json gulpfile.js index.md Gemfile jekyll-koru.gemspec /project/
+COPY package.json package-lock.json index.md Gemfile jekyll-koru.gemspec /project/
 
 WORKDIR /project
 
-RUN mkdir assets
+RUN npm config set registry $REGISTRY && npm config set _auth $AUTH && npm config set email $EMAIL && npm config set always-auth $ALWAYS_AUTH && npm install
 
-RUN npm config set registry $REGISTRY
-RUN npm config set _auth $AUTH
-RUN npm config set email $EMAIL
-RUN npm config set always-auth $ALWAYS_AUTH
-
-RUN npm install
-
-RUN rm -rf assets/koru-base
-RUN cp -r node_modules/koru-base/ assets/koru-base/
+RUN mkdir assets && cp -r node_modules/koru-base/ assets/koru-base/
 
 #FROM jekyll/builder:3.8.5
 #
