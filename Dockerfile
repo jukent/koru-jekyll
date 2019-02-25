@@ -15,18 +15,22 @@ COPY package.json package-lock.json index.md Gemfile jekyll-koru.gemspec /projec
 
 WORKDIR /project
 
-RUN npm config set registry $REGISTRY && npm config set _auth $AUTH && npm config set email $EMAIL && npm config set always-auth $ALWAYS_AUTH && npm install
+RUN npm config set registry $REGISTRY &&  \
+    npm config set _auth $AUTH &&  \
+    npm config set email $EMAIL && \
+    npm config set always-auth $ALWAYS_AUTH && \
+    npm install
 
-RUN mkdir assets && cp -r node_modules/koru-base/ assets/koru-base/
+RUN mkdir assets && \
+    cp -r node_modules/koru-base/ assets/koru-base/
 
-#FROM jekyll/builder:3.8.5
-#
-#CMD gem install bundler
-#
-#COPY --from=node /project/ /project/
-#
-#EXPOSE 4000
-#
-#WORKDIR /project
+FROM jekyll/jekyll:3.8.5
 
-ENTRYPOINT /bin/bash
+RUN mkdir /project && \
+    chmod 777 /project
+
+WORKDIR /project
+
+COPY --from=node /project .
+
+CMD ["jekyll", "serve"]

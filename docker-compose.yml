@@ -2,6 +2,8 @@ version: '3.7'
 
 services:
   web:
+    container_name: jekyll-koru
+    image: jekyll-koru:latest
     env_file: .env
     build:
       context: .
@@ -13,6 +15,3 @@ services:
       dockerfile: Dockerfile
     ports:
       - "4000:4000"
-    container_name: jekyll-koru
-    image: jekyll-koru:latest
-    stdin_open: true
