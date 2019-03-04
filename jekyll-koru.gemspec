@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.name          = "jekyll-koru"
   spec.version       = "0.1.3"
   spec.authors       = ["Steve Geinosky"]
-  spec.email         = ["stephengeinosky@gmail.com"]
+  spec.email         = ["geinosky@ucar.edu"]
 
   spec.summary       = "Koru based jekyll theme"
   spec.homepage      = "https://www.ucar.edu"
