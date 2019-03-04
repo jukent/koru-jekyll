@@ -11,7 +11,8 @@ ENV EMAIL ${EMAIL}
 ENV ALWAYS_AUTH ${ALWAYS_AUTH}
 
 COPY /_layouts /project/_layouts
-COPY package.json package-lock.json index.md Gemfile jekyll-koru.gemspec /project/
+COPY /_includes /project/_includes
+COPY .git package.json package-lock.json index.md Gemfile jekyll-koru.gemspec /project/
 
 WORKDIR /project
 
