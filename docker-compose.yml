@@ -8,10 +8,10 @@ services:
     build:
       context: .
       args:
-        REGISTRY: ${REGISTRY}
         AUTH: ${AUTH}
         EMAIL: ${EMAIL}
-        ALWAYS_AUTH: ${ALWAYS_AUTH}
       dockerfile: Dockerfile
+    volumes:
+      - ./:/project
     ports:
       - "4000:4000"
