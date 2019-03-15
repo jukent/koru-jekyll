@@ -1,1 +1,66 @@
-<header></header>
+<header>
+    <div data-sticky-container="" class="sticky-container">
+        <div data-sticky="" data-options="marginTop:0;stickyOn:small;" data-top-anchor="main-content"
+             class="sticky is-anchored is-at-top">
+            <div class="title-bar hide-for-mlarge">
+                <div class="grid-container mobile-logo">
+                    <div class="grid-x grid-padding-x grid-margin-y align-middle">
+                        <h1 class="cell small-3 medium-2 acronym">
+                            <img src="/assets/img/logo-ucar-active.png"
+                                 alt="University Corporation for Atmospheric Research">
+                            <span class="show-for-sr">UCAR</span>
+                        </h1>
+                        <h1 class="cell small-8 medium-8 description">
+                            <a href="https://www.ucar.edu/" title="Jekyll Template">
+                                Jekyll Template
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+                <button class="fa fa-bars hide-for-print" type="button" id="menu-button"
+                        data-toggler="fa-minus-circle fa-bars" data-toggle="body main-menu menu-button top-bar"
+                        aria-expanded="true" aria-controls="body menu-button main-menu" data-i="pg62q8-i"></button>
+            </div>
+            <div class="top-bar align-top" id="top-bar">
+                <div class="grid-x align-bottom">
+                    <div class="cell mlarge-4 show-for-mlarge top-bar-title logo-wrapper">
+                        <div class="grid-x align-middle">
+                            <div class="cell mlarge-4 xlarge-3 acronym-wrapper">
+                                <h1>
+                                    <a href="https://ncar.ucar.edu" title="NCAR Home">
+                                        <img src="/assets/img/logo-ncar-active-large.png"
+                                             alt="NCAR">
+                                        <span class="show-for-sr">NCAR</span>
+                                    </a>
+                                </h1>
+                                <p>
+                                    <a href="https://www.ucar.edu/" title="UCAR Home">
+                                        <img src="/assets/img/logo-ucar-inactive-large.png"
+                                             alt="UCAR">
+                                        <span class="show-for-sr">UCAR</span>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="cell mlarge-8 xlarge-9 acronym-definition">
+                                <h1><a href="/">Jekyll Template</a></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell mlarge-8 show-for-mlarge top-bar-menus hide-for-print" id="main-menu" data-toggler="show-for-mlarge">
+                        <div class="grid-y">
+                            <nav class="cell main-nav">
+                                <ul class="menu icons icon-left dropdown" data-responsive-menu="accordion mlarge-dropdown">
+                                    {% for page in site.pages %}
+                                    {% if page.title != 'Home' %}
+                                    <li aria-label="{{ page.title }}"><a href="{{ page.url }}">{{ page.title }}</a></li>
+                                    {% endif %}
+                                    {% endfor %}
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
