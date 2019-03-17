@@ -51,7 +51,7 @@
                             <nav class="cell main-nav">
                                 <ul class="menu icons icon-left dropdown" data-responsive-menu="accordion mlarge-dropdown">
                                     {% for page in site.pages %}
-                                    {% if page.title != 'Home' %}
+                                    {% if page.dir == '/pages/' %}
                                     <li aria-label="{{ page.title }}"><a href="{{ site.github.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
                                     {% endif %}
                                     {% endfor %}
