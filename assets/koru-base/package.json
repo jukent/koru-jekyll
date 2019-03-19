@@ -2,7 +2,7 @@
   "_args": [
     [
       "koru-base@2.1.16",
-      "/Users/geinosky/Projects/jekyll-koru"
+      "/project"
     ]
   ],
   "_from": "koru-base@2.1.16",
@@ -26,7 +26,7 @@
   ],
   "_resolved": "https://repo.ucar.edu/artifactory/api/npm/npm-virtual/koru-base/-/koru-base-2.1.16.tgz",
   "_spec": "2.1.16",
-  "_where": "/Users/geinosky/Projects/jekyll-koru",
+  "_where": "/project",
   "bugs": {
     "url": "https://github.com/NCAR/koru-base/issues"
   },

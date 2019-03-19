@@ -11,4 +11,4 @@ RUN npm config set _auth $AUTH &&  \
 
 WORKDIR /project
 
-CMD npm install && jekyll serve
+CMD npm install  && rm -rf assets/koru-base && mv node_modules/koru-base assets/koru-base && jekyll serve

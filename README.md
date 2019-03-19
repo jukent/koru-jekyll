@@ -17,8 +17,6 @@ EMAIL=[email address]
 
 Run `docker-compose up --build` to (re)build the node.js and jekyll images and run the container.
 
-The latest version of koru-base will be downloaded and be located in the node_modules directory. To update koru-base, remove the koru-base directory in /assets and replace it with the version in /node_modules.
-
 ## Jekyll Development
 
 When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
