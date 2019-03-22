@@ -2,8 +2,8 @@ version: '3.7'
 
 services:
   web:
-    container_name: jekyll-koru
-    image: jekyll-koru:latest
+    container_name: koru-jekyll
+    image: koru-jekyll:latest
     env_file: .env
     build:
       context: .
