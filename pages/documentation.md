@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Test
+title: Documentation
 ---
 
 This is a test

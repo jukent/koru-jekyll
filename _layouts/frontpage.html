@@ -3,16 +3,17 @@
 
 {% include head.html %}
 
-<body class="ncar no-banner with-sidebar">
-<div class="content-wrapper">
+<body class="ncar with-sidebar">
+    <div class="content-wrapper">
     {% include header.html %}
 
-    <div class="body-content" id="main-content">
-        {% include content.html %}
-    </div>
+        <div class="body-content" id="main-content">
+            {% include banner.html %}
+            {% include content.html %}
+        </div>
 
     {% include footer.html %}
-</div>
+    </div>
 </body>
 
 <script src="{{ site.github.baseurl }}{{ 'assets/koru-base/lib/jquery/dist/jquery.js' | relative_url }}"></script>

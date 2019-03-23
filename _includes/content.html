@@ -1,6 +1,4 @@
-<body class="ncar">
-<div class="body-content" id="main-content">
-    <section class="panel primary-content">
+<section class="panel primary-content">
         <div class="grid-x align-center">
             <div class="cell medium-8 large-9">
                 <article role="article" class="content">
@@ -14,21 +12,12 @@
                             <li class="cell">
                                 <a href="" class="cell home"><i class="fa fa-home"></i><span>Home</span></a>
                             </li>
-                            <li class="cell">
-                                <a href="/what-we-do"><i class="fa fa-circle-o"></i><span>What we do</span></a>
-                            </li>
-                            <li class="cell active">
-                                <a href="/what-we-do/university-collaboration"><i class="fa fa-bullseye"></i><span>University collaboration</span></a>
-                                <ul class="grid-y">
-                                    <li class="cell"><a href="/what-we-do/university-collaboration/uvisit"><i class="fa fa-circle"></i><span>UVisit</span></a></li>
-                                    <li class="cell"><a href="/what-we-do/university-collaboration/ucar-update"><i class="fa fa-circle"></i><span>UCAR Update</span></a></li>
-                                </ul>
-                            </li>
+                            {% for link in site.data.mainmenu.menu %}
+                            <li class="cell"><a href="{{ link.url }}"><i class="fa fa-circle-o"></i>{{ link.title }}</a></li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-</div>
-</body>
