@@ -50,10 +50,8 @@
                         <div class="grid-y">
                             <nav class="cell main-nav">
                                 <ul class="menu icons icon-left dropdown" data-responsive-menu="accordion mlarge-dropdown">
-                                    {% for page in site.pages %}
-                                    {% if page.dir == '/pages/' %}
-                                    <li aria-label="{{ page.title }}"><a href="{{ site.github.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
-                                    {% endif %}
+                                    {% for link in site.data.mainmenu.menu %}
+                                    <li aria-label="{{ link.title }}"><a href="{{ site.github.baseurl }}{{ link.url }}"><i class="fa fa-circle-o"></i>{{ link.title }}</a></li>
                                     {% endfor %}
                                 </ul>
                             </nav>

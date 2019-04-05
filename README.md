@@ -1,5 +1,43 @@
 # jekyll-koru
 
+## Layouts
+
+### Default
+
+The only front matter information required for default pages is:
+
+```yml
+---
+layout:
+title:
+---
+```
+
+### Front page
+
+Front matter options for the front page are:
+
+```yml
+---
+layout:
+title:
+banner-title:
+banner-description:
+banner-button-text:
+banner-button-url:
+---
+```
+
+## Main menu
+
+The main menu is set in the mainmenu.yml file found in /_data. This allows users to set both absolute and relative paths in the menu. The structure for creating a menu is:
+
+```yml
+menu:
+  - title: Software
+    url: pages/documentation.html
+```
+
 ## Local Development
 
 To download koru-base from Artifactory, you will need to add your Artifactory credentials to a .env file. First, you will need to retrieve your credentials with the following command:
