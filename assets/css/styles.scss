@@ -1,0 +1,64 @@
+---
+---
+
+  // start content
+header {
+  color: #012169;
+
+  h2 {
+    img {
+      max-width: 140px;
+    }
+  }
+}
+
+.top-bar {
+  padding: 2rem 0;
+}
+
+.logo-wrapper {
+  h1 {
+    font-size: 3rem;
+    line-height: .8;
+  }
+
+  h2 {
+    line-height: 0;
+    margin: 0 .5rem 0 0;
+    padding-right: .5rem;
+  }
+}
+
+.main-nav {
+  .menu {
+    background-color: #012169;
+    justify-content: center;
+
+    li {
+      padding: .5em;
+
+      a {
+        color: #fff;
+
+        &:hover {
+          color: #bfd600;
+        }
+      }
+    }
+  }
+}
+
+.nsf-logo {
+  .cell {
+    position: fixed;
+    top: 0;
+  }
+
+  p {
+    font-size: .5rem;
+  }
+
+  img {
+    width: 80px;
+  }
+}

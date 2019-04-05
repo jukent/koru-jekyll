@@ -22,42 +22,43 @@
                         aria-expanded="true" aria-controls="body menu-button main-menu" data-i="pg62q8-i"></button>
             </div>
             <div class="top-bar align-top" id="top-bar">
-                <div class="grid-x align-bottom">
-                    <div class="cell mlarge-4 show-for-mlarge top-bar-title logo-wrapper">
+                <div class="grid-x">
+                    <div class="cell">
                         <div class="grid-x align-middle">
-                            <div class="cell mlarge-4 xlarge-3 acronym-wrapper">
-                                <h1>
+                            <div class="cell mlarge-3 large-2 ">
+                                <div class="grid-x grid-margin-x nsf-logo">
+                                    <div class="cell mlarge-4">
+                                        <div class="grid-x">
+                                            <div class="cell small-1 mlarge-4 xlarge-3">
+                                                <p><a href="https://www.ucar.edu/who-we-are/funding">Sponsored By</a></p>
+                                                <a href="https://www.ucar.edu/who-we-are/funding"><img alt="NSF Logo" src="{{ site.github.baseurl }}{{ 'assets/koru-base/img/NSF_4-Color_bitmap_Logo.png' | relative_url }}"/></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div></div>
+                            <div class="cell mlarge-6 large-8 top-bar-title logo-wrapper align-center">
+                                <h2 class="acronym-wrapper">
                                     <a href="https://ncar.ucar.edu" title="NCAR Home">
                                         <img src="{{ site.github.baseurl }}{{ 'assets/koru-base/img/logo-ncar-active-large.png' | relative_url }}"
                                              alt="NCAR">
                                         <span class="show-for-sr">NCAR</span>
                                     </a>
-                                </h1>
-                                <p>
-                                    <a href="https://www.ucar.edu/" title="UCAR Home">
-                                        <img src="{{ site.github.baseurl }}{{ 'assets/koru-base/img/logo-ucar-inactive-large.png' | relative_url }}"
-                                             alt="UCAR">
-                                        <span class="show-for-sr">UCAR</span>
-                                    </a>
-                                </p>
+                                </h2>
+                                <h1>VAPOR</h1>
                             </div>
-                            <div class="cell mlarge-8 xlarge-9 acronym-definition">
-                                <h1><a href="{{ site.github.baseurl }}">Jekyll Template</a></h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cell mlarge-8 show-for-mlarge top-bar-menus hide-for-print" id="main-menu" data-toggler="show-for-mlarge">
-                        <div class="grid-y">
-                            <nav class="cell main-nav">
-                                <ul class="menu icons icon-left dropdown" data-responsive-menu="accordion mlarge-dropdown">
-                                    {% for link in site.data.mainmenu.menu %}
-                                    <li aria-label="{{ link.title }}"><a href="{{ site.github.baseurl }}{{ link.url }}"><i class="fa fa-circle-o"></i>{{ link.title }}</a></li>
-                                    {% endfor %}
-                                </ul>
-                            </nav>
+                            <div class="cell mlarge-3 large-2 text-right"><strong>National Center for Atmospheric Research</strong></div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="main-nav">
+                <nav class="cell">
+                    <ul class="menu">
+                        {% for link in site.data.mainmenu.menu %}
+                        <li aria-label="{{ link.title }}"><a href="{{ site.github.baseurl }}{{ link.url }}"><i class="fa fa-circle-o"></i>{{ link.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
