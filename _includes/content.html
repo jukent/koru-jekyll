@@ -5,19 +5,5 @@
                     {{ content }}
                 </article>
             </div>
-            <div class="cell medium-4 large-3 sidebar">
-                <div class="grid-y sidebar-breadcrumb">
-                    <div class="cell">
-                        <ul class="grid-y vertical menu">
-                            <li class="cell">
-                                <a href="" class="cell home"><i class="fa fa-home"></i><span>Home</span></a>
-                            </li>
-                            {% for link in site.data.mainmenu.menu %}
-                            <li class="cell"><a href="{{ link.url }}"><i class="fa fa-circle-o"></i>{{ link.title }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
