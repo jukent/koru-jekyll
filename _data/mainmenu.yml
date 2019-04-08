@@ -1,11 +1,11 @@
 menu:
   - title: Software
-    url: documentation.html
+    url: /pages/documentation.html
   - title: Documentation
-    url: documentation.html
+    url: /pages/documentation.html
   - title: Contributing
-    url: documentation.html
+    url: /pages/documentation.html
   - title: Images
-    url: documentation.html
+    url: /pages/documentation.html
   - title: Help
-    url: documentation.html
+    url: https://google.com
