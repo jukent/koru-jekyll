@@ -2,41 +2,22 @@
     <div data-sticky-container="" class="sticky-container">
         <div data-sticky="" data-options="marginTop:0;stickyOn:small;" data-top-anchor="main-content"
              class="sticky is-anchored is-at-top">
-            <div class="title-bar hide-for-mlarge">
-                <div class="grid-container mobile-logo">
-                    <div class="grid-x grid-padding-x grid-margin-y align-middle">
-                        <h1 class="cell small-3 medium-2 acronym">
-                            <img src="{{ site.github.baseurl }}{{ 'assets/koru-base/img/logo-ncar-active.png' | relative_url }}"
-                                 alt="University Corporation for Atmospheric Research">
-                            <span class="show-for-sr">UCAR</span>
-                        </h1>
-                        <h1 class="cell small-8 medium-8 description">
-                            <a href="https://www.ucar.edu/" title="Jekyll Template">
-                                Jekyll Template
-                            </a>
-                        </h1>
-                    </div>
-                </div>
-                <button class="fa fa-bars hide-for-print" type="button" id="menu-button"
-                        data-toggler="fa-minus-circle fa-bars" data-toggle="body main-menu menu-button top-bar"
-                        aria-expanded="true" aria-controls="body menu-button main-menu" data-i="pg62q8-i"></button>
-            </div>
-            <div class="top-bar align-top" id="top-bar">
+            <div class="top-bar align-top hide-for-print" id="top-bar">
                 <div class="grid-x">
                     <div class="cell">
                         <div class="grid-x align-middle">
-                            <div class="cell mlarge-3 large-2 ">
+                            <div class="cell small-3 large-2">
                                 <div class="grid-x grid-margin-x nsf-logo">
-                                    <div class="cell mlarge-4">
+                                    <div class="cell small-4">
                                         <div class="grid-x">
-                                            <div class="cell small-1 mlarge-4 xlarge-3">
+                                            <div class="cell small-1 small-4 xlarge-3">
                                                 <p><a href="https://www.ucar.edu/who-we-are/funding">Sponsored By</a></p>
                                                 <a href="https://www.ucar.edu/who-we-are/funding"><img alt="NSF Logo" src="{{ site.github.baseurl }}{{ 'assets/koru-base/img/NSF_4-Color_bitmap_Logo.png' | relative_url }}"/></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div></div>
-                            <div class="cell mlarge-6 large-8 top-bar-title logo-wrapper align-center">
+                            <div class="cell small-6 large-8 top-bar-title logo-wrapper align-center">
                                 <h2 class="acronym-wrapper">
                                     <a href="https://ncar.ucar.edu" title="NCAR Home">
                                         <img src="{{ site.github.baseurl }}{{ 'assets/koru-base/img/logo-ncar-active-large.png' | relative_url }}"
@@ -46,16 +27,20 @@
                                 </h2>
                                 <h1>VAPOR</h1>
                             </div>
-                            <div class="cell mlarge-3 large-2 text-right"><strong>National Center for Atmospheric Research</strong></div>
+                            <div class="cell small-3 large-2 text-right"><p class="ncar-title">National Center for Atmospheric Research</p></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="main-nav">
+            <div class="mobile-nav hide-for-print text-center" data-responsive-toggle="main-nav" data-hide-for="mlarge">
+                <div class="title-bar-title">Menu</div>
+                <button class="fa fa-chevron-down" type="button" data-toggle="main-nav"></button>
+            </div>
+            <div class="main-nav hide-for-print" id="main-nav">
                 <nav class="cell">
-                    <ul class="menu">
+                    <ul class="vertical mlarge-horizontal menu" data-responsive-menu="accordion mlarge-menu">
                         {% for link in site.data.mainmenu.menu %}
-                        <li aria-label="{{ link.title }}"><a href="{{ site.github.baseurl }}{{ link.url }}"><i class="fa fa-circle-o"></i>{{ link.title }}</a></li>
+                        <li aria-label="{{ link.title }}"><a class="text-center" href="{{ site.github.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
                         {% endfor %}
                     </ul>
                 </nav>
