@@ -1,7 +1,13 @@
-# jekyll-koru
+# Using the koru-jekyll theme
+
+This is a theme based on UCAR/NCAR's custom 'koru' design. It is built on top the Foundation framework. This provides users and developers with responsiveness and accessibility.
+
+* [Layouts](#layouts)
+* [Main Menu](#main-menu)
+* [Local Development](#local-development)
+* [Jekyll Development](#jekyll-development)
 
 ## Layouts
-
 ### Default
 
 The only front matter information required for default pages is:
@@ -30,12 +36,12 @@ banner-button-url:
 
 ## Main menu
 
-The main menu is set in the mainmenu.yml file found in /_data. This allows users to set both absolute and relative paths in the menu. The structure for creating a menu is:
+The main menu is set in the mainmenu.yml file in the _data directory. Paths can be both absolute and relative in the menu. The structure for creating a menu is:
 
 ```yml
 menu:
   - title: Software
-    url: pages/documentation.html
+    url: /pages/documentation.html
 ```
 
 ## Local Development
@@ -54,7 +60,6 @@ EMAIL=[email address]
 ```
 
 Run `docker-compose up --build` to (re)build the node.js and jekyll images and run the container.
-
 ## Jekyll Development
 
 When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
