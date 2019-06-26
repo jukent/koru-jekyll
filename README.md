@@ -75,4 +75,5 @@ To add a custom directory to your theme-gem, please edit the regexp in `jekyll-k
 
 * Commit and push your changes to Github
 * Create a new version on Github
+* Pull in the new release at https://github.com/NCAR/jekyll-koru-test in the _config.yml file.
 
