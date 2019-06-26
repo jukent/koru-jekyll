@@ -60,10 +60,19 @@ EMAIL=[email address]
 ```
 
 Run `docker-compose up --build` to (re)build the node.js and jekyll images and run the container.
+
+## Update Koru base
+
+Run `npm update koru-base` to update to the latest package version.
+
 ## Jekyll Development
 
 When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
 
 To add a custom directory to your theme-gem, please edit the regexp in `jekyll-koru.gemspec` accordingly.
 
+## New Release for downstream sites
+
+* Commit and push your changes to Github
+* Create a new version on Github
 
