@@ -6,3 +6,7 @@ Gemfile.lock
 
 .idea/
 .env
+
+# Ignore backstopjs tests
+/backstop_data/bitmaps_test
+/backstop_data/html_report
