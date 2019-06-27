@@ -1,51 +1,49 @@
 {
-  "_args": [
-    [
-      "koru-base@2.1.23",
-      "/project"
-    ]
-  ],
-  "_from": "koru-base@2.1.23",
-  "_id": "koru-base@2.1.23",
+  "_from": "koru-base@2.1.24",
+  "_id": "koru-base@2.1.24",
   "_inBundle": false,
-  "_integrity": "sha1-D2q/on069bLFpRcz+j+gXQmRyuI=",
+  "_integrity": "sha1-fGF2oaPuNuL9zcTq/0JCV7SR0AU=",
   "_location": "/koru-base",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "koru-base@2.1.23",
+    "raw": "koru-base@2.1.24",
     "name": "koru-base",
     "escapedName": "koru-base",
-    "rawSpec": "2.1.23",
+    "rawSpec": "2.1.24",
     "saveSpec": null,
-    "fetchSpec": "2.1.23"
+    "fetchSpec": "2.1.24"
   },
   "_requiredBy": [
+    "#USER",
     "/"
   ],
-  "_resolved": "https://repo.ucar.edu/artifactory/api/npm/npm-virtual/koru-base/-/koru-base-2.1.23.tgz",
-  "_spec": "2.1.23",
-  "_where": "/project",
+  "_resolved": "https://repo.ucar.edu/artifactory/api/npm/npm-virtual/koru-base/-/koru-base-2.1.24.tgz",
+  "_shasum": "7c6176a1a3ee36e2fdcdc4eaff424257b491d005",
+  "_spec": "koru-base@2.1.24",
+  "_where": "/Users/geinosky/Projects/koru-jekyll",
   "bugs": {
     "url": "https://github.com/NCAR/koru-base/issues"
   },
+  "bundleDependencies": false,
+  "deprecated": false,
   "devDependencies": {
-    "backstopjs": "^3.5.2",
+    "backstopjs": "^4.1.9",
     "font-awesome": "^4.7.0",
     "foundation-sites": "^6.5.3",
     "grunt": "^1.0.4",
     "grunt-autoprefixer": "^3.0.4",
     "grunt-browser-sync": "^2.2.0",
     "grunt-bump": "^0.8.0",
-    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-uglify": "^4.0.0",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-php": "^1.5.1",
+    "grunt-php": "^3.0.0",
     "grunt-sass-lint": "^0.2.2",
-    "grunt-shell": "^2.1.0",
+    "grunt-shell": "^3.0.1",
     "jquery": "^3.4.1"
   },
   "homepage": "https://github.com/NCAR/koru-base#readme",
@@ -62,5 +60,5 @@
     "serve": "php -S localhost:8000 -t .",
     "test": "backstop test"
   },
-  "version": "2.1.23"
+  "version": "2.1.24"
 }
