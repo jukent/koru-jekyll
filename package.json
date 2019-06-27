@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/NCAR/jekyll-koru#readme",
   "dependencies": {
-    "koru-base": "^2.1.22"
+    "koru-base": "^2.1.23"
   }
 }

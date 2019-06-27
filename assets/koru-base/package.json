@@ -1,38 +1,40 @@
 {
-  "_from": "koru-base@2.1.20",
-  "_id": "koru-base@2.1.20",
+  "_args": [
+    [
+      "koru-base@2.1.23",
+      "/project"
+    ]
+  ],
+  "_from": "koru-base@2.1.23",
+  "_id": "koru-base@2.1.23",
   "_inBundle": false,
-  "_integrity": "sha1-W7BhxVIa7w415NtsRQESnuC7pa4=",
+  "_integrity": "sha1-D2q/on069bLFpRcz+j+gXQmRyuI=",
   "_location": "/koru-base",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "koru-base@2.1.20",
+    "raw": "koru-base@2.1.23",
     "name": "koru-base",
     "escapedName": "koru-base",
-    "rawSpec": "2.1.20",
+    "rawSpec": "2.1.23",
     "saveSpec": null,
-    "fetchSpec": "2.1.20"
+    "fetchSpec": "2.1.23"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
-  "_resolved": "https://repo.ucar.edu/artifactory/api/npm/npm-virtual/koru-base/-/koru-base-2.1.20.tgz",
-  "_shasum": "5bb061c5521aef0e35e4db6c4501129ee0bba5ae",
-  "_spec": "koru-base@2.1.20",
-  "_where": "/Users/geinosky/Projects/koru-jekyll",
+  "_resolved": "https://repo.ucar.edu/artifactory/api/npm/npm-virtual/koru-base/-/koru-base-2.1.23.tgz",
+  "_spec": "2.1.23",
+  "_where": "/project",
   "bugs": {
     "url": "https://github.com/NCAR/koru-base/issues"
   },
-  "bundleDependencies": false,
-  "deprecated": false,
   "devDependencies": {
     "backstopjs": "^3.5.2",
     "font-awesome": "^4.7.0",
-    "foundation-sites": "^6.5.0-rc.2",
-    "grunt": "^1.0.3",
+    "foundation-sites": "^6.5.3",
+    "grunt": "^1.0.4",
     "grunt-autoprefixer": "^3.0.4",
     "grunt-browser-sync": "^2.2.0",
     "grunt-bump": "^0.8.0",
@@ -44,7 +46,7 @@
     "grunt-php": "^1.5.1",
     "grunt-sass-lint": "^0.2.2",
     "grunt-shell": "^2.1.0",
-    "jquery": "^3.1.1"
+    "jquery": "^3.4.1"
   },
   "homepage": "https://github.com/NCAR/koru-base#readme",
   "license": "UNLICENSED",
@@ -60,5 +62,5 @@
     "serve": "php -S localhost:8000 -t .",
     "test": "backstop test"
   },
-  "version": "2.1.20"
+  "version": "2.1.23"
 }
