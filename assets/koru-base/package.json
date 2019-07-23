@@ -1,4 +1,10 @@
 {
+  "_args": [
+    [
+      "koru-base@2.1.25",
+      "/project"
+    ]
+  ],
   "_from": "koru-base@2.1.25",
   "_id": "koru-base@2.1.25",
   "_inBundle": false,
@@ -16,18 +22,14 @@
     "fetchSpec": "2.1.25"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
   "_resolved": "https://repo.ucar.edu/artifactory/api/npm/npm-virtual/koru-base/-/koru-base-2.1.25.tgz",
-  "_shasum": "87a3b3091216284d2ce25e73421fa99263cccf08",
-  "_spec": "koru-base@2.1.25",
-  "_where": "/Users/geinosky/Projects/koru-jekyll",
+  "_spec": "2.1.25",
+  "_where": "/project",
   "bugs": {
     "url": "https://github.com/NCAR/koru-base/issues"
   },
-  "bundleDependencies": false,
-  "deprecated": false,
   "devDependencies": {
     "backstopjs": "^4.1.9",
     "font-awesome": "^4.7.0",

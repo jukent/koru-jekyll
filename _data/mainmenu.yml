@@ -1,6 +1,9 @@
 menu:
   - title: Software
     url: /pages/software.html
+    submenu:
+      - title: Submenu Item
+        url: https://www.google.com
   - title: Documentation
     url: /pages/documentation.html
   - title: Contributing

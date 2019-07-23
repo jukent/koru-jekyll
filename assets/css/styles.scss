@@ -45,11 +45,16 @@ header {
 }
 
 .main-nav {
+  .grid-x {
+    background-color: #012169;
+    justify-content: center;
+  }
+
   .menu {
     background-color: #012169;
     justify-content: center;
 
-    li {
+    li:not(.is-submenu-item) {
       padding: .5em;
 
       a {
@@ -121,6 +126,11 @@ header {
 }
 
 @media only screen and (min-width: 900px) {
+  li:hover.is-dropdown-submenu-parent > a::after {
+    border-color: #012169 transparent;
+    top: 135%;
+  }
+
   .top-bar {
     padding: 2rem 0;
   }

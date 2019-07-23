@@ -44,6 +44,17 @@ menu:
     url: /pages/documentation.html
 ```
 
+Use the following structure to create submenus:
+
+```yml
+menu:
+  - title: Software
+    url: /pages/documentation.html
+    submenu:
+        - title: VAPOR
+        url: /pages/vapor.html
+```
+
 ## Local Development
 
 To download koru-base from Artifactory, you will need to add your Artifactory credentials to a .env file. First, you will need to retrieve your credentials with the following command:

@@ -37,13 +37,25 @@
                 <button class="fa fa-chevron-down" type="button" data-toggle="main-nav"></button>
             </div>
             <div class="main-nav hide-for-print" id="main-nav">
-                <nav class="cell">
-                    <ul class="vertical mlarge-horizontal menu" data-responsive-menu="accordion mlarge-menu">
+                <div class="grid-x">
+                <nav class="cell center mlarge-10 large-7">
+                    <ul class="menu icons icon-left" data-responsive-menu="accordion mlarge-dropdown">
                         {% for link in site.data.mainmenu.menu %}
-                        <li aria-label="{{ link.title }}"><a class="text-center" href="{{ link.url }}">{{ link.title }}</a></li>
+                        <li aria-label="{{ link.title }}">
+                            <a class="text-center" href="{{ link.url }}">{{ link.title }}</a>
+                            {% if link.submenu %}
+                            <ul class="menu">
+                                <li aria-label="{{ link.title }}"><a class="text-center" href="{{ link.url }}">Overview</a></li>
+                                {% for sublink in link.submenu %}
+                                <li aria-label="{{ sublink.title }}"><a class="text-left" href="{{ sublink.url }}">{{ sublink.title }}</a></li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </li>
                         {% endfor %}
                     </ul>
                 </nav>
+                </div>
             </div>
         </div>
     </div>
