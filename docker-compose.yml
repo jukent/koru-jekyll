@@ -4,12 +4,8 @@ services:
   web:
     container_name: koru-jekyll
     image: koru-jekyll:latest
-    env_file: .env
     build:
       context: .
-      args:
-        AUTH: ${AUTH}
-        EMAIL: ${EMAIL}
       dockerfile: Dockerfile
     volumes:
       - ./:/project

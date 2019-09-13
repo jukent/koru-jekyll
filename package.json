@@ -16,10 +16,10 @@
     "url": "https://github.com/NCAR/jekyll-koru/issues"
   },
   "homepage": "https://github.com/NCAR/jekyll-koru#readme",
-  "dependencies": {
-    "koru-base": "^2.1.25"
-  },
   "devDependencies": {
     "backstopjs": "^4.1.9"
+  },
+  "dependencies": {
+    "koru-base": "^2.1.48"
   }
 }
