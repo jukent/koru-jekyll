@@ -55,26 +55,11 @@ menu:
         url: /pages/vapor.html
 ```
 
-## Local Development
+## Update Koru base to Latest Version
 
-To download koru-base from Artifactory, you will need to add your Artifactory credentials to a .env file. First, you will need to retrieve your credentials with the following command:
-
-```sh
-curl -u [username]:[password] http://<ARTIFACTORY_SERVER_DOMAIN>/artifactory/api/npm/auth
-```
-
-Then copy the `_auth` and `email` strings into a .env file. The structure should be:
-
-```
-AUTH=[token]
-EMAIL=[email address]
-```
-
-Run `docker-compose up --build` to (re)build the node.js and jekyll images and run the container.
-
-## Update Koru base
-
-Run `npm update koru-base` to update to the latest package version.
+* Run `npm update koru-base --registry=https://repo.ucar.edu/artifactory/api/npm/npm-virtual` (pulls in latest version from Artifactory)
+* Commit changes
+    > Note: when in doubt, delete node_modules and re-run the previous steps
 
 ## Jekyll Development
 
