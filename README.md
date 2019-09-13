@@ -57,7 +57,7 @@ menu:
 
 ## Update Koru base to Latest Version
 
-* Run `npm update koru-base --registry=https://repo.ucar.edu/artifactory/api/npm/npm-virtual` (pulls in latest version from Artifactory)
+* Run `npm install koru-base --registry=https://repo.ucar.edu/artifactory/api/npm/npm-virtual` (pulls in latest version from Artifactory)
 * Commit changes
     > Note: when in doubt, delete node_modules and re-run the previous steps
 
