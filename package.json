@@ -20,6 +20,6 @@
     "backstopjs": "^4.1.9"
   },
   "dependencies": {
-    "koru-base": "^2.1.51"
+    "koru-base": "^2.1.53"
   }
 }

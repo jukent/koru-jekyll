@@ -1,28 +1,28 @@
 {
-  "_from": "koru-base@^2.1.48",
-  "_id": "koru-base@2.1.48",
+  "_from": "koru-base@^2.1.51",
+  "_id": "koru-base@2.1.53",
   "_inBundle": false,
-  "_integrity": "sha1-6ri9m9seWR/0q6s9mlkG1OehHt8=",
+  "_integrity": "sha1-PbjoBFMij8pDSIAiwP3Vmh/DVO8=",
   "_location": "/koru-base",
   "_phantomChildren": {},
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "koru-base@^2.1.48",
+    "raw": "koru-base@^2.1.51",
     "name": "koru-base",
     "escapedName": "koru-base",
-    "rawSpec": "^2.1.48",
+    "rawSpec": "^2.1.51",
     "saveSpec": null,
-    "fetchSpec": "^2.1.48"
+    "fetchSpec": "^2.1.51"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://artifactory-app.ucar.edu:8443/artifactory/api/npm/npm-virtual/koru-base/-/koru-base-2.1.48.tgz",
-  "_shasum": "eab8bd9bdb1e591ff4abab3d9a5906d4e7a11edf",
-  "_spec": "koru-base@^2.1.48",
-  "_where": "/Users/aditya/projects/Drupal/koru-jekyll",
+  "_resolved": "https://repo.ucar.edu:443/artifactory/api/npm/npm-virtual/koru-base/-/koru-base-2.1.53.tgz",
+  "_shasum": "3db8e80453228fca43488022c0fdd59a1fc354ef",
+  "_spec": "koru-base@^2.1.51",
+  "_where": "/home/circleci/project",
   "bugs": {
     "url": "https://github.com/NCAR/koru-base/issues"
   },
@@ -60,5 +60,5 @@
     "serve": "php -S localhost:8000 -t .",
     "test": "backstop test"
   },
-  "version": "2.1.48"
+  "version": "2.1.53"
 }
