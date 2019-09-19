@@ -7,6 +7,9 @@ Gemfile.lock
 .idea/
 .env
 
+# Ignore the Node Modules folder
+node_modules/
+
 # Ignore backstopjs tests
 /backstop_data/bitmaps_test
 /backstop_data/html_report
