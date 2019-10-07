@@ -9930,7 +9930,7 @@ li:hover.is-dropdown-submenu-parent > a::after {
       display: inline-flex;
       line-height: 1.6rem; }
       .utility-wrapper li a {
-        color: #97999b;
+        color: #414143;
         font-weight: 400;
         padding: 0 10px; }
         .utility-wrapper li a:active, .utility-wrapper li a:hover {
@@ -10345,15 +10345,15 @@ li:hover.is-dropdown-submenu-parent > a::after {
     height: 1.55rem;
     margin: 0; }
     .top-bar .input-group-field::-webkit-input-placeholder {
-      color: #97999b; }
+      color: #414143; }
     .top-bar .input-group-field::-moz-placeholder {
-      color: #97999b; }
+      color: #414143; }
     .top-bar .input-group-field:-ms-input-placeholder {
-      color: #97999b; }
+      color: #414143; }
     .top-bar .input-group-field::-ms-input-placeholder {
-      color: #97999b; }
+      color: #414143; }
     .top-bar .input-group-field::placeholder {
-      color: #97999b; } }
+      color: #414143; } }
 
 .subdomain .subdomain-hero {
   height: auto; }
@@ -10646,10 +10646,10 @@ li:hover.is-dropdown-submenu-parent > a::after {
   text-align: center; }
 
 .news footer .newsletter-signup form::after {
-  border-color: transparent #5bc2e7; }
+  border-color: transparent #0092cb; }
 
 .news footer .newsletter-signup form input.button {
-  background: #5bc2e7; }
+  background: #0092cb; }
 
 .news h3,
 .news h4,
@@ -10793,7 +10793,6 @@ a .cta-link {
     transition: 200ms ease-in-out;
     width: 0; }
   .cta-link.dark-blue-on-gray {
-    background: #dbe2e9;
     border-color: #012169;
     color: #012169; }
     .cta-link.dark-blue-on-gray:hover {
@@ -10803,7 +10802,7 @@ a .cta-link {
     .cta-link.dark-blue-on-gray:link, .cta-link.dark-blue-on-gray:visited, .cta-link.dark-blue-on-gray:hover, .cta-link.dark-blue-on-gray:active {
       color: #012169; }
     .cta-link.dark-blue-on-gray::after {
-      border-color: transparent #dbe2e9; }
+      border-color: transparent #eff2f5; }
     .cta-link.dark-blue-on-gray::before {
       border-color: transparent #012169; }
     .cta-link.dark-blue-on-gray.back-button::after {
@@ -10845,7 +10844,7 @@ a .cta-link {
     font-weight: 700;
     padding: 7px 10px; }
     .cta-link.small::after {
-      border-color: transparent #dbe2e9;
+      border-color: transparent #eff2f5;
       border-style: solid;
       border-width: 13px 0 13px 11px;
       right: -11px;
@@ -11954,7 +11953,8 @@ footer {
     border: 0;
     color: #fff;
     cursor: pointer;
-    font-size: 11px;
+    font-size: .75rem;
+    font-weight: 700;
     height: 30px;
     line-height: 2.7;
     outline: 0;
