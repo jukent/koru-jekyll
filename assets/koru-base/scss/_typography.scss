@@ -1,0 +1,174 @@
+b,
+strong {
+  font-weight: $font-weight-semi-bold;
+  letter-spacing: .05em;
+}
+
+blockquote {
+  @include body-large;
+  border: 0;
+  color: $darkest-gray;
+
+  p {
+    @include body-large;
+    color: $darkest-gray;
+  }
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size-xxsmall;
+}
+
+h1 {
+  @include heading-large;
+  @include heading-bold;
+}
+
+h2 {
+  @include heading-mlarge;
+  @include heading-semi-bold;
+}
+
+h3 {
+  @include heading-medium;
+  @include heading-bold;
+}
+
+h4 {
+  @include heading-small;
+  @include heading-semi-bold;
+}
+
+h5,
+h6 {
+  @include heading-xsmall;
+  @include heading-semi-bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  font-family: $font-family;
+  margin-bottom: .75rem;
+  margin-top: 1rem;
+}
+
+header {
+  .menu {
+    a {
+      @include uppercase;
+      font-family: $font-family;
+      font-weight: $font-weight-bold;
+    }
+  }
+}
+
+ol,
+ul {
+  ul {
+    list-style-type: circle;
+  }
+
+  ul,
+  ol {
+    margin-top: 0;
+    padding-left: .625rem;
+  }
+}
+
+// typography utility classes
+.date {
+  @include uppercase;
+  font-size: .875rem;
+  font-weight: $font-weight-regular;
+}
+
+.heading-xsmall-normal {
+  @include heading-xxsmall;
+}
+
+.primary-content {
+  blockquote {
+    @include body-large;
+
+    p {
+      @include body-large;
+    }
+  }
+}
+
+.panel-title {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include heading-bold;
+    @include heading-medium;
+  }
+
+  p {
+    @include body-large;
+  }
+}
+
+@media only screen and (min-width: $medium) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: $mlarge) {
+  .main-nav > ul {
+    &.menu > li {
+      > a {
+        font-size: .75rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $large) {
+  .main-nav > ul {
+    &.menu > li {
+      > a {
+        font-size: .9rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $xlarge) {
+  .main-nav > ul {
+    &.menu > li {
+      > a {
+        font-size: $font-size-xxsmall;
+      }
+    }
+  }
+
+  .primary-content {
+    article {
+      ul,
+      ol {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

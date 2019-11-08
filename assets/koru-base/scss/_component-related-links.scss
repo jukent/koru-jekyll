@@ -1,0 +1,68 @@
+.related-links {
+  background: $gray-placeholder-light;
+  box-shadow: -5px -5px 24px -4px rgba($gradient-gray-light, .56);
+  padding: 1.5rem;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include heading-semi-bold;
+    @include heading-xsmall;
+    color: $lime-green;
+    margin-bottom: .75rem;
+    margin-top: 0;
+  }
+
+  li {
+    border-bottom: solid 1px $darkest-gray;
+    font-family: $font-family;
+
+    &:last-child {
+      border: 0;
+
+      a {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    a {
+      color: $white;
+      padding-left: 0;
+      padding-right: 0;
+
+      &:link,
+      &:visited {
+        color: $white;
+      }
+
+      &:hover,
+      &:active {
+        color: $lime-green;
+      }
+    }
+
+    i {
+      padding-right: 1rem;
+    }
+
+    .inner {
+      -webkit-font-smoothing: initial; // sass-lint:disable-line no-vendor-prefixes
+      line-height: 1.46;
+
+      p {
+        margin: 0;
+      }
+
+      cite {
+        font-size: .87rem;
+        font-style: normal;
+        font-weight: $font-weight-regular;
+        padding: .5rem 0;
+      }
+    }
+  }
+}

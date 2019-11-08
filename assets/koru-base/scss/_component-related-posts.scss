@@ -1,0 +1,65 @@
+.related-posts {
+  &.related-links {
+    a {
+      border: 0;
+    }
+  }
+
+  a {
+    border: 10px solid $darkest-gray;
+    display: block;
+    outline: none;
+    position: relative;
+
+    &:hover {
+      border-color: $gray-placeholder-light;
+
+      h4 {
+        background: $gray-placeholder-light;
+      }
+    }
+  }
+
+  h4 {
+    @include sentence-case;
+    background: $darkest-gray;
+    bottom: -1px;
+    color: $white;
+    font-size: $font-size-xxsmall;
+    font-weight: $font-weight-regular;
+    left: 0;
+    letter-spacing: .06em;
+    margin: 0;
+    padding-top: 10px;
+    position: absolute;
+    width: 100%;
+
+    i {
+      font-size: 80%;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .featured-post {
+    h4 {
+      @include body-large;
+      color: $white;
+      font-weight: $font-weight-semi-bold;
+    }
+  }
+}
+
+@media only screen and (min-width: $mlarge) {
+  .related-posts {
+    a {
+      border-width: 14px;
+    }
+
+    .last-post {
+      margin-top: 0;
+    }
+  }
+}

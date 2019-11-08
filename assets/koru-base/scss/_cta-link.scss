@@ -1,0 +1,211 @@
+a {
+  .cta-link {
+    text-decoration: none;
+  }
+}
+
+.cta-link {
+  @include heading-semi-bold;
+  @include heading-xsmall;
+  display: inline-block;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transition: 200ms ease-in-out;
+
+  &::after,
+  &::before {
+    @include pseudo-element;
+    height: 0;
+    right: -18px;
+    top: 0;
+    transition: 200ms ease-in-out;
+    width: 0;
+  }
+
+  &.dark-blue-on-gray {
+    border-color: $dark-blue;
+    color: $dark-blue;
+
+    &:hover {
+      border-color: $gray-placeholder-dark;
+
+      &::before {
+        border-color: transparent $gray-placeholder-dark;
+      }
+    }
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: $dark-blue;
+    }
+
+    &::after {
+      border-color: transparent $cool-gray;
+    }
+
+    &::before {
+      border-color: transparent $dark-blue;
+    }
+
+    // for the back button
+    &.back-button {
+      &::after {
+        border-color: transparent $light-gray;
+      }
+
+      &::before {
+        border-color: transparent $dark-blue;
+      }
+
+      &:hover {
+        &::before {
+          border-color: transparent $gray-placeholder-dark;
+        }
+      }
+    }
+  }
+
+  &.large {
+    border: 3px solid;
+    font-size: 11px;
+    height: 30px;
+    padding: 6px 6px 1px 12px;
+    text-decoration: none;
+
+    &::after {
+      @include button-arrow(transparent $light-gray, 12px 0 12px 12px);
+      right: -12px;
+    }
+
+    &::before {
+      @include button-arrow(transparent $dark-blue, 14px 0 14px 14px);
+      right: -17px;
+      top: -2px;
+    }
+
+    // for the back button, only used with dark-blue-on-gray class
+    &.back-button {
+      margin-left: 2rem;
+      padding-left: 15px;
+      padding-right: 30px;
+
+      &::after {
+        border-width: 12px 12px 12px 0;
+        left: -12px;
+      }
+
+      &::before {
+        border-width: 14px 14px 14px 0;
+        left: -16px;
+      }
+    }
+  }
+
+  &.small {
+    border: 3px solid;
+    font-size: 11px;
+    font-weight: $font-weight-bold;
+    padding: 7px 10px;
+
+    &::after {
+      @include button-arrow(transparent $cool-gray, 13px 0 13px 11px);
+      right: -11px;
+      top: 0;
+    }
+
+    &::before {
+      @include button-arrow(transparent $dark-blue, 14px 0 14px 14px);
+      right: -17px;
+      top: -1px;
+      width: 0;
+    }
+  }
+
+  &.lime-green-on-gray {
+    background: $gradient-gray-light;
+    border-color: $white;
+    color: $white;
+
+    &:hover {
+      border-color: $lime-green;
+
+      &::before {
+        border-color: transparent $lime-green;
+      }
+    }
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: $white;
+    }
+
+    &::before {
+      border-color: transparent $white;
+    }
+
+    &::after {
+      border-color: transparent $gradient-gray-light;
+    }
+  }
+
+  &.white-on-color {
+    background: $white;
+    border-color: $white;
+
+    &::before {
+      border-color: transparent $white;
+    }
+
+    &::after {
+      border-color: transparent $white;
+    }
+
+    &:link,
+    &:visited {
+      color: $gray-placeholder-dark;
+    }
+
+    &:hover,
+    &:active {
+      color: $gray-placeholder-dark;
+    }
+  }
+}
+
+@media only screen and (min-width: $mlarge) {
+  .cta-link {
+    &.large {
+      font-size: 19px;
+      height: 46px;
+      padding: 10px 15px 10px 30px;
+
+      &::after {
+        border-width: 20px 0 20px 18px;
+        right: -17px;
+      }
+
+      &::before {
+        border-width: 22px 0 22px 19px;
+        right: -22px;
+      }
+
+      &.back-button {
+        &::after {
+          border-width: 20px 18px 20px 0;
+          left: -18px;
+        }
+
+        &::before {
+          border-width: 22px 19px 22px 0;
+          left: -22px;
+        }
+      }
+    }
+  }
+}

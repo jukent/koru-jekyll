@@ -1,0 +1,42 @@
+.with-sidebar {
+  .sidebar {
+    margin-top: 1rem;
+    padding-left: 1.875rem;
+
+    .article-details {
+      @include radial-gradient($gradient-gray-light, $gradient-gray-dark);
+      box-shadow: -5px -5px 24px -4px rgba($gradient-gray-light, .56);
+      padding: 1.5rem;
+
+      h5,
+      h6,
+      p {
+        color: $white;
+      }
+    }
+  }
+}
+
+.primary-content {
+  article {
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (min-width: $mlarge) {
+  .with-sidebar {
+    .sidebar {
+      margin-top: -5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: $xxlarge) {
+  .primary-content {
+    @include xy-grid-container(85rem, 1.875rem);
+
+    article {
+      margin-left: 0;
+    }
+  }
+}

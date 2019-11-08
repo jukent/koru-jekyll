@@ -1,0 +1,14 @@
+.pagination {
+  li {
+    @include uppercase;
+    font-weight: $font-weight-semi-bold;
+  }
+}
+
+@media only screen and (min-width: $mlarge) {
+  .pagination {
+    li {
+      font-size: $font-size-xxsmall;
+    }
+  }
+}

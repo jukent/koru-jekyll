@@ -1,0 +1,22 @@
+.alert {
+  a {
+    &:link {
+      color: $yellow;
+    }
+  }
+
+  .close-button {
+    color: $white;
+  }
+}
+
+.alert-box {
+  font-size: 1.125rem;
+  margin: auto;
+  max-width: 85rem;
+}
+
+.highlighted {
+  color: $red;
+  font-weight: $font-weight-bold;
+}

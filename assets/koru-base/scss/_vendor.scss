@@ -1,0 +1,55 @@
+// Foundation by ZURB
+// foundation.zurb.com
+// Licensed under MIT Open Source
+@import '../../node_modules/foundation-sites/scss/foundation';
+
+$breakpoints: (
+  small: 0,
+  medium: 40rem,
+  mlarge: 56.25rem,
+  large: 64rem,
+  xlarge: 75rem,
+  xxlarge: 90rem,
+);
+
+$breakpoint-classes: (small medium mlarge large xlarge xxlarge);
+$grid-container: 85rem;
+
+$foundation-palette: (
+  primary: #d8e8ff,
+  secondary: #767676,
+  success: #3adb76,
+  warning: #ffff32,
+  alert: #e50000,
+);
+
+$closebutton-color: $black;
+
+$callout-border: none;
+$callout-margin: none;
+$callout-background-fade: 1%;
+
+$accordionmenu-arrow-color: $white;
+$dropdownmenu-arrows: false;
+$dropdownmenu-background: none;
+$dropdown-menu-item-color-active: $black;
+$accordionmenu-arrows: false;
+$menu-icon-spacing: .5rem;
+
+$pagination-mobile-items: true;
+$pagination-item-padding: .3rem;
+$pagination-item-background-current: none;
+$pagination-item-color-current: #262526;
+
+$body-antialiased: false;
+
+$print-hrefs: false;
+$print-transparent-backgrounds: false;
+
+@include foundation-everything;
+
+// get fontawesome
+@import '../../node_modules/font-awesome/scss/font-awesome';
+
+// get custom-designed icons as font-family by icomoon
+@import '../fonts/icomoon/style.css';

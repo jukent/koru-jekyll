@@ -1,0 +1,217 @@
+footer {
+  background: $darkest-gray;
+  font-size: .85em;
+
+  h4 {
+    @include heading-semi-bold;
+    @include heading-xsmall;
+  }
+
+  p {
+    color: $light-gray;
+  }
+}
+
+.footer-sponsor {
+  background: $dark-gray;
+  padding-bottom: 30px;
+  padding-top: 30px;
+
+  p {
+    color: $white;
+    margin: 0;
+  }
+
+  .grid-x {
+    @include flex-align(center);
+  }
+}
+
+.footer-addresses {
+  width: auto;
+}
+
+.footer-menu-secondary {
+  margin-bottom: 20px;
+  margin-top: 1rem;
+
+  li {
+    margin-bottom: 5px;
+
+    a {
+      color: $light-gray;
+
+      i {
+        padding-right: 5px;
+      }
+
+      &:link,
+      &:visited {
+        color: $light-gray;
+      }
+
+      &:hover,
+      &:active {
+        color: $lime-green;
+      }
+    }
+  }
+}
+
+.footer-menu-tertiary {
+  margin-top: 20px;
+
+  li {
+    a {
+      @include uppercase;
+      color: $light-gray;
+
+      &:link,
+      &:visited {
+        color: $light-gray;
+      }
+
+      &:hover,
+      &:active {
+        color: $lime-green;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  small {
+    font-size: 100%;
+  }
+
+  small,
+  li,
+  ul {
+    color: $light-gray;
+  }
+}
+
+.newsletter-signup {
+  width: 80%;
+
+  form {
+    position: relative;
+
+    &::after {
+      @include pseudo-element;
+      @include button-arrow (transparent $gray-placeholder-light, 15px 0 15px 15px);
+      height: 0;
+      right: -15px;
+      top: 0;
+      width: 0;
+    }
+  }
+
+  input {
+    &[type='email'] {
+      background: $white;
+      border: 0;
+      height: 30px;
+      margin: 0;
+      outline: none;
+      width: 70%;
+    }
+
+    &[type='submit'] {
+      @include uppercase;
+      background: $gray-placeholder-light;
+      border: 0;
+      color: $white;
+      cursor: pointer;
+      font-size: .75rem;
+      font-weight: 700;
+      height: 30px;
+      line-height: 2.7;
+      outline: 0;
+      padding: 0 0 0 .3rem;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0;
+      width: 30%;
+    }
+  }
+
+  label {
+    left: -9999px;
+    position: absolute;
+    top: -9999px;
+  }
+}
+
+.footer-address-postal,
+.footer-address-shipping {
+  display: none;
+}
+
+// foundation medium begins
+@media only screen and (min-width: $medium) {
+  footer,
+  .footer-sponsor {
+    font-size: .9em;
+
+    .grid-x {
+      @include flex-align(right);
+    }
+  }
+
+  .footer-addresses,
+  .footer-subscribe {
+    text-align: center;
+  }
+
+  .footer-address-postal,
+  .footer-address-shipping {
+    display: block;
+  }
+
+  .footer-menu-secondary {
+    text-align: center;
+
+    li {
+      display: inline-flex;
+      margin-right: 12px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .footer-menu-tertiary {
+    small,
+    .menu {
+      @include menu-direction(horizontal);
+      display: inline-flex;
+    }
+  }
+}
+
+// foundation large begins
+@media only screen and (min-width: $large) {
+  footer,
+  .footer-sponsor {
+    font-size: $font-size-xxsmall;
+  }
+
+  .footer-addresses,
+  .footer-subscribe {
+    text-align: left;
+  }
+
+  .footer-menu-secondary {
+    text-align: left;
+
+    li {
+      display: block;
+      margin-right: 0;
+    }
+  }
+}

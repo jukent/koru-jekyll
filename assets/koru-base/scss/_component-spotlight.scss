@@ -1,0 +1,50 @@
+.spotlight-wrapper {
+  a {
+    &:hover {
+      background-blend-mode: normal;
+    }
+  }
+}
+
+.spotlight {
+  background-blend-mode: multiply;
+  background-color: $light-gray;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+  position: relative;
+
+  h4 {
+    @include heading-semi-bold;
+    @include heading-xsmall;
+    color: $lime-green;
+    margin-bottom: 0;
+  }
+
+  h5 {
+    @include heading-mlarge;
+    @include heading-semi-bold;
+    color: $white;
+  }
+
+  h4,
+  h5 {
+    @include text-shadow(rgba($black, .5));
+    font-weight: $font-weight-bold;
+  }
+
+  .inner {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: $mlarge) {
+  .spotlight-wrapper {
+    margin-bottom: 3rem;
+  }
+
+  .spotlight {
+    height: 100%;
+  }
+}

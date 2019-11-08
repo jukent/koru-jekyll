@@ -1,0 +1,87 @@
+.related-sections {
+  a {
+    height: 190px;
+
+    &:hover {
+      .figure {
+        background: $gray-placeholder-light;
+      }
+    }
+  }
+
+  h4 {
+    @include heading-semi-bold;
+    @include heading-xsmall;
+    color: $lime-green;
+    font-size: .65rem;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  i {
+    color: $white;
+    display: block;
+    font-size: $font-size-mlarge;
+    margin-bottom: 20px;
+  }
+
+  .figure {
+    @include radial-gradient($gradient-gray-light, $gradient-gray-dark);
+    @include flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .figcaption {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $medium) {
+  .related-sections {
+    h4 {
+      font-size: 16px;
+    }
+
+    i {
+      font-size: 4rem;
+    }
+  }
+}
+
+@media only screen and (min-width: $mlarge) {
+  .related-sections {
+    .figcaption {
+      @include flex;
+      background: $white;
+      justify-content: center;
+      padding: 10px;
+
+      .excerpt {
+        color: $darkest-gray;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .grid-container {
+      margin: 0;
+      max-width: none;
+      padding: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: $large) {
+  .related-sections {
+    a {
+      height: 225px;
+    }
+
+    .figcaption {
+      padding: 20px;
+    }
+  }
+}

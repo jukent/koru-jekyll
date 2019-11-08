@@ -1,0 +1,50 @@
+.subdomain {
+  .subdomain-hero {
+    @include banner-default-heights;
+
+    &.dark {
+      background-color: $gradient-gray-dark;
+    }
+
+    &.with-caption {
+      height: auto;
+    }
+
+    > .grid-x {
+      height: 100%;
+    }
+
+    a {
+      color: $white;
+    }
+
+    .figure-feature {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      * {
+        color: $white;
+      }
+    }
+
+    .figure-feature-text {
+      color: $white;
+      padding-top: 0;
+
+      * {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $mlarge) {
+  .subdomain {
+    .subdomain-hero {
+      .figure-feature-text {
+        padding-top: 40px;
+      }
+    }
+  }
+}

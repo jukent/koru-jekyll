@@ -1,0 +1,50 @@
+.programs-listing {
+  background: $gray-placeholder-light;
+
+  h3,
+  h4 {
+    color: $lime-green;
+  }
+
+  p {
+    color: $white;
+  }
+
+  .program-listing {
+    .cta-link {
+      margin-top: 8px;
+    }
+
+    h4 {
+      @include body-large;
+      @include sentence-case;
+      font-weight: $font-weight-bold;
+      letter-spacing: .02em;
+      margin-bottom: .25em;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: $font-weight-semi-bold;
+      letter-spacing: .05em;
+      line-height: 1.7;
+      margin: 0;
+    }
+  }
+
+  @media only screen and (min-width: $large) {
+    .panel-title {
+      padding-right: 3rem;
+    }
+  }
+
+  @media only screen and (min-width: $xlarge) {
+    > .cell {
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}

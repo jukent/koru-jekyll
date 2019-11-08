@@ -1,0 +1,154 @@
+.offerings {
+  &.portraits {
+    .offering {
+      h4 {
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+
+      .details {
+        float: right;
+        width: 65%;
+      }
+
+      .post-image {
+        float: left;
+        width: 30%;
+      }
+    }
+  }
+
+  .group-listing {
+    .panel-title {
+      h3 {
+        @include heading-semi-bold;
+        @include heading-xsmall;
+        color: $dark-blue;
+      }
+    }
+  }
+
+  .offering {
+    margin-bottom: 1rem;
+    transition: 200ms ease-in-out;
+
+    h4 {
+      @include heading-semi-bold;
+      @include heading-xsmall;
+
+      a {
+        color: $gray-placeholder-light;
+
+        &:link,
+        &:visited {
+          color: $gray-placeholder-light;
+        }
+
+        &:hover,
+        &:active {
+          color: $dark-blue;
+        }
+      }
+    }
+
+    &:hover {
+      .post-image {
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+
+    .post-image {
+      display: block;
+      margin-bottom: 1rem;
+      position: relative;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+
+      &::before {
+        @include pseudo-element;
+        border: $light-gray solid 14px;
+        height: 100%;
+        opacity: 0;
+        transition: 200ms ease-in-out;
+        width: 100%;
+      }
+    }
+  }
+
+  .panel-title {
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .with-gradient {
+    @include linear-gradient(bottom, rgba($white, .5), rgba($white, 0));
+    padding-top: .9375rem;
+  }
+
+  @media only screen and (min-width: $medium) {
+    .group-listing {
+      .panel-title {
+        h3 {
+          font-size: $font-size-small;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $medium) {
+  .offerings {
+    .offering {
+      font-size: .9rem;
+
+      .post-image {
+        float: left;
+        width: 45%;
+      }
+
+      .details {
+        float: right;
+        width: 50%;
+      }
+    }
+
+    &.portraits {
+      .post-image {
+        float: left;
+        width: 30%;
+      }
+
+      .details {
+        float: right;
+        width: 65%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $large) {
+  .offerings {
+    .offering {
+      font-size: $font-size-xxsmall;
+      min-height: 550px;
+
+      .post-image,
+      .details {
+        float: none;
+        width: 100%;
+      }
+    }
+
+    &.portraits {
+      .offering {
+        min-height: 290px;
+      }
+    }
+  }
+}

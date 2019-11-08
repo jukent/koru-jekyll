@@ -1,0 +1,331 @@
+.ncar {
+  background-image: url('../img/bg-body-ncar-v2.png');
+  background-position: top right;
+  background-repeat: repeat-y;
+
+  a {
+    color: $ncar-primary-dark;
+
+    &:hover,
+    &:active {
+      color: $ncar-primary-light;
+    }
+  }
+
+  footer {
+    .newsletter-signup {
+      form {
+        &::after {
+          border-color: transparent $ncar-primary-light;
+        }
+
+        input {
+          &.button {
+            background: $ncar-primary-light;
+          }
+        }
+      }
+    }
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $ncar-primary-light;
+  }
+
+  header {
+    .description {
+      a {
+        color: $dark-blue;
+      }
+    }
+
+    .submenu {
+      background: transparentize($ncar-primary-dark, .08);
+
+      li {
+        &:first-child {
+          a {
+            background-color: $ncar-primary-dark;
+
+            &::after {
+              border-color: transparent $ncar-primary-dark;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .banner {
+    background-color: $ncar-primary-light;
+  }
+
+  .cta-link {
+    &.dark-blue-on-gray {
+      &:hover {
+        border-color: $ncar-primary-light;
+
+        &::before {
+          border-color: transparent $ncar-primary-light;
+        }
+      }
+
+      &.back-button {
+        &:hover {
+          &::before {
+            border-right-color: $ncar-primary-light;
+          }
+        }
+      }
+    }
+
+    &.white-on-color {
+      background: $ncar-primary-light;
+
+      &::after {
+        border-color: transparent $ncar-primary-light;
+      }
+
+      &:link,
+      &:visited {
+        color: $white;
+      }
+
+      &:hover,
+      &:active {
+        color: $lime-green;
+      }
+    }
+  }
+
+  .featured-section {
+    &:hover {
+      @include radial-gradient($ncar-primary-light, $ncar-primary-dark);
+    }
+  }
+
+  .header-default-search-mobile {
+    &::after {
+      border-color: transparent $ncar-primary-dark;
+    }
+  }
+
+  .home-happenings {
+    .related-links {
+      background: transparent;
+    }
+  }
+
+  .home-hero {
+    &.banner {
+      &.with-image {
+        &.open {
+          .banner-content {
+            background: transparentize($ncar-primary-light, .3);
+          }
+        }
+      }
+    }
+  }
+
+  .logo-wrapper {
+    .acronym-wrapper {
+      h1 {
+        a {
+          color: $dark-blue;
+
+          &:link,
+          &:visited,
+          &:hover,
+          &:active {
+            color: $dark-blue;
+          }
+
+          &::after {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .members-details-list {
+    .item-details {
+      border-color: transparent $ncar-primary-light;
+    }
+  }
+
+  .news-archive {
+    color: $ncar-primary-dark;
+  }
+
+  .nsf-logo {
+    a {
+      color: $white;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  .offerings {
+    .offering {
+      h4 {
+        a {
+          color: $ncar-primary-dark;
+
+          &:link,
+          &:visited {
+            color: $ncar-primary-dark;
+          }
+
+          &:hover,
+          &:active {
+            color: $dark-blue;
+          }
+        }
+      }
+
+      .post-image {
+        &::before {
+          border-color: $ncar-primary-light;
+        }
+      }
+    }
+  }
+
+  .post-list {
+    .date {
+      color: $ncar-primary-light;
+    }
+  }
+
+  .programs-listing {
+    background-color: $ncar-primary-light;
+  }
+
+  .related-links {
+    @include radial-gradient($ncar-primary-light, $ncar-primary-dark);
+  }
+
+  .related-page-section {
+    .details,
+    .figure {
+      background: $ncar-primary-light;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $darkest-gray;
+    }
+  }
+
+  .related-posts {
+    a {
+      &:hover {
+        border-color: $ncar-primary-dark;
+
+        h4 {
+          background: $ncar-primary-dark;
+        }
+      }
+    }
+  }
+
+  .related-sections {
+    a {
+      &:hover {
+        .figure {
+          @include radial-gradient($ncar-primary-light, $ncar-primary-dark);
+        }
+      }
+    }
+  }
+
+  .sidebar-breadcrumb {
+    li {
+      a {
+        &::before {
+          border-right-color: $ncar-primary-dark;
+        }
+      }
+
+      &.active {
+        > a {
+          background: $ncar-primary-dark;
+          color: $white;
+        }
+      }
+    }
+
+    .home {
+      &::before {
+        border-right-color: $ncar-primary-dark;
+      }
+    }
+  }
+
+  .stay-connected {
+    background: $ncar-primary-light;
+
+    .newsletter-signup {
+      input {
+        &[type='email'] {
+          &::placeholder {
+            color: $ucar-primary-dark;
+          }
+        }
+      }
+    }
+  }
+
+  .subdomain-hero {
+    background-color: $ncar-primary-light;
+  }
+
+  .title-bar {
+    button {
+      @include linear-gradient(bottom, $ncar-primary-light, $ncar-primary-dark);
+    }
+  }
+
+  .top-bar {
+    .accordion-menu {
+      background: $ncar-primary-light;
+    }
+  }
+
+  .utility-mobile-wrapper {
+    @include linear-gradient(right, $ncar-primary-light, $ncar-primary-dark);
+  }
+}
+
+@media only screen and (min-width: $mlarge) {
+  .ncar {
+    header {
+      nav {
+        background: $white;
+      }
+    }
+
+    .main-nav {
+      > .menu {
+        > li {
+          &:hover {
+            > a {
+              color: $ncar-primary-light;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+@mixin pseudo-element {
+  content: '';
+  position: absolute;
+}
+
+@mixin radial-gradient ($inside, $outside) {
+  background: $inside radial-gradient(ellipse at center, $inside 0%, $outside 100%);
+}
+
+@mixin linear-gradient ($position, $top, $bottom) {
+  background: $top linear-gradient(to $position, $top 0%, $bottom 100%);
+}
+
+@mixin banner-image-heights {
+  height: auto;
+
+  @media only screen and (min-width: $medium) {
+    height: 18.75rem;
+  }
+
+  @media only screen and (min-width: $mlarge) {
+    height: 27.5rem;
+  }
+
+  @media only screen and (min-width: $xxlarge) {
+    height: 37.5rem;
+  }
+}
+
+@mixin banner-default-heights {
+  height: auto;
+
+  @media only screen and (min-width: $mlarge) {
+    height: 25rem;
+  }
+}
+
+@mixin button-arrow ($color, $width) {
+  border-color: $color;
+  border-style: solid;
+  border-width: $width;
+}
+
+// typography mixins
+@mixin fontawesome {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  transform: translate(0, 0);
+}
+
+@mixin uppercase {
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+@mixin sentence-case {
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+@mixin heading-semi-bold {
+  font-weight: $font-weight-semi-bold;
+  line-height: 1.05;
+}
+
+@mixin heading-bold {
+  font-weight: $font-weight-bold;
+  line-height: 1.05;
+}
+
+@mixin heading-large {
+  @include uppercase;
+  font-size: $font-size-small;
+
+  @media only screen and (min-width: $medium) {
+    font-size: $font-size-medium;
+  }
+
+  @media only screen and (min-width: $mlarge) {
+    font-size: $font-size-mlarge;
+  }
+
+  @media only screen and (min-width: $xxlarge) {
+    font-size: $font-size-large;
+  }
+}
+
+@mixin heading-mlarge {
+  @include uppercase;
+  font-size: $font-size-small;
+
+  @media only screen and (min-width: $medium) {
+    font-size: $font-size-medium;
+  }
+
+  @media only screen and (min-width: $mlarge) {
+    font-size: $font-size-mlarge;
+  }
+}
+
+@mixin heading-medium {
+  @include uppercase;
+  font-size: $font-size-small;
+
+  @media only screen and (min-width: $medium) {
+    font-size: $font-size-medium;
+  }
+}
+
+@mixin heading-small {
+  @include uppercase;
+  font-size: $font-size-small;
+}
+
+@mixin heading-xsmall {
+  @include uppercase;
+  font-size: $font-size-xsmall;
+  line-height: 1.3;
+}
+
+@mixin heading-xxsmall {
+  @include uppercase;
+  font-size: $font-size-xxsmall;
+  line-height: 1.2;
+}
+
+@mixin body-large {
+  font-size: $font-size-xsmall;
+  line-height: 1.3;
+
+  @media only screen and (min-width: $mlarge) {
+    font-size: 1.6rem;
+  }
+
+  @media only screen and (min-width: $xlarge) {
+    font-size: 1.8rem;
+  }
+}
+
+@mixin text-shadow ($color) {
+  text-shadow: 0 0 1.875rem $color;
+}

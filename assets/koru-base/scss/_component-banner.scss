@@ -1,0 +1,51 @@
+.banner {
+  @include banner-default-heights;
+  background-color: $dark-blue;
+
+  &.with-image {
+    @include banner-image-heights;
+
+    h1,
+    h2 {
+      @include text-shadow(rgba($black, .5));
+    }
+  }
+
+  > .grid-x {
+    height: 100%;
+  }
+
+  h1 {
+    @include heading-semi-bold;
+    @include heading-xsmall;
+    color: $lime-green;
+    margin-bottom: .25rem;
+  }
+
+  h2 {
+    @include heading-bold;
+    @include heading-large;
+    color: $white;
+    line-height: 1;
+  }
+
+  h1,
+  h2 {
+    margin: 0;
+  }
+
+  .banner-content {
+    margin: auto;
+    max-width: 60rem;
+    padding: 2.5rem 0;
+    transition: opacity 300ms ease-out;
+  }
+}
+
+@media only screen and (min-width: $mlarge) {
+  .banner {
+    h1 {
+      @include heading-small;
+    }
+  }
+}

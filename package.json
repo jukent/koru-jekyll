@@ -20,6 +20,6 @@
     "backstopjs": "^4.1.9"
   },
   "dependencies": {
-    "@ncar/koru-base": "^2.1.74"
+    "@ncar/koru-base": "^2.1.75"
   }
 }

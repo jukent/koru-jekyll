@@ -1,0 +1,273 @@
+.news {
+  &.no-banner {
+    &.with-sidebar {
+      .sidebar {
+        margin-top: 0;
+      }
+    }
+  }
+
+  a {
+    color: $light-blue-tinted;
+
+    &:hover,
+    &:active {
+      color: $light-blue;
+    }
+  }
+
+  footer {
+    .footer-menu-tertiary {
+      text-align: center;
+    }
+
+    .newsletter-signup {
+      form {
+        &::after {
+          border-color: transparent $light-blue-tinted;
+        }
+
+        input {
+          &.button {
+            background: $light-blue-tinted;
+          }
+        }
+      }
+    }
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $light-blue-tinted;
+  }
+
+  header {
+    .description {
+      a {
+        color: $dark-blue;
+      }
+    }
+
+    .submenu {
+      background: transparentize($light-blue-tinted, .08);
+
+      li {
+        &:first-child {
+          a {
+            background-color: $light-blue-tinted;
+
+            &::after {
+              border-color: transparent $light-blue-tinted;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cta-link {
+    &.white-on-color {
+      background: $light-blue-tinted-darker;
+
+      &::after {
+        border-color: transparent $light-blue-tinted-darker;
+      }
+
+      &:link,
+      &:visited {
+        color: $white;
+      }
+
+      &:hover,
+      &:active {
+        color: $lime-green;
+      }
+    }
+
+    &.dark-blue-on-gray {
+      &:hover {
+        border-color: $light-blue-tinted-darker;
+
+        &::before {
+          border-color: transparent $light-blue-tinted-darker;
+        }
+      }
+
+      &.back-button {
+        &:hover {
+          &::before {
+            border-color: transparent $light-blue-tinted-darker;
+          }
+        }
+      }
+    }
+  }
+
+  .featured-section {
+    &:hover {
+      background: $light-blue-tinted-darker;
+    }
+  }
+
+  .header-default-search-mobile {
+    &::after {
+      border-color: transparent $light-blue-tinted;
+    }
+  }
+
+  .is-stuck {
+    .logo-wrapper {
+      .acronym-wrapper {
+        h1 {
+          &:first-child {
+            padding-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .logo-wrapper {
+    .acronym-definition {
+      h1 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .mobile-logo {
+    .acronym {
+      &::after {
+        display: none;
+      }
+    }
+
+    .description {
+      font-size: 1.2rem;
+    }
+  }
+
+  .news-archive {
+    color: $light-blue-tinted-darker;
+  }
+
+  .post-list {
+    .date {
+      color: $light-blue-tinted-darker;
+    }
+  }
+
+  .programs-listing {
+    background-color: $light-blue-tinted-darker;
+  }
+
+  .related-links {
+    background: $light-blue-tinted-darker;
+  }
+
+  .related-page-section {
+    .details,
+    .figure {
+      background: $light-blue-tinted-darker;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $darkest-gray;
+    }
+  }
+
+  .stay-connected {
+    background: $light-blue-tinted-darker;
+
+    .newsletter-signup {
+      input {
+        &[type='email'] {
+          &::placeholder {
+            color: $light-blue-tinted-darker;
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar-breadcrumb {
+    li {
+      a {
+        &::before {
+          border-right-color: $light-blue-tinted-darker;
+        }
+      }
+
+      &.active {
+        > a {
+          background: $light-blue-tinted-darker;
+          color: $white;
+        }
+      }
+    }
+
+    .home {
+      &::before {
+        border-right-color: $light-blue-tinted-darker;
+      }
+    }
+  }
+
+  .title-bar {
+    button {
+      @include linear-gradient(bottom, $light-blue, $light-blue-tinted-darker);
+    }
+  }
+
+  .top-bar {
+    .accordion-menu {
+      background: $light-blue;
+    }
+  }
+
+  .utility-mobile-wrapper {
+    @include linear-gradient(right, $light-blue, $light-blue-tinted-darker);
+  }
+}
+
+@media only screen and (min-width: $mlarge) {
+  .news {
+    &.subdomain {
+      .submenu {
+        background: $light-blue-tinted;
+      }
+    }
+
+    footer {
+      .footer-menu-tertiary {
+        margin-top: 0;
+      }
+    }
+
+    header {
+      nav {
+        background: $white;
+      }
+    }
+
+    .main-nav {
+      > .menu {
+        > li {
+          &:hover {
+            > a {
+              color: $light-blue-tinted;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

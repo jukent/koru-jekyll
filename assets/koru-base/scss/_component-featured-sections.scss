@@ -1,0 +1,39 @@
+.featured-section {
+  @include flex;
+  @include radial-gradient($gradient-gray-light, $gradient-gray-dark);
+  justify-content: center;
+  min-height: 10.3125rem;
+
+  &:hover {
+    background: $gray-placeholder-light;
+
+    h4 {
+      color: $white;
+    }
+  }
+
+  h4 {
+    color: $lime-green;
+    font-size: .65rem;
+    margin-bottom: 0;
+  }
+
+  i {
+    color: $white;
+    font-size: $font-size-medium;
+  }
+}
+
+@media only screen and (min-width: $medium) {
+  .featured-section {
+    min-height: 13.4375rem;
+
+    h4 {
+      font-size: $font-size-xxsmall;
+    }
+
+    i {
+      font-size: 4rem;
+    }
+  }
+}

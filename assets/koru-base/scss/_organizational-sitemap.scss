@@ -1,0 +1,116 @@
+.organizational-sitemap {
+  a {
+    color: $gray-placeholder-light;
+
+    &:link,
+    &:visited {
+      color: $gray-placeholder-light;
+    }
+
+    &:hover,
+    &:active {
+      color: $gray-placeholder-dark;
+    }
+  }
+
+  abbr {
+    border: 0;
+    color: $medium-gray;
+    cursor: pointer;
+    min-width: 50px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $gradient-gray-dark;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.5rem;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    &.org-list {
+      margin-bottom: 2rem;
+
+      li {
+        a {
+          display: table;
+          table-layout: fixed;
+          text-decoration: none;
+          width: 100%;
+
+          abbr,
+          span {
+            display: table-cell;
+            vertical-align: middle;
+          }
+
+          abbr {
+            width: 30%;
+          }
+        }
+      }
+
+      > li {
+        border-bottom: solid 1px $gradient-gray-light;
+        font-weight: $font-weight-semi-bold;
+        margin-bottom: 8px;
+        padding-bottom: 8px;
+
+        &:last-child {
+          border-bottom: 0;
+        }
+
+        > ul {
+          margin-top: 5px;
+
+          > li {
+            border-bottom: 0;
+            font-size: .95rem;
+            font-weight: $font-weight-regular;
+            margin-bottom: 4px;
+            padding-bottom: 0;
+
+            > a {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cell {
+    background: $white;
+    max-width: 70rem;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: $medium) {
+  .organizational-sitemap {
+    ul {
+      &.org-list {
+        li {
+          a {
+            abbr {
+              width: 16%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
