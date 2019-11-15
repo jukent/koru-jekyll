@@ -1,53 +1,43 @@
-@import 'vendor';
-@import 'variables';
-@import 'mixins';
+// Dependencies
+@import 'settings/vendor';
+@import 'settings/variables';
 
-// define the overall styles for templates
+// Utilities
+@import 'util/util';
+
+// Global styles
 @import 'theme';
-@import 'alerts';
-@import 'pagination';
 
-// global typography
-@import 'typography';
+// Theme colors specific to parent organization
+@import 'themes/ucar';
+@import 'themes/ncar';
+@import 'themes/news';
 
-// define global modules
-// above the fold first
-@import 'header';
-@import 'header-utility';
-@import 'logo-wrapper';
-@import 'component-home-hero';
-@import 'component-home-primary-cta';
-@import 'component-banner';
-@import 'search';
-@import 'subdomain';
+// Layout
+@import 'layout/layout';
 
-// theme colors specific to parent organization
-@import 'theme-ucar';
-@import 'theme-ncar';
-@import 'theme-news';
+// Global Components
+@import 'components/global/alerts';
+@import 'components/global/cta-link';
+@import 'components/global/gdpr-compliance';
+@import 'components/global/organizational-sitemap';
+@import 'components/global/social';
+@import 'components/global/stay-connected';
 
-// generally speaking, below the fold
-@import 'cta-link';
-@import 'organizational-sitemap';
-@import 'social';
-@import 'form-styles';
-@import 'news';
-@import 'gdpr-compliance';
-
-// specific components to this theme
-@import 'component-home-happenings';
-@import 'component-related-links';
-@import 'component-sidebar-breadcrumb';
-@import 'component-featured-sections';
-@import 'component-main-content';
-@import 'component-members-details-list';
-@import 'component-offerings';
-@import 'component-post-content';
-@import 'component-programs-listing';
-@import 'component-related-page-section';
-@import 'component-related-posts';
-@import 'component-related-sections';
-@import 'component-spotlight';
-
-// way below the fold
-@import 'footer';
+// Upstream Components
+@import 'components/upstream/home-hero';
+@import 'components/upstream/home-primary-cta';
+@import 'components/upstream/banner';
+@import 'components/upstream/home-happenings';
+@import 'components/upstream/related-links';
+@import 'components/upstream/sidebar-breadcrumb';
+@import 'components/upstream/featured-sections';
+@import 'components/upstream/main-content';
+@import 'components/upstream/members-details-list';
+@import 'components/upstream/offerings';
+@import 'components/upstream/post-content';
+@import 'components/upstream/programs-listing';
+@import 'components/upstream/related-page-section';
+@import 'components/upstream/related-posts';
+@import 'components/upstream/related-sections';
+@import 'components/upstream/spotlight';

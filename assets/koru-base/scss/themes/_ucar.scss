@@ -1,14 +1,14 @@
-.ncar {
-  background-image: url('../img/bg-body-ncar-v2.png');
+.ucar {
+  background-image: url('/source/img/bg-body-ucar-v4.png');
   background-position: top right;
   background-repeat: repeat-y;
 
   a {
-    color: $ncar-primary-dark;
+    color: $ucar-primary-dark;
 
     &:hover,
     &:active {
-      color: $ncar-primary-light;
+      color: $ucar-primary-light;
     }
   }
 
@@ -16,12 +16,12 @@
     .newsletter-signup {
       form {
         &::after {
-          border-color: transparent $ncar-primary-light;
+          border-color: transparent $ucar-primary-light;
         }
 
         input {
           &.button {
-            background: $ncar-primary-light;
+            background: $ucar-primary-light;
           }
         }
       }
@@ -32,7 +32,7 @@
   h4,
   h5,
   h6 {
-    color: $ncar-primary-light;
+    color: $ucar-primary-light;
   }
 
   header {
@@ -43,15 +43,15 @@
     }
 
     .submenu {
-      background: transparentize($ncar-primary-dark, .08);
+      background: transparentize($ucar-primary-dark, .08);
 
       li {
         &:first-child {
           a {
-            background-color: $ncar-primary-dark;
+            background-color: $ucar-primary-dark;
 
             &::after {
-              border-color: transparent $ncar-primary-dark;
+              border-color: transparent $ucar-primary-dark;
             }
           }
         }
@@ -60,33 +60,33 @@
   }
 
   .banner {
-    background-color: $ncar-primary-light;
+    background-color: $ucar-primary-light;
   }
 
   .cta-link {
     &.dark-blue-on-gray {
       &:hover {
-        border-color: $ncar-primary-light;
+        border-color: $ucar-primary-light;
 
         &::before {
-          border-color: transparent $ncar-primary-light;
+          border-color: transparent$ucar-primary-light;
         }
       }
 
       &.back-button {
         &:hover {
           &::before {
-            border-right-color: $ncar-primary-light;
+            border-right-color: $ucar-primary-light;
           }
         }
       }
     }
 
     &.white-on-color {
-      background: $ncar-primary-light;
+      background: $ucar-primary-light;
 
       &::after {
-        border-color: transparent $ncar-primary-light;
+        border-color: transparent $ucar-primary-light;
       }
 
       &:link,
@@ -103,13 +103,13 @@
 
   .featured-section {
     &:hover {
-      @include radial-gradient($ncar-primary-light, $ncar-primary-dark);
+      @include radial-gradient($ucar-primary-light, $ucar-primary-dark);
     }
   }
 
   .header-default-search-mobile {
     &::after {
-      border-color: transparent $ncar-primary-dark;
+      border-color: transparent $ucar-primary-dark;
     }
   }
 
@@ -124,7 +124,7 @@
       &.with-image {
         &.open {
           .banner-content {
-            background: transparentize($ncar-primary-light, .3);
+            background: transparentize($ucar-primary-light, .3);
           }
         }
       }
@@ -154,33 +154,23 @@
 
   .members-details-list {
     .item-details {
-      border-color: transparent $ncar-primary-light;
+      border-color: transparent$ucar-primary-light;
     }
   }
 
   .news-archive {
-    color: $ncar-primary-dark;
-  }
-
-  .nsf-logo {
-    a {
-      color: $white;
-
-      &:hover {
-        color: $white;
-      }
-    }
+    color: $ucar-primary-dark;
   }
 
   .offerings {
     .offering {
       h4 {
         a {
-          color: $ncar-primary-dark;
+          color: $ucar-primary-dark;
 
           &:link,
           &:visited {
-            color: $ncar-primary-dark;
+            color: $ucar-primary-dark;
           }
 
           &:hover,
@@ -192,7 +182,7 @@
 
       .post-image {
         &::before {
-          border-color: $ncar-primary-light;
+          border-color: $ucar-primary-light;
         }
       }
     }
@@ -200,22 +190,22 @@
 
   .post-list {
     .date {
-      color: $ncar-primary-light;
+      color: $ucar-primary-light;
     }
   }
 
   .programs-listing {
-    background-color: $ncar-primary-light;
+    background-color: $ucar-primary-light;
   }
 
   .related-links {
-    @include radial-gradient($ncar-primary-light, $ncar-primary-dark);
+    @include radial-gradient($ucar-primary-light, $ucar-primary-dark);
   }
 
   .related-page-section {
     .details,
     .figure {
-      background: $ncar-primary-light;
+      background: $ucar-primary-light;
     }
 
     h1,
@@ -231,10 +221,10 @@
   .related-posts {
     a {
       &:hover {
-        border-color: $ncar-primary-dark;
+        border-color: $ucar-primary-dark;
 
         h4 {
-          background: $ncar-primary-dark;
+          background: $ucar-primary-dark;
         }
       }
     }
@@ -244,7 +234,7 @@
     a {
       &:hover {
         .figure {
-          @include radial-gradient($ncar-primary-light, $ncar-primary-dark);
+          @include radial-gradient($ucar-primary-light, $ucar-primary-dark);
         }
       }
     }
@@ -254,13 +244,13 @@
     li {
       a {
         &::before {
-          border-right-color: $ncar-primary-dark;
+          border-right-color: $ucar-primary-dark;
         }
       }
 
       &.active {
         > a {
-          background: $ncar-primary-dark;
+          background: $ucar-primary-dark;
           color: $white;
         }
       }
@@ -268,13 +258,13 @@
 
     .home {
       &::before {
-        border-right-color: $ncar-primary-dark;
+        border-right-color: $ucar-primary-dark;
       }
     }
   }
 
   .stay-connected {
-    background: $ncar-primary-light;
+    background: $ucar-primary-light;
 
     .newsletter-signup {
       input {
@@ -287,29 +277,25 @@
     }
   }
 
-  .subdomain-hero {
-    background-color: $ncar-primary-light;
-  }
-
   .title-bar {
     button {
-      @include linear-gradient(bottom, $ncar-primary-light, $ncar-primary-dark);
+      @include linear-gradient(bottom, $ucar-primary-light, $ucar-primary-dark);
     }
   }
 
   .top-bar {
     .accordion-menu {
-      background: $ncar-primary-light;
+      background: $ucar-primary-light;
     }
   }
 
   .utility-mobile-wrapper {
-    @include linear-gradient(right, $ncar-primary-light, $ncar-primary-dark);
+    @include linear-gradient(right, $ucar-primary-light, $ucar-primary-dark);
   }
 }
 
 @media only screen and (min-width: $mlarge) {
-  .ncar {
+  .ucar {
     header {
       nav {
         background: $white;
@@ -321,7 +307,7 @@
         > li {
           &:hover {
             > a {
-              color: $ncar-primary-light;
+              color: $ucar-primary-light;
             }
           }
         }

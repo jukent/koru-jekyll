@@ -1,0 +1,69 @@
+.stay-connected {
+  padding: 20px;
+
+  > .grid-x {
+    height: 100%;
+  }
+
+  h5 {
+    color: $white;
+  }
+
+  .newsletter-signup {
+    margin: auto;
+    width: 75%;
+
+    form {
+      margin: 0;
+
+      &::after {
+        border-color: transparent $dark-blue;
+      }
+    }
+
+    input {
+      &.button {
+        background: $dark-blue;
+      }
+    }
+  }
+
+  .social {
+    .cell {
+      font-size: 1.8rem;
+
+      a {
+        &:link,
+        &:visited {
+          color: $white;
+        }
+
+        &:hover {
+          i {
+            color: $dark-blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $mlarge) {
+  .stay-connected {
+    h5 {
+      margin-top: 0;
+    }
+
+    .newsletter-signup {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: $xlarge) {
+  .stay-connected {
+    .newsletter-signup {
+      width: 75%;
+    }
+  }
+}

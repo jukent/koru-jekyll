@@ -32,7 +32,7 @@ article {
   &.content {
     figure {
       @include button-arrow($darkest-gray, 10px);
-      margin-bottom: 1.5rem;
+      margin: 1.5rem 0;
 
       figcaption {
         background: $darkest-gray;
