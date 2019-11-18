@@ -62,7 +62,7 @@
     "ci_report": "backstop_data/ci_report"
   },
   "report": ["browser"],
-  "engine": "chrome",
+  "engine": "puppeteer",
   "engineOptions": {
     "args": ["--no-sandbox"]
   },
