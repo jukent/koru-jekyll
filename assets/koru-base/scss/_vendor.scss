@@ -1,7 +1,7 @@
 // Foundation by ZURB
 // foundation.zurb.com
 // Licensed under MIT Open Source
-@import '../../../node_modules/foundation-sites/scss/foundation';
+@import '../../node_modules/foundation-sites/scss/foundation';
 
 $breakpoints: (
   small: 0,
@@ -49,7 +49,7 @@ $print-transparent-backgrounds: false;
 @include foundation-everything;
 
 // get font-awesome
-@import '../../../node_modules/font-awesome/scss/font-awesome';
+@import '../../node_modules/font-awesome/css/font-awesome';
 
 // get custom-designed icons as font-family by icomoon
-@import '/source/fonts/icomoon/style.css';
+@import '../fonts/icomoon/style.css';
