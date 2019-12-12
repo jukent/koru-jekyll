@@ -30,7 +30,7 @@
       }
 
       &.small-11 {
-        @include xy-cell-static(11, false, $gutter-type: 0)
+        @include xy-cell(11)
       }
     }
   }
@@ -44,7 +44,7 @@
       }
 
       &.small-11 {
-        @include xy-cell-static(10, false, $gutter-type: 0)
+        @include xy-cell(10)
       }
     }
   }
@@ -62,7 +62,7 @@
       }
 
       &.small-11 {
-        @include xy-cell-static(9, false, $gutter-type: 0)
+        @include xy-cell(9)
       }
     }
   }
@@ -76,7 +76,7 @@
       }
 
       &.small-11 {
-        @include xy-cell-static(6, false, $gutter-type: 0)
+        @include xy-cell(6)
       }
     }
   }
