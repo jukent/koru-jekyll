@@ -9988,7 +9988,7 @@ tr {
     font-size: 1.2rem; } }
 
 .ucar {
-  background-image: url("/source/img/bg-body-ucar-v4.png");
+  background-image: url("../img/bg-body-ucar-v4.png");
   background-position: top right;
   background-repeat: repeat-y; }
   .ucar a {
@@ -10111,7 +10111,7 @@ tr {
     color: #28938d; } }
 
 .ncar {
-  background-image: url("/source/img/bg-body-ncar-v2.png");
+  background-image: url("../img/bg-body-ncar-v2.png");
   background-position: top right;
   background-repeat: repeat-y; }
   .ncar a {
