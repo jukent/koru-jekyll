@@ -1,5 +1,4 @@
 .banner {
-  @include banner-default-heights;
   background-color: $dark-blue;
 
   &.with-image {
@@ -39,6 +38,12 @@
     max-width: 60rem;
     padding: 2.5rem 0;
     transition: opacity 300ms ease-out;
+  }
+}
+
+.cell {
+  &.banner {
+    @include banner-default-heights;
   }
 }
 

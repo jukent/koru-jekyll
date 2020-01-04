@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /**
  * Foundation for Sites by ZURB
- * Version 6.6.0
+ * Version 6.6.1
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -11679,11 +11679,7 @@ a .cta-link {
     margin-right: 0.625rem; } }
 
 .banner {
-  height: auto;
   background-color: #012169; }
-  @media only screen and (min-width: 900px) {
-    .banner {
-      height: 25rem; } }
   .banner.with-image {
     height: auto; }
     @media only screen and (min-width: 640px) {
@@ -11735,6 +11731,12 @@ a .cta-link {
     padding: 2.5rem 0;
     -webkit-transition: opacity 300ms ease-out;
     transition: opacity 300ms ease-out; }
+
+.cell.banner {
+  height: auto; }
+  @media only screen and (min-width: 900px) {
+    .cell.banner {
+      height: 25rem; } }
 
 @media only screen and (min-width: 900px) {
   .banner h1 {
