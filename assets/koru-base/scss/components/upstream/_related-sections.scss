@@ -4,7 +4,7 @@
 
     &:hover {
       .figure {
-        background: $gray-placeholder-light;
+        background: map-get($default-colors, 'light');
       }
     }
   }
@@ -12,21 +12,21 @@
   h4 {
     @include heading-semi-bold;
     @include heading-xsmall;
-    color: $lime-green;
+    color: map-get($colors, 'lime-green');
     font-size: .65rem;
     margin-bottom: 0;
     margin-top: 0;
   }
 
   i {
-    color: $white;
+    color: map-get($colors, 'white');
     display: block;
-    font-size: $font-size-mlarge;
+    font-size: map-get($font-sizes, 'mlarge');
     margin-bottom: 20px;
   }
 
   .figure {
-    @include radial-gradient($gradient-gray-light, $gradient-gray-dark);
+    @include radial-gradient(map-get($gradient-colors, 'light-gray'), map-get($gradient-colors, 'dark-gray'));
     @include flex;
     justify-content: center;
     padding: 20px;
@@ -37,7 +37,7 @@
   }
 }
 
-@media only screen and (min-width: $medium) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
   .related-sections {
     h4 {
       font-size: 16px;
@@ -49,16 +49,16 @@
   }
 }
 
-@media only screen and (min-width: $mlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .related-sections {
     .figcaption {
       @include flex;
-      background: $white;
+      background: map-get($colors, 'white');
       justify-content: center;
       padding: 10px;
 
       .excerpt {
-        color: $darkest-gray;
+        color: map-get($colors, 'darkest-gray');
       }
 
       p {
@@ -74,7 +74,7 @@
   }
 }
 
-@media only screen and (min-width: $large) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'large')) {
   .related-sections {
     a {
       height: 225px;

@@ -23,16 +23,16 @@ $foundation-palette: (
   alert: #e50000,
 );
 
-$closebutton-color: $black;
+$closebutton-color: map-get($colors, 'black');
 
 $callout-border: none;
 $callout-margin: none;
 $callout-background-fade: 1%;
 
-$accordionmenu-arrow-color: $white;
+$accordionmenu-arrow-color: map-get($colors, 'white');
 $dropdownmenu-arrows: false;
 $dropdownmenu-background: none;
-$dropdown-menu-item-color-active: $black;
+$dropdown-menu-item-color-active: map-get($colors, 'black');
 $accordionmenu-arrows: false;
 $menu-icon-spacing: .5rem;
 

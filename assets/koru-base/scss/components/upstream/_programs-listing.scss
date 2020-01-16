@@ -1,13 +1,13 @@
 .programs-listing {
-  background: $gray-placeholder-light;
+  background: map-get($default-colors, 'light');
 
   h3,
   h4 {
-    color: $lime-green;
+    color: map-get($colors, 'lime-green');
   }
 
   p {
-    color: $white;
+    color: map-get($colors, 'white');
   }
 
   .program-listing {
@@ -18,27 +18,27 @@
     h4 {
       @include body-large;
       @include sentence-case;
-      font-weight: $font-weight-bold;
+      font-weight: map-get($font-weights, 'bold');
       letter-spacing: .02em;
       margin-bottom: .25em;
     }
 
     p {
       font-size: 14px;
-      font-weight: $font-weight-semi-bold;
+      font-weight: map-get($font-weights, 'semi-bold');
       letter-spacing: .05em;
       line-height: 1.7;
       margin: 0;
     }
   }
 
-  @media only screen and (min-width: $large) {
+  @media only screen and (min-width: map-get($custom-breakpoints, 'large')) {
     .panel-title {
       padding-right: 3rem;
     }
   }
 
-  @media only screen and (min-width: $xlarge) {
+  @media only screen and (min-width: map-get($custom-breakpoints, 'xlarge')) {
     > .cell {
       margin-top: 0;
     }

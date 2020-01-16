@@ -9,7 +9,7 @@
   .cell {
     &.featured-section {
       @include xy-cell(4);
-      box-shadow: 0 0 5px 2px rgba($black, .25);
+      box-shadow: 0 0 5px 2px rgba(map-get($colors, 'black'), .25);
       min-height: 105px;
     }
 
@@ -19,7 +19,7 @@
   }
 }
 
-@media only screen and (min-width: $medium) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
   .home-primary-cta {
     margin-top: -60px;
 
@@ -36,7 +36,7 @@
   }
 }
 
-@media only screen and (min-width: $mlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .home-primary-cta {
     .cell {
       &.featured-section {
@@ -50,7 +50,7 @@
   }
 }
 
-@media only screen and (min-width: $large) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'large')) {
   .home-primary-cta {
     .cell {
       &.featured-section {
@@ -68,7 +68,7 @@
   }
 }
 
-@media only screen and (min-width: $xlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'xlarge')) {
   .home-primary-cta {
     .cell {
       &.featured-section {

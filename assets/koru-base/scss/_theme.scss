@@ -6,20 +6,20 @@
 }
 
 a {
-  color: $gray-placeholder-light;
+  color: map-get($default-colors, 'light');
   text-decoration: none;
 
   &:link {
-    color: $gray-placeholder-light;
+    color: map-get($default-colors, 'light');
   }
 
   &:visited {
-    color: $gradient-gray-dark;
+    color: map-get($gradient-colors, 'dark-gray');
   }
 
   &:hover,
   &:active {
-    color: $gray-placeholder-dark;
+    color: map-get($default-colors, 'dark');
   }
 
   img {
@@ -31,24 +31,24 @@ a {
 article {
   &.content {
     figure {
-      @include button-arrow($darkest-gray, 10px);
+      @include button-arrow(map-get($colors, 'darkest-gray'), 10px);
       margin: 1.5rem 0;
 
       figcaption {
-        background: $darkest-gray;
-        color: $white;
+        background: map-get($colors, 'darkest-gray');
+        color: map-get($colors, 'white');
         padding: 10px 10px 1px;
         right: 0;
 
         &.image-download {
           a {
-            color: $lime-green;
+            color: map-get($colors, 'lime-green');
             font-size: 13px;
             text-decoration: none;
 
             &:hover,
             &:active {
-              color: $lime-green;
+              color: map-get($colors, 'lime-green');
               text-decoration: underline;
             }
           }
@@ -63,16 +63,16 @@ article {
           margin: 0;
 
           a {
-            color: $lime-green;
+            color: map-get($colors, 'lime-green');
 
             &:link,
             &:visited {
-              color: $lime-green;
+              color: map-get($colors, 'lime-green');
             }
 
             &:hover,
             &:active {
-              color: $lime-green;
+              color: map-get($colors, 'lime-green');
               text-decoration: underline;
             }
           }
@@ -88,13 +88,13 @@ article {
 }
 
 body {
-  background-color: $light-gray;
+  background-color: map-get($colors, 'light-gray');
   overflow-x: hidden;
 }
 
 body,
 html {
-  color: $darkest-gray;
+  color: map-get($colors, 'darkest-gray');
   height: 100%;
 }
 
@@ -105,7 +105,7 @@ figure {
 }
 
 cite {
-  color: $white;
+  color: map-get($colors, 'white');
 
   &::before {
     display: none;
@@ -126,7 +126,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $gray-placeholder-light;
+  color: map-get($default-colors, 'light');
 }
 
 header,
@@ -135,9 +135,9 @@ footer {
 }
 
 hr {
-  background: $darkest-gray;
+  background: map-get($colors, 'darkest-gray');
   border: 0;
-  color: $darkest-gray;
+  color: map-get($colors, 'darkest-gray');
   height: 1px;
 }
 
@@ -172,8 +172,8 @@ table {
 tbody {
   tr {
     &:nth-child(even) {
-      background: rgba($white, .5);
-      border-bottom: 3px solid $white;
+      background: rgba(map-get($colors, 'white'), .5);
+      border-bottom: 3px solid map-get($colors, 'white');
     }
 
     &:last-child {
@@ -189,7 +189,7 @@ thead {
 }
 
 td {
-  border-bottom: 1px solid $white;
+  border-bottom: 1px solid map-get($colors, 'white');
   display: block;
   font-size: .8rem;
   text-align: right;
@@ -198,7 +198,7 @@ td {
     @include uppercase;
     content: attr(data-label);
     float: left;
-    font-weight: $font-weight-bold;
+    font-weight: map-get($font-weights, 'bold');
   }
 
   &:last-child {
@@ -211,15 +211,15 @@ thead {
 }
 
 tr {
-  background: rgba($white, .5);
-  border-bottom: 3px solid $white;
+  background: rgba(map-get($colors, 'white'), .5);
+  border-bottom: 3px solid map-get($colors, 'white');
   display: block;
   margin-bottom: .625rem;
 }
 
 ::selection {
-  background: $lime-green;
-  color: $darkest-gray;
+  background: map-get($colors, 'lime-green');
+  color: map-get($colors, 'darkest-gray');
 }
 
 .primary-content {
@@ -230,7 +230,7 @@ tr {
     h4,
     h5,
     h6 {
-      font-weight: $font-weight-bold;
+      font-weight: map-get($font-weights, 'bold');
     }
   }
 }
@@ -240,7 +240,7 @@ tr {
 }
 
 .bottom-edge {
-  background: $dark-gray;
+  background: map-get($colors, 'dark-gray');
   content: '';
   display: block;
   font-size: 1px;
@@ -257,7 +257,7 @@ tr {
   h2 {
     @include heading-mlarge;
     @include heading-semi-bold;
-    color: $darkest-gray;
+    color: map-get($colors, 'darkest-gray');
   }
 
   h3,
@@ -295,7 +295,7 @@ tr {
   padding: 40px 0;
 }
 
-@media only screen and (min-width: $medium) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
   table {
     border-collapse: collapse;
     margin-bottom: 1.5rem;
@@ -316,7 +316,7 @@ tr {
   tbody {
     tr {
       &:nth-child(even) {
-        background-color: lighten($light-gray, 75%);
+        background-color: lighten(map-get($colors, 'light-gray'), 75%);
       }
     }
   }
@@ -328,7 +328,7 @@ tr {
   }
 }
 
-@media only screen and (min-width: $mlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   article {
     &.content {
       figure {
@@ -357,7 +357,7 @@ tr {
   tbody {
     tr {
       &:nth-child(even) {
-        border-bottom: 1px solid $gray;
+        border-bottom: 1px solid map-get($colors, 'gray');
       }
     }
   }
@@ -365,7 +365,7 @@ tr {
   td {
     border: 0;
     display: table-cell;
-    font-size: $font-size-xxsmall;
+    font-size: map-get($font-sizes, 'xxsmall');
     text-align: left;
 
     &::before {
@@ -380,7 +380,7 @@ tr {
   thead,
   tfoot {
     tr {
-      background: rgba($white, .5);
+      background: rgba(map-get($colors, 'white'), .5);
     }
   }
 
@@ -392,7 +392,7 @@ tr {
   }
 
   tr {
-    border-bottom: 1px solid $gray;
+    border-bottom: 1px solid map-get($colors, 'gray');
     display: table-row;
     margin-bottom: 0;
   }
@@ -409,7 +409,7 @@ tr {
   }
 }
 
-@media only screen and (min-width: $xlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'xlarge')) {
   .content {
     p {
       font-size: 1.2rem;

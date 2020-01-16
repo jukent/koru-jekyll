@@ -1,29 +1,29 @@
 .article-details {
   h6 {
-    font-size: $font-size-xxsmall;
+    font-size: map-get($font-sizes, 'xxsmall');
     margin-bottom: 0;
 
     a {
-      color: $lime-green;
+      color: map-get($colors, 'lime-green');
     }
   }
 
   a {
     .term {
-      color: $lime-green;
+      color: map-get($colors, 'lime-green');
     }
 
     &:link,
     &:visited {
       .term {
-        color: $lime-green;
+        color: map-get($colors, 'lime-green');
       }
     }
 
     &:hover,
     &:active {
       .term {
-        color: $lime-green;
+        color: map-get($colors, 'lime-green');
         text-decoration: underline;
       }
     }
@@ -56,7 +56,7 @@
 
 .post {
   h1 {
-    color: $darkest-gray;
+    color: map-get($colors, 'darkest-gray');
     margin-bottom: 0;
   }
 
@@ -78,12 +78,12 @@
   width: 100%;
 
   .date {
-    font-size: $font-size-xxsmall;
-    font-weight: $font-weight-semi-bold;
+    font-size: map-get($font-sizes, 'xxsmall');
+    font-weight: map-get($font-weights, 'semi-bold');
   }
 }
 
-@media only screen and (min-width: $mlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .post {
     h1 {
       font-size: 2.5rem;

@@ -2,7 +2,7 @@
   h3 {
     @include body-large;
     @include sentence-case;
-    font-weight: $font-weight-semi-bold;
+    font-weight: map-get($font-weights, 'semi-bold');
     margin-top: 0;
   }
 
@@ -22,16 +22,16 @@
   }
 
   .details {
-    background: $darkest-gray;
+    background: map-get($colors, 'darkest-gray');
     padding: 15px 20px;
 
     * {
-      color: $white;
+      color: map-get($colors, 'white');
     }
   }
 }
 
-@media only screen and (min-width: $medium) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
   .related-page-section {
     img {
       height: 240px;
@@ -39,14 +39,14 @@
   }
 }
 
-@media only screen and (min-width: $mlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .related-page-section {
     img {
       min-height: 400px;
     }
 
     p {
-      font-size: $font-size-xxsmall;
+      font-size: map-get($font-sizes, 'xxsmall');
     }
 
     .figure {
@@ -63,7 +63,7 @@
   }
 }
 
-@media only screen and (min-width: $xxlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'xxlarge')) {
   .featured-story {
     .related-page-section {
       img {

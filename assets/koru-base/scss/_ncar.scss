@@ -4,11 +4,11 @@
   background-repeat: repeat-y;
 
   a {
-    color: $ncar-primary-dark;
+    color: map-get($ncar-colors, 'dark');
 
     &:hover,
     &:active {
-      color: $ncar-primary-light;
+      color: map-get($ncar-colors, 'base');
     }
   }
 
@@ -16,12 +16,12 @@
     .newsletter-signup {
       form {
         &::after {
-          border-color: transparent $ncar-primary-light;
+          border-color: transparent map-get($ncar-colors, 'base');
         }
 
         input {
           &.button {
-            background: $ncar-primary-light;
+            background: map-get($ncar-colors, 'base');
           }
         }
       }
@@ -32,26 +32,26 @@
   h4,
   h5,
   h6 {
-    color: $ncar-primary-light;
+    color: map-get($ncar-colors, 'base');
   }
 
   header {
     .description {
       a {
-        color: $dark-blue;
+        color: map-get($colors, 'dark-blue');
       }
     }
 
     .submenu {
-      background: transparentize($ncar-primary-dark, .08);
+      background: transparentize(map-get($ncar-colors, 'dark'), .08);
 
       li {
         &:first-child {
           a {
-            background-color: $ncar-primary-dark;
+            background-color: map-get($ncar-colors, 'dark');
 
             &::after {
-              border-color: transparent $ncar-primary-dark;
+              border-color: transparent map-get($ncar-colors, 'dark');
             }
           }
         }
@@ -60,56 +60,56 @@
   }
 
   .banner {
-    background-color: $ncar-primary-light;
+    background-color: map-get($ncar-colors, 'base');
   }
 
   .cta-link {
     &.dark-blue-on-gray {
       &:hover {
-        border-color: $ncar-primary-light;
+        border-color: map-get($ncar-colors, 'base');
 
         &::before {
-          border-color: transparent $ncar-primary-light;
+          border-color: transparent map-get($ncar-colors, 'base');
         }
       }
 
       &.back-button {
         &:hover {
           &::before {
-            border-right-color: $ncar-primary-light;
+            border-right-color: map-get($ncar-colors, 'base');
           }
         }
       }
     }
 
     &.white-on-color {
-      background: $ncar-primary-light;
+      background: map-get($ncar-colors, 'base');
 
       &::after {
-        border-color: transparent $ncar-primary-light;
+        border-color: transparent map-get($ncar-colors, 'base');
       }
 
       &:link,
       &:visited {
-        color: $white;
+        color: map-get($colors, 'white');
       }
 
       &:hover,
       &:active {
-        color: $lime-green;
+        color: map-get($colors, 'lime-green');
       }
     }
   }
 
   .featured-section {
     &:hover {
-      @include radial-gradient($ncar-primary-light, $ncar-primary-dark);
+      @include radial-gradient(map-get($ncar-colors, 'base'), map-get($ncar-colors, 'dark'));
     }
   }
 
   .header-default-search-mobile {
     &::after {
-      border-color: transparent $ncar-primary-dark;
+      border-color: transparent map-get($ncar-colors, 'dark');
     }
   }
 
@@ -124,7 +124,7 @@
       &.with-image {
         &.open {
           .banner-content {
-            background: transparentize($ncar-primary-light, .3);
+            background: transparentize(map-get($ncar-colors, 'base'), .3);
           }
         }
       }
@@ -135,13 +135,13 @@
     .acronym-wrapper {
       h1 {
         a {
-          color: $dark-blue;
+          color: map-get($colors, 'dark-blue');
 
           &:link,
           &:visited,
           &:hover,
           &:active {
-            color: $dark-blue;
+            color: map-get($colors, 'dark-blue');
           }
 
           &::after {
@@ -154,20 +154,31 @@
 
   .members-details-list {
     .item-details {
-      border-color: transparent $ncar-primary-light;
+      border-color: transparent map-get($ncar-colors, 'base');
+    }
+
+    .item-titles {
+      ul {
+        a {
+          &:hover,
+          &:active {
+            color: map-get($ncar-colors, 'base');
+          }
+        }
+      }
     }
   }
 
   .news-archive {
-    color: $ncar-primary-dark;
+    color: map-get($ncar-colors, 'dark');
   }
 
   .nsf-logo {
     a {
-      color: $white;
+      color: map-get($colors, 'white');
 
       &:hover {
-        color: $white;
+        color: map-get($colors, 'white');
       }
     }
   }
@@ -176,23 +187,23 @@
     .offering {
       h4 {
         a {
-          color: $ncar-primary-dark;
+          color: map-get($ncar-colors, 'dark');
 
           &:link,
           &:visited {
-            color: $ncar-primary-dark;
+            color: map-get($ncar-colors, 'dark');
           }
 
           &:hover,
           &:active {
-            color: $dark-blue;
+            color: map-get($colors, 'dark-blue');
           }
         }
       }
 
       .post-image {
         &::before {
-          border-color: $ncar-primary-light;
+          border-color: map-get($ncar-colors, 'base');
         }
       }
     }
@@ -200,22 +211,22 @@
 
   .post-list {
     .date {
-      color: $ncar-primary-light;
+      color: map-get($ncar-colors, 'base');
     }
   }
 
   .programs-listing {
-    background-color: $ncar-primary-light;
+    background-color: map-get($ncar-colors, 'base');
   }
 
   .related-links {
-    @include radial-gradient($ncar-primary-light, $ncar-primary-dark);
+    @include radial-gradient(map-get($ncar-colors, 'base'), map-get($ncar-colors, 'dark'));
   }
 
   .related-page-section {
     .details,
     .figure {
-      background: $ncar-primary-light;
+      background: map-get($ncar-colors, 'base');
     }
 
     h1,
@@ -224,17 +235,17 @@
     h4,
     h5,
     h6 {
-      color: $darkest-gray;
+      color: map-get($colors, 'darkest-gray');
     }
   }
 
   .related-posts {
     a {
       &:hover {
-        border-color: $ncar-primary-dark;
+        border-color: map-get($ncar-colors, 'dark');
 
         h4 {
-          background: $ncar-primary-dark;
+          background: map-get($ncar-colors, 'dark');
         }
       }
     }
@@ -244,7 +255,7 @@
     a {
       &:hover {
         .figure {
-          @include radial-gradient($ncar-primary-light, $ncar-primary-dark);
+          @include radial-gradient(map-get($ncar-colors, 'base'), map-get($ncar-colors, 'dark'));
         }
       }
     }
@@ -254,33 +265,33 @@
     li {
       a {
         &::before {
-          border-right-color: $ncar-primary-dark;
+          border-right-color: map-get($ncar-colors, 'dark');
         }
       }
 
       &.active {
         > a {
-          background: $ncar-primary-dark;
-          color: $white;
+          background: map-get($ncar-colors, 'dark');
+          color: map-get($colors, 'white');
         }
       }
     }
 
     .home {
       &::before {
-        border-right-color: $ncar-primary-dark;
+        border-right-color: map-get($ncar-colors, 'dark');
       }
     }
   }
 
   .stay-connected {
-    background: $ncar-primary-light;
+    background: map-get($ncar-colors, 'base');
 
     .newsletter-signup {
       input {
         &[type='email'] {
           &::placeholder {
-            color: $ucar-primary-dark;
+            color: map-get($ncar-colors, 'dark');
           }
         }
       }
@@ -289,26 +300,26 @@
 
   .title-bar {
     button {
-      @include linear-gradient(bottom, $ncar-primary-light, $ncar-primary-dark);
+      @include linear-gradient(bottom, map-get($ncar-colors, 'base'), map-get($ncar-colors, 'dark'));
     }
   }
 
   .top-bar {
     .accordion-menu {
-      background: $ncar-primary-light;
+      background: map-get($ncar-colors, 'base');
     }
   }
 
   .utility-mobile-wrapper {
-    @include linear-gradient(right, $ncar-primary-light, $ncar-primary-dark);
+    @include linear-gradient(right, map-get($ncar-colors, 'base'), map-get($ncar-colors, 'dark'));
   }
 }
 
-@media only screen and (min-width: $mlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .ncar {
     header {
       nav {
-        background: $white;
+        background: map-get($colors, 'white');
       }
     }
 
@@ -317,7 +328,7 @@
         > li {
           &:hover {
             > a {
-              color: $ncar-primary-light;
+              color: map-get($ncar-colors, 'base');
             }
           }
         }

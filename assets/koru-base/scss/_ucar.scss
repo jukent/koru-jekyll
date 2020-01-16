@@ -4,11 +4,11 @@
   background-repeat: repeat-y;
 
   a {
-    color: $ucar-primary-dark;
+    color: map-get($ucar-colors, 'dark');
 
     &:hover,
     &:active {
-      color: $ucar-primary-light;
+      color: map-get($ucar-colors, 'base');
     }
   }
 
@@ -16,12 +16,12 @@
     .newsletter-signup {
       form {
         &::after {
-          border-color: transparent $ucar-primary-light;
+          border-color: transparent map-get($ucar-colors, 'base');
         }
 
         input {
           &.button {
-            background: $ucar-primary-light;
+            background: map-get($ucar-colors, 'base');
           }
         }
       }
@@ -32,26 +32,26 @@
   h4,
   h5,
   h6 {
-    color: $ucar-primary-light;
+    color: map-get($ucar-colors, 'base');
   }
 
   header {
     .description {
       a {
-        color: $dark-blue;
+        color: map-get($colors, 'dark-blue');
       }
     }
 
     .submenu {
-      background: transparentize($ucar-primary-dark, .08);
+      background: transparentize(map-get($ucar-colors, 'dark'), .08);
 
       li {
         &:first-child {
           a {
-            background-color: $ucar-primary-dark;
+            background-color: map-get($ucar-colors, 'dark');
 
             &::after {
-              border-color: transparent $ucar-primary-dark;
+              border-color: transparent map-get($ucar-colors, 'dark');
             }
           }
         }
@@ -60,56 +60,56 @@
   }
 
   .banner {
-    background-color: $ucar-primary-light;
+    background-color: map-get($ucar-colors, 'base');
   }
 
   .cta-link {
     &.dark-blue-on-gray {
       &:hover {
-        border-color: $ucar-primary-light;
+        border-color: map-get($ucar-colors, 'base');
 
         &::before {
-          border-color: transparent$ucar-primary-light;
+          border-color: transparent map-get($ucar-colors, 'base');
         }
       }
 
       &.back-button {
         &:hover {
           &::before {
-            border-right-color: $ucar-primary-light;
+            border-right-color: map-get($ucar-colors, 'base');
           }
         }
       }
     }
 
     &.white-on-color {
-      background: $ucar-primary-light;
+      background: map-get($ucar-colors, 'base');
 
       &::after {
-        border-color: transparent $ucar-primary-light;
+        border-color: transparent map-get($ucar-colors, 'base');
       }
 
       &:link,
       &:visited {
-        color: $white;
+        color: map-get($colors, 'white');
       }
 
       &:hover,
       &:active {
-        color: $lime-green;
+        color: map-get($colors, 'lime-green');
       }
     }
   }
 
   .featured-section {
     &:hover {
-      @include radial-gradient($ucar-primary-light, $ucar-primary-dark);
+      @include radial-gradient(map-get($ucar-colors, 'base'), map-get($ucar-colors, 'dark'));
     }
   }
 
   .header-default-search-mobile {
     &::after {
-      border-color: transparent $ucar-primary-dark;
+      border-color: transparent map-get($ucar-colors, 'dark');
     }
   }
 
@@ -124,7 +124,7 @@
       &.with-image {
         &.open {
           .banner-content {
-            background: transparentize($ucar-primary-light, .3);
+            background: transparentize(map-get($ucar-colors, 'base'), .3);
           }
         }
       }
@@ -135,13 +135,13 @@
     .acronym-wrapper {
       h1 {
         a {
-          color: $dark-blue;
+          color: map-get($colors, 'dark-blue');
 
           &:link,
           &:visited,
           &:hover,
           &:active {
-            color: $dark-blue;
+            color: map-get($colors, 'dark-blue');
           }
 
           &::after {
@@ -154,35 +154,46 @@
 
   .members-details-list {
     .item-details {
-      border-color: transparent$ucar-primary-light;
+      border-color: transparent map-get($ucar-colors, 'base');
+    }
+
+    .item-titles {
+      ul {
+        a {
+          &:hover,
+          &:active {
+            color: map-get($ucar-colors, 'base');
+          }
+        }
+      }
     }
   }
 
   .news-archive {
-    color: $ucar-primary-dark;
+    color: map-get($ucar-colors, 'dark');
   }
 
   .offerings {
     .offering {
       h4 {
         a {
-          color: $ucar-primary-dark;
+          color: map-get($ucar-colors, 'dark');
 
           &:link,
           &:visited {
-            color: $ucar-primary-dark;
+            color: map-get($ucar-colors, 'dark');
           }
 
           &:hover,
           &:active {
-            color: $dark-blue;
+            color: map-get($colors, 'dark-blue');
           }
         }
       }
 
       .post-image {
         &::before {
-          border-color: $ucar-primary-light;
+          border-color: map-get($ucar-colors, 'base');
         }
       }
     }
@@ -190,22 +201,22 @@
 
   .post-list {
     .date {
-      color: $ucar-primary-light;
+      color: map-get($ucar-colors, 'base');
     }
   }
 
   .programs-listing {
-    background-color: $ucar-primary-light;
+    background-color: map-get($ucar-colors, 'base');
   }
 
   .related-links {
-    @include radial-gradient($ucar-primary-light, $ucar-primary-dark);
+    @include radial-gradient(map-get($ucar-colors, 'base'), map-get($ucar-colors, 'dark'));
   }
 
   .related-page-section {
     .details,
     .figure {
-      background: $ucar-primary-light;
+      background: map-get($ucar-colors, 'base');
     }
 
     h1,
@@ -214,17 +225,17 @@
     h4,
     h5,
     h6 {
-      color: $darkest-gray;
+      color: map-get($colors, 'darkest-gray');
     }
   }
 
   .related-posts {
     a {
       &:hover {
-        border-color: $ucar-primary-dark;
+        border-color: map-get($ucar-colors, 'dark');
 
         h4 {
-          background: $ucar-primary-dark;
+          background: map-get($ucar-colors, 'dark');
         }
       }
     }
@@ -234,7 +245,7 @@
     a {
       &:hover {
         .figure {
-          @include radial-gradient($ucar-primary-light, $ucar-primary-dark);
+          @include radial-gradient(map-get($ucar-colors, 'base'), map-get($ucar-colors, 'dark'));
         }
       }
     }
@@ -244,33 +255,33 @@
     li {
       a {
         &::before {
-          border-right-color: $ucar-primary-dark;
+          border-right-color: map-get($ucar-colors, 'dark');
         }
       }
 
       &.active {
         > a {
-          background: $ucar-primary-dark;
-          color: $white;
+          background: map-get($ucar-colors, 'dark');
+          color: map-get($colors, 'white');
         }
       }
     }
 
     .home {
       &::before {
-        border-right-color: $ucar-primary-dark;
+        border-right-color: map-get($ucar-colors, 'dark');
       }
     }
   }
 
   .stay-connected {
-    background: $ucar-primary-light;
+    background: map-get($ucar-colors, 'base');
 
     .newsletter-signup {
       input {
         &[type='email'] {
           &::placeholder {
-            color: $ucar-primary-dark;
+            color: map-get($ucar-colors, 'dark');
           }
         }
       }
@@ -279,26 +290,26 @@
 
   .title-bar {
     button {
-      @include linear-gradient(bottom, $ucar-primary-light, $ucar-primary-dark);
+      @include linear-gradient(bottom, map-get($ucar-colors, 'base'), map-get($ucar-colors, 'dark'));
     }
   }
 
   .top-bar {
     .accordion-menu {
-      background: $ucar-primary-light;
+      background: map-get($ucar-colors, 'base');
     }
   }
 
   .utility-mobile-wrapper {
-    @include linear-gradient(right, $ucar-primary-light, $ucar-primary-dark);
+    @include linear-gradient(right, map-get($ucar-colors, 'base'), map-get($ucar-colors, 'dark'));
   }
 }
 
-@media only screen and (min-width: $mlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .ucar {
     header {
       nav {
-        background: $white;
+        background: map-get($colors, 'white');
       }
     }
 
@@ -307,7 +318,7 @@
         > li {
           &:hover {
             > a {
-              color: $ucar-primary-light;
+              color: map-get($ucar-colors, 'base');
             }
           }
         }

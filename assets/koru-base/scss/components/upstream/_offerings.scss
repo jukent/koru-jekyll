@@ -23,7 +23,7 @@
       h3 {
         @include heading-semi-bold;
         @include heading-xsmall;
-        color: $dark-blue;
+        color: map-get($colors, 'dark-blue');
       }
     }
   }
@@ -37,16 +37,16 @@
       @include heading-xsmall;
 
       a {
-        color: $gray-placeholder-light;
+        color: map-get($default-colors, 'light');
 
         &:link,
         &:visited {
-          color: $gray-placeholder-light;
+          color: map-get($default-colors, 'light');
         }
 
         &:hover,
         &:active {
-          color: $dark-blue;
+          color: map-get($colors, 'dark-blue');
         }
       }
     }
@@ -71,7 +71,7 @@
 
       &::before {
         @include pseudo-element;
-        border: $light-gray solid 14px;
+        border: map-get($colors, 'light-gray') solid 14px;
         height: 100%;
         opacity: 0;
         transition: 200ms ease-in-out;
@@ -87,22 +87,22 @@
   }
 
   .with-gradient {
-    @include linear-gradient(bottom, rgba($white, .5), rgba($white, 0));
+    @include linear-gradient(bottom, rgba(map-get($colors, 'white'), .5), rgba(map-get($colors, 'white'), 0));
     padding-top: .9375rem;
   }
 
-  @media only screen and (min-width: $medium) {
+  @media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
     .group-listing {
       .panel-title {
         h3 {
-          font-size: $font-size-small;
+          font-size: map-get($font-sizes, 'small');
         }
       }
     }
   }
 }
 
-@media only screen and (min-width: $medium) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
   .offerings {
     .offering {
       font-size: .9rem;
@@ -132,10 +132,10 @@
   }
 }
 
-@media only screen and (min-width: $large) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'large')) {
   .offerings {
     .offering {
-      font-size: $font-size-xxsmall;
+      font-size: map-get($font-sizes, 'xxsmall');
       min-height: 550px;
 
       .post-image,

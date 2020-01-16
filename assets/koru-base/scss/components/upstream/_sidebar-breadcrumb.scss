@@ -1,15 +1,15 @@
 .sidebar-breadcrumb {
-  @include radial-gradient($gradient-gray-light, $gradient-gray-dark);
-  box-shadow: -5px -5px 24px -4px rgba($gradient-gray-light, .56);
+  @include radial-gradient(map-get($gradient-colors, 'light-gray'), map-get($gradient-colors, 'dark-gray'));
+  box-shadow: -5px -5px 24px -4px rgba(map-get($gradient-colors, 'light-gray'), .56);
   padding: 40px 0;
 
   a {
-    color: $light-gray;
+    color: map-get($colors, 'light-gray');
 
     &:link,
     &:visited,
     &:active {
-      color: $light-gray;
+      color: map-get($colors, 'light-gray');
     }
   }
 
@@ -25,7 +25,7 @@
       &::before {
         @include pseudo-element;
         border-bottom: 16px solid transparent;
-        border-right: 15px solid $gray-placeholder-light;
+        border-right: 15px solid map-get($default-colors, 'light');
         border-top: 16px solid transparent;
         display: none;
         height: 0;
@@ -35,7 +35,7 @@
       }
 
       &:hover {
-        color: $lime-green;
+        color: map-get($colors, 'lime-green');
 
         i {
           &::before {
@@ -55,8 +55,8 @@
 
     &.active {
       > a {
-        background: $gray-placeholder-light;
-        color: $white;
+        background: map-get($default-colors, 'light');
+        color: map-get($colors, 'white');
       }
     }
   }
@@ -67,7 +67,7 @@
         @include uppercase;
 
         > a {
-          color: $white;
+          color: map-get($colors, 'white');
         }
       }
 
@@ -149,7 +149,7 @@
     &::before {
       @include pseudo-element;
       border-bottom: 16px solid transparent;
-      border-right: 15px solid $gray-placeholder-light;
+      border-right: 15px solid map-get($default-colors, 'light');
       border-top: 16px solid transparent;
       display: none;
       height: 0;
@@ -167,7 +167,7 @@
     }
 
     &:hover {
-      color: $lime-green;
+      color: map-get($colors, 'lime-green');
 
       i {
         &::before {
@@ -178,7 +178,7 @@
   }
 }
 
-@media only screen and (min-width: $medium) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
   .sidebar-breadcrumb {
     li {
       &.active {

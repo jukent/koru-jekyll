@@ -6,7 +6,7 @@
   }
 
   h5 {
-    color: $white;
+    color: map-get($colors, 'white');
   }
 
   .newsletter-signup {
@@ -17,13 +17,13 @@
       margin: 0;
 
       &::after {
-        border-color: transparent $dark-blue;
+        border-color: transparent map-get($colors, 'dark-blue');
       }
     }
 
     input {
       &.button {
-        background: $dark-blue;
+        background: map-get($colors, 'dark-blue');
       }
     }
   }
@@ -35,12 +35,12 @@
       a {
         &:link,
         &:visited {
-          color: $white;
+          color: map-get($colors, 'white');
         }
 
         &:hover {
           i {
-            color: $dark-blue;
+            color: map-get($colors, 'dark-blue');
           }
         }
       }
@@ -48,7 +48,7 @@
   }
 }
 
-@media only screen and (min-width: $mlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .stay-connected {
     h5 {
       margin-top: 0;
@@ -60,7 +60,7 @@
   }
 }
 
-@media only screen and (min-width: $xlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'xlarge')) {
   .stay-connected {
     .newsletter-signup {
       width: 75%;

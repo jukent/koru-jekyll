@@ -1,23 +1,23 @@
 b,
 strong {
-  font-weight: $font-weight-semi-bold;
+  font-weight: map-get($font-weights, 'semi-bold');
   letter-spacing: .05em;
 }
 
 blockquote {
   @include body-large;
   border: 0;
-  color: $darkest-gray;
+  color: map-get($colors, 'darkest-gray');
 
   p {
     @include body-large;
-    color: $darkest-gray;
+    color: map-get($colors, 'darkest-gray');
   }
 }
 
 body {
-  font-family: $font-family;
-  font-size: $font-size-xxsmall;
+  font-family: map-get($font-families, 'poppins');
+  font-size: map-get($font-sizes, 'xxsmall');
 }
 
 h1 {
@@ -55,7 +55,7 @@ h6,
 p,
 ul,
 ol {
-  font-family: $font-family;
+  font-family: map-get($font-families, 'poppins');
   margin-bottom: .75rem;
   margin-top: 1rem;
 }
@@ -64,8 +64,8 @@ header {
   .menu {
     a {
       @include uppercase;
-      font-family: $font-family;
-      font-weight: $font-weight-bold;
+      font-family: map-get($font-families, 'poppins');
+      font-weight: map-get($font-weights, 'bold');
     }
   }
 }
@@ -87,7 +87,7 @@ ul {
 .date {
   @include uppercase;
   font-size: .875rem;
-  font-weight: $font-weight-regular;
+  font-weight: map-get($font-weights, 'regular');
 }
 
 .heading-xsmall-normal {
@@ -120,7 +120,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: $medium) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
   h1,
   h2,
   h3,
@@ -134,7 +134,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: $mlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .main-nav > ul {
     &.menu > li {
       > a {
@@ -144,7 +144,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: $large) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'large')) {
   .main-nav > ul {
     &.menu > li {
       > a {
@@ -154,11 +154,11 @@ ul {
   }
 }
 
-@media only screen and (min-width: $xlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'xlarge')) {
   .main-nav > ul {
     &.menu > li {
       > a {
-        font-size: $font-size-xxsmall;
+        font-size: map-get($font-sizes, 'xxsmall');
       }
     }
   }

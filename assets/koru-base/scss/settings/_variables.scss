@@ -1,67 +1,77 @@
-// Browser Sizes
-$medium: 640px;
-$mlarge: 900px;
-$large: 1024px;
-$xlarge: 1260px;
-$xxlarge: 1440px;
+// Breakpoints
+$custom-breakpoints: (
+  'medium': 640px,
+  'mlarge': 900px,
+  'large': 1024px,
+  'xlarge': 1260px,
+  'xxlarge': 1440px
+);
 
-// Font variables
-$font-family: Poppins, sans-serif;
+// Font styles
+$font-families: (
+  'poppins': (Poppins, sans-serif)
+);
 
-$font-weight-regular: 400;
-$font-weight-semi-bold: 600;
-$font-weight-bold: 700;
+$font-weights: (
+  'regular': 400,
+  'semi-bold': 600,
+  'bold': 700,
+);
 
-$font-size-large: 4.6875rem;
-$font-size-mlarge: 3rem;
-$font-size-medium: 2.2rem;
-$font-size-small: 1.75rem;
-$font-size-xsmall: 1.25rem;
-$font-size-xxsmall: 1rem;
+$font-sizes: (
+  'xxsmall': 1rem,
+  'xsmall': 1.25rem,
+  'small': 1.75rem,
+  'medium': 2.2rem,
+  'mlarge': 3rem,
+  'large': 4.6875rem
+);
 
-// neutral colors
-$white: #fff;
-$lightest-gray: #ced9e5;
-$light-gray: #dbe2e9;
-$cool-gray: #eff2f5;
-$medium-gray: #97999b;
-$gray: #63666a;
-$dark-gray: #414143;
-$darkest-gray: #332f21;
-$black: #000;
+// Colors
+$colors: (
+  'white': #fff,
+  'lightest-gray': #ced9e5,
+  'light-gray': #dbe2e9,
+  'cool-gray': #eff2f5,
+  'medium-gray': #97999b,
+  'gray': #63666a,
+  'dark-gray': #414143,
+  'darkest-gray': #332f21,
+  'black': #000,
+  'cool-blue': #0779bf,
+  'dark-blue': #012169,
+  'lime-green': #bfd600,
+);
 
-// cool colors
-$dark-blue: #012169;
+$alert-colors: (
+  'red': #da291c,
+  'yellow': #f7ea48
+);
 
-// warm colors
-$lime-green: #bfd600;
+$gradient-colors: (
+  'dark-gray': #323133,
+  'light-gray': #454648
+);
 
-// gradient grays
-$gradient-gray-light: #454648;
-$gradient-gray-dark: #323133;
+$default-colors: (
+  'dark': #58565a,
+  'light': #7f7c81
+);
 
-// for the default theme
-$gray-placeholder-light: lighten($gradient-gray-dark, 30%);
-$gray-placeholder-dark: lighten($gradient-gray-dark, 15%);
+$ncar-colors: (
+  'base': #007fa3,
+  'dark': #1a658f,
+  'light': #00c1d5
+);
 
-// body.ucar
-$ucar-primary-light: #28938d;
-$ucar-primary-dark: #00797c;
-$ucar-primary-lightest: #40c1ac;
+$ucar-colors: (
+  'base': #28938d,
+  'dark': #00797c,
+  'light': #40c1ac
+);
 
-// body.ncar
-$ncar-primary-light: #007fa3;
-$ncar-primary-dark: #1a658f;
-$ncar-primary-lightest: #00c1d5;
-
-// body.news
-$light-blue: #5bc2e7;
-$light-blue-tinted: #0092cb;
-$light-blue-tinted-darker: #0085ca;
-
-// alerts
-$red: #da291c;
-$yellow: #f7ea48;
-
-// GDPR Compliance
-$cool-blue: #0779bf;
+$news-colors: (
+  'base': #0092cb,
+  'dark': #0085ca,
+  'light': #5bc2e7
+);

@@ -25,14 +25,14 @@ a {
   }
 
   &.dark-blue-on-gray {
-    border-color: $dark-blue;
-    color: $dark-blue;
+    border-color: map-get($colors, 'dark-blue');
+    color: map-get($colors, 'dark-blue');
 
     &:hover {
-      border-color: $gray-placeholder-dark;
+      border-color: map-get($default-colors, 'dark');
 
       &::before {
-        border-color: transparent $gray-placeholder-dark;
+        border-color: transparent map-get($default-colors, 'dark');
       }
     }
 
@@ -40,30 +40,30 @@ a {
     &:visited,
     &:hover,
     &:active {
-      color: $dark-blue;
+      color: map-get($colors, 'dark-blue');
     }
 
     &::after {
-      border-color: transparent $cool-gray;
+      border-color: transparent map-get($colors, 'cool-gray');
     }
 
     &::before {
-      border-color: transparent $dark-blue;
+      border-color: transparent map-get($colors, 'dark-blue');
     }
 
     // for the back button
     &.back-button {
       &::after {
-        border-color: transparent $light-gray;
+        border-color: transparent map-get($colors, 'light-gray');
       }
 
       &::before {
-        border-color: transparent $dark-blue;
+        border-color: transparent map-get($colors, 'dark-blue');
       }
 
       &:hover {
         &::before {
-          border-color: transparent $gray-placeholder-dark;
+          border-color: transparent map-get($default-colors, 'dark');
         }
       }
     }
@@ -77,12 +77,12 @@ a {
     text-decoration: none;
 
     &::after {
-      @include button-arrow(transparent $light-gray, 12px 0 12px 12px);
+      @include button-arrow(transparent map-get($colors, 'light-gray'), 12px 0 12px 12px);
       right: -12px;
     }
 
     &::before {
-      @include button-arrow(transparent $dark-blue, 14px 0 14px 14px);
+      @include button-arrow(transparent map-get($colors, 'dark-blue'), 14px 0 14px 14px);
       right: -17px;
       top: -2px;
     }
@@ -108,17 +108,17 @@ a {
   &.small {
     border: 3px solid;
     font-size: 11px;
-    font-weight: $font-weight-bold;
+    font-weight: map-get($font-weights, 'bold');
     padding: 7px 10px;
 
     &::after {
-      @include button-arrow(transparent $cool-gray, 13px 0 13px 11px);
+      @include button-arrow(transparent map-get($colors, 'cool-gray'), 13px 0 13px 11px);
       right: -11px;
       top: 0;
     }
 
     &::before {
-      @include button-arrow(transparent $dark-blue, 14px 0 14px 14px);
+      @include button-arrow(transparent map-get($colors, 'dark-blue'), 14px 0 14px 14px);
       right: -17px;
       top: -1px;
       width: 0;
@@ -126,15 +126,15 @@ a {
   }
 
   &.lime-green-on-gray {
-    background: $gradient-gray-light;
-    border-color: $white;
-    color: $white;
+    background: map-get($gradient-colors, 'light-gray');
+    border-color: map-get($colors, 'white');
+    color: map-get($colors, 'white');
 
     &:hover {
-      border-color: $lime-green;
+      border-color: map-get($colors, 'lime-green');
 
       &::before {
-        border-color: transparent $lime-green;
+        border-color: transparent map-get($colors, 'lime-green');
       }
     }
 
@@ -142,43 +142,43 @@ a {
     &:visited,
     &:hover,
     &:active {
-      color: $white;
+      color: map-get($colors, 'white');
     }
 
     &::before {
-      border-color: transparent $white;
+      border-color: transparent map-get($colors, 'white');
     }
 
     &::after {
-      border-color: transparent $gradient-gray-light;
+      border-color: transparent map-get($gradient-colors, 'light-gray');
     }
   }
 
   &.white-on-color {
-    background: $white;
-    border-color: $white;
+    background: map-get($colors, 'white');
+    border-color: map-get($colors, 'white');
 
     &::before {
-      border-color: transparent $white;
+      border-color: transparent map-get($colors, 'white');
     }
 
     &::after {
-      border-color: transparent $white;
+      border-color: transparent map-get($colors, 'white');
     }
 
     &:link,
     &:visited {
-      color: $gray-placeholder-dark;
+      color: map-get($default-colors, 'dark');
     }
 
     &:hover,
     &:active {
-      color: $gray-placeholder-dark;
+      color: map-get($default-colors, 'dark');
     }
   }
 }
 
-@media only screen and (min-width: $mlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .cta-link {
     &.large {
       font-size: 19px;

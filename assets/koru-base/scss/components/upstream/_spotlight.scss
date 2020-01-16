@@ -8,7 +8,7 @@
 
 .spotlight {
   background-blend-mode: multiply;
-  background-color: $light-gray;
+  background-color: map-get($colors, 'light-gray');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,20 +18,20 @@
   h4 {
     @include heading-semi-bold;
     @include heading-xsmall;
-    color: $lime-green;
+    color: map-get($colors, 'lime-green');
     margin-bottom: 0;
   }
 
   h5 {
     @include heading-mlarge;
     @include heading-semi-bold;
-    color: $white;
+    color: map-get($colors, 'white');
   }
 
   h4,
   h5 {
-    @include text-shadow(rgba($black, .5));
-    font-weight: $font-weight-bold;
+    @include text-shadow(rgba(map-get($colors, 'black'), .5));
+    font-weight: map-get($font-weights, 'bold');
   }
 
   .inner {
@@ -39,7 +39,7 @@
   }
 }
 
-@media only screen and (min-width: $mlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .spotlight-wrapper {
     margin-bottom: 3rem;
   }

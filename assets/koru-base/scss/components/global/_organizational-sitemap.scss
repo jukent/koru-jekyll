@@ -1,21 +1,21 @@
 .organizational-sitemap {
   a {
-    color: $gray-placeholder-light;
+    color: map-get($default-colors, 'light');
 
     &:link,
     &:visited {
-      color: $gray-placeholder-light;
+      color: map-get($default-colors, 'light');
     }
 
     &:hover,
     &:active {
-      color: $gray-placeholder-dark;
+      color: map-get($default-colors, 'dark');
     }
   }
 
   abbr {
     border: 0;
-    color: $medium-gray;
+    color: map-get($colors, 'medium-gray');
     cursor: pointer;
     min-width: 50px;
   }
@@ -26,7 +26,7 @@
   h4,
   h5,
   h6 {
-    color: $gradient-gray-dark;
+    color: map-get($gradient-colors, 'dark-gray');
   }
 
   h3,
@@ -64,8 +64,8 @@
       }
 
       > li {
-        border-bottom: solid 1px $gradient-gray-light;
-        font-weight: $font-weight-semi-bold;
+        border-bottom: solid 1px map-get($gradient-colors, 'light-gray');
+        font-weight: map-get($font-weights, 'semi-bold');
         margin-bottom: 8px;
         padding-bottom: 8px;
 
@@ -79,7 +79,7 @@
           > li {
             border-bottom: 0;
             font-size: .95rem;
-            font-weight: $font-weight-regular;
+            font-weight: map-get($font-weights, 'regular');
             margin-bottom: 4px;
             padding-bottom: 0;
 
@@ -93,13 +93,13 @@
   }
 
   .cell {
-    background: $white;
+    background: map-get($colors, 'white');
     max-width: 70rem;
     padding: 20px;
   }
 }
 
-@media only screen and (min-width: $medium) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
   .organizational-sitemap {
     ul {
       &.org-list {

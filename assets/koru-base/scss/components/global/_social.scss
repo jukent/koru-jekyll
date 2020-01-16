@@ -10,12 +10,12 @@
 
     &:link,
     &:visited {
-      color: $white;
+      color: map-get($colors, 'white');
     }
 
     &:hover {
       i {
-        color: $lime-green;
+        color: map-get($colors, 'lime-green');
       }
     }
   }

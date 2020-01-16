@@ -4300,7 +4300,7 @@ a.button:hover, a.button:focus {
 .close-button {
   position: absolute;
   z-index: 10;
-  color: #0a0a0a;
+  color: #000;
   cursor: pointer; }
   [data-whatinput='mouse'] .close-button {
     outline: 0; }
@@ -5509,7 +5509,7 @@ a.thumbnail {
     content: '';
     border-bottom-width: 0;
     border-top-style: solid;
-    border-color: #fefefe transparent transparent;
+    border-color: #fff transparent transparent;
     top: 0;
     bottom: 0;
     margin: auto; }
@@ -5644,7 +5644,7 @@ a.thumbnail {
 
 .dropdown.menu > li.is-active > a {
   background: transparent;
-  color: #0a0a0a; }
+  color: #000; }
 
 .no-js .dropdown.menu ul {
   display: none; }
@@ -10044,6 +10044,8 @@ tr {
       display: block; }
   .ucar .members-details-list .item-details {
     border-color: transparent #28938d; }
+  .ucar .members-details-list .item-titles ul a:hover, .ucar .members-details-list .item-titles ul a:active {
+    color: #28938d; }
   .ucar .news-archive {
     color: #00797c; }
   .ucar .offerings .offering h4 a {
@@ -10167,6 +10169,8 @@ tr {
       display: block; }
   .ncar .members-details-list .item-details {
     border-color: transparent #007fa3; }
+  .ncar .members-details-list .item-titles ul a:hover, .ncar .members-details-list .item-titles ul a:active {
+    color: #007fa3; }
   .ncar .news-archive {
     color: #1a658f; }
   .ncar .nsf-logo a {
@@ -10213,15 +10217,15 @@ tr {
   .ncar .stay-connected {
     background: #007fa3; }
     .ncar .stay-connected .newsletter-signup input[type='email']::-webkit-input-placeholder {
-      color: #00797c; }
+      color: #1a658f; }
     .ncar .stay-connected .newsletter-signup input[type='email']::-moz-placeholder {
-      color: #00797c; }
+      color: #1a658f; }
     .ncar .stay-connected .newsletter-signup input[type='email']:-ms-input-placeholder {
-      color: #00797c; }
+      color: #1a658f; }
     .ncar .stay-connected .newsletter-signup input[type='email']::-ms-input-placeholder {
-      color: #00797c; }
+      color: #1a658f; }
     .ncar .stay-connected .newsletter-signup input[type='email']::placeholder {
-      color: #00797c; }
+      color: #1a658f; }
   .ncar .title-bar button {
     background: #007fa3 -webkit-gradient(linear, left top, left bottom, from(#007fa3), to(#1a658f));
     background: #007fa3 linear-gradient(to bottom, #007fa3 0%, #1a658f 100%); }
@@ -10458,30 +10462,27 @@ tr {
   .post-list > .grid-x {
     border-bottom: 0; } }
 
-header button.fa,
-header button .fa {
-  color: #fff; }
-
-header button.fa {
-  cursor: pointer;
-  padding: 17px 19px; }
-
-header h1 {
-  font-size: 1rem;
-  line-height: normal; }
-
-header ul {
-  margin: 0;
-  padding: 0; }
-
-header .menu li a {
-  padding: 8px 20px; }
-  header .menu li a:hover, header .menu li a:active {
-    color: #332f21; }
-
-header .menu li i {
-  font-size: 1.5rem;
-  line-height: .5; }
+header {
+  background-color: #fff; }
+  header button.fa,
+  header button .fa {
+    color: #fff; }
+  header button.fa {
+    cursor: pointer;
+    padding: 17px 19px; }
+  header h1 {
+    font-size: 1rem;
+    line-height: normal; }
+  header ul {
+    margin: 0;
+    padding: 0; }
+  header .menu li a {
+    padding: 8px 20px; }
+    header .menu li a:hover, header .menu li a:active {
+      color: #332f21; }
+  header .menu li i {
+    font-size: 1.5rem;
+    line-height: .5; }
 
 .dropdown.menu li a {
   padding: .7rem; }
@@ -10494,9 +10495,6 @@ header .menu li i {
 
 .is-accordion-submenu-parent > a::after {
   left: 1rem; }
-
-.is-at-top {
-  background: #fff; }
 
 .is-dropdown-submenu {
   width: 100%; }
@@ -11680,20 +11678,9 @@ a .cta-link {
 
 .banner {
   background-color: #012169; }
-  .banner.with-image {
-    height: auto; }
-    @media only screen and (min-width: 640px) {
-      .banner.with-image {
-        height: 18.75rem; } }
-    @media only screen and (min-width: 900px) {
-      .banner.with-image {
-        height: 27.5rem; } }
-    @media only screen and (min-width: 1440px) {
-      .banner.with-image {
-        height: 37.5rem; } }
-    .banner.with-image h1,
-    .banner.with-image h2 {
-      text-shadow: 0 0 1.875rem rgba(0, 0, 0, 0.5); }
+  .banner.with-image h1,
+  .banner.with-image h2 {
+    text-shadow: 0 0 1.875rem rgba(0, 0, 0, 0.5); }
   .banner > .grid-x {
     height: 100%; }
   .banner h1 {
@@ -11737,6 +11724,17 @@ a .cta-link {
   @media only screen and (min-width: 900px) {
     .cell.banner {
       height: 25rem; } }
+  .cell.banner.with-image {
+    height: auto; }
+    @media only screen and (min-width: 640px) {
+      .cell.banner.with-image {
+        height: 18.75rem; } }
+    @media only screen and (min-width: 900px) {
+      .cell.banner.with-image {
+        height: 27.5rem; } }
+    @media only screen and (min-width: 1440px) {
+      .cell.banner.with-image {
+        height: 37.5rem; } }
 
 @media only screen and (min-width: 900px) {
   .banner h1 {
@@ -12032,7 +12030,7 @@ a .cta-link {
     .members-details-list .item-titles ul a:link, .members-details-list .item-titles ul a:visited {
       color: #454648; }
     .members-details-list .item-titles ul a:hover, .members-details-list .item-titles ul a:active {
-      color: #28938d; }
+      color: #323133; }
 
 .members-details-list .row.wide {
   max-width: 87.5rem; }

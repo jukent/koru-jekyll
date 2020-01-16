@@ -1,5 +1,5 @@
 footer {
-  background: $darkest-gray;
+  background: map-get($colors, 'darkest-gray');
   font-size: .85em;
 
   h4 {
@@ -8,17 +8,17 @@ footer {
   }
 
   p {
-    color: $light-gray;
+    color: map-get($colors, 'light-gray');
   }
 }
 
 .footer-sponsor {
-  background: $dark-gray;
+  background: map-get($colors, 'dark-gray');
   padding-bottom: 30px;
   padding-top: 30px;
 
   p {
-    color: $white;
+    color: map-get($colors, 'white');
     margin: 0;
   }
 
@@ -39,7 +39,7 @@ footer {
     margin-bottom: 5px;
 
     a {
-      color: $light-gray;
+      color: map-get($colors, 'light-gray');
 
       i {
         padding-right: 5px;
@@ -47,12 +47,12 @@ footer {
 
       &:link,
       &:visited {
-        color: $light-gray;
+        color: map-get($colors, 'light-gray');
       }
 
       &:hover,
       &:active {
-        color: $lime-green;
+        color: map-get($colors, 'lime-green');
       }
     }
   }
@@ -64,16 +64,16 @@ footer {
   li {
     a {
       @include uppercase;
-      color: $light-gray;
+      color: map-get($colors, 'light-gray');
 
       &:link,
       &:visited {
-        color: $light-gray;
+        color: map-get($colors, 'light-gray');
       }
 
       &:hover,
       &:active {
-        color: $lime-green;
+        color: map-get($colors, 'lime-green');
       }
     }
 
@@ -89,7 +89,7 @@ footer {
   small,
   li,
   ul {
-    color: $light-gray;
+    color: map-get($colors, 'light-gray');
   }
 }
 
@@ -101,7 +101,7 @@ footer {
 
     &::after {
       @include pseudo-element;
-      @include button-arrow (transparent $gray-placeholder-light, 15px 0 15px 15px);
+      @include button-arrow (transparent map-get($default-colors, 'light'), 15px 0 15px 15px);
       height: 0;
       right: -15px;
       top: 0;
@@ -111,7 +111,7 @@ footer {
 
   input {
     &[type='email'] {
-      background: $white;
+      background: map-get($colors, 'white');
       border: 0;
       height: 30px;
       margin: 0;
@@ -121,9 +121,9 @@ footer {
 
     &[type='submit'] {
       @include uppercase;
-      background: $gray-placeholder-light;
+      background: map-get($default-colors, 'light');
       border: 0;
-      color: $white;
+      color: map-get($colors, 'white');
       cursor: pointer;
       font-size: .75rem;
       font-weight: 700;
@@ -152,7 +152,7 @@ footer {
 }
 
 // foundation medium begins
-@media only screen and (min-width: $medium) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
   footer,
   .footer-sponsor {
     font-size: .9em;
@@ -195,10 +195,10 @@ footer {
 }
 
 // foundation large begins
-@media only screen and (min-width: $large) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'large')) {
   footer,
   .footer-sponsor {
-    font-size: $font-size-xxsmall;
+    font-size: map-get($font-sizes, 'xxsmall');
   }
 
   .footer-addresses,

@@ -14,15 +14,15 @@
 @mixin banner-image-heights {
   height: auto;
 
-  @media only screen and (min-width: $medium) {
+  @media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
     height: 18.75rem;
   }
 
-  @media only screen and (min-width: $mlarge) {
+  @media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
     height: 27.5rem;
   }
 
-  @media only screen and (min-width: $xxlarge) {
+  @media only screen and (min-width: map-get($custom-breakpoints, 'xxlarge')) {
     height: 37.5rem;
   }
 }
@@ -30,7 +30,7 @@
 @mixin banner-default-heights {
   height: auto;
 
-  @media only screen and (min-width: $mlarge) {
+  @media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
     height: 25rem;
   }
 }
@@ -61,80 +61,80 @@
 }
 
 @mixin heading-semi-bold {
-  font-weight: $font-weight-semi-bold;
+  font-weight: map-get($font-weights, 'semi-bold');
   line-height: 1.05;
 }
 
 @mixin heading-bold {
-  font-weight: $font-weight-bold;
+  font-weight: map-get($font-weights, 'bold');
   line-height: 1.05;
 }
 
 @mixin heading-large {
   @include uppercase;
-  font-size: $font-size-small;
+  font-size: map-get($font-sizes, 'small');
 
-  @media only screen and (min-width: $medium) {
-    font-size: $font-size-medium;
+  @media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
+    font-size: map-get($font-sizes, 'medium');
   }
 
-  @media only screen and (min-width: $mlarge) {
-    font-size: $font-size-mlarge;
+  @media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
+    font-size: map-get($font-sizes, 'mlarge');
   }
 
-  @media only screen and (min-width: $xxlarge) {
-    font-size: $font-size-large;
+  @media only screen and (min-width: map-get($custom-breakpoints, 'xxlarge')) {
+    font-size: map-get($font-sizes, 'large');
   }
 }
 
 @mixin heading-mlarge {
   @include uppercase;
-  font-size: $font-size-small;
+  font-size: map-get($font-sizes, 'small');
 
-  @media only screen and (min-width: $medium) {
-    font-size: $font-size-medium;
+  @media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
+    font-size: map-get($font-sizes, 'medium');
   }
 
-  @media only screen and (min-width: $mlarge) {
-    font-size: $font-size-mlarge;
+  @media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
+    font-size: map-get($font-sizes, 'mlarge');
   }
 }
 
 @mixin heading-medium {
   @include uppercase;
-  font-size: $font-size-small;
+  font-size: map-get($font-sizes, 'small');
 
-  @media only screen and (min-width: $medium) {
-    font-size: $font-size-medium;
+  @media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
+    font-size: map-get($font-sizes, 'medium');
   }
 }
 
 @mixin heading-small {
   @include uppercase;
-  font-size: $font-size-small;
+  font-size: map-get($font-sizes, 'small');
 }
 
 @mixin heading-xsmall {
   @include uppercase;
-  font-size: $font-size-xsmall;
+  font-size: map-get($font-sizes, 'xsmall');
   line-height: 1.3;
 }
 
 @mixin heading-xxsmall {
   @include uppercase;
-  font-size: $font-size-xxsmall;
+  font-size: map-get($font-sizes, 'xxsmall');
   line-height: 1.2;
 }
 
 @mixin body-large {
-  font-size: $font-size-xsmall;
+  font-size: map-get($font-sizes, 'xsmall');
   line-height: 1.3;
 
-  @media only screen and (min-width: $mlarge) {
+  @media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
     font-size: 1.6rem;
   }
 
-  @media only screen and (min-width: $xlarge) {
+  @media only screen and (min-width: map-get($custom-breakpoints, 'xlarge')) {
     font-size: 1.8rem;
   }
 }

@@ -6,27 +6,27 @@
   }
 
   a {
-    border: 10px solid $darkest-gray;
+    border: 10px solid map-get($colors, 'darkest-gray');
     display: block;
     outline: none;
     position: relative;
 
     &:hover {
-      border-color: $gray-placeholder-light;
+      border-color: map-get($default-colors, 'light');
 
       h4 {
-        background: $gray-placeholder-light;
+        background: map-get($default-colors, 'light');
       }
     }
   }
 
   h4 {
     @include sentence-case;
-    background: $darkest-gray;
+    background: map-get($colors, 'darkest-gray');
     bottom: -1px;
-    color: $white;
-    font-size: $font-size-xxsmall;
-    font-weight: $font-weight-regular;
+    color: map-get($colors, 'white');
+    font-size: map-get($font-sizes, 'xxsmall');
+    font-weight: map-get($font-weights, 'regular');
     left: 0;
     letter-spacing: .06em;
     margin: 0;
@@ -46,13 +46,13 @@
   .featured-post {
     h4 {
       @include body-large;
-      color: $white;
-      font-weight: $font-weight-semi-bold;
+      color: map-get($colors, 'white');
+      font-weight: map-get($font-weights, 'semi-bold');
     }
   }
 }
 
-@media only screen and (min-width: $mlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .related-posts {
     a {
       border-width: 14px;

@@ -18,13 +18,13 @@
   }
 
   h3 {
-    font-size: $font-size-xxsmall;
+    font-size: map-get($font-sizes, 'xxsmall');
     margin-bottom: .5rem;
     margin-top: .35rem;
   }
 
   .item-details {
-    border-left: solid .125rem $gray-placeholder-light;
+    border-left: solid .125rem map-get($default-colors, 'light');
 
     p {
       font-size: .875rem;
@@ -38,21 +38,21 @@
     }
 
     ul {
-      font-size: $font-size-xxsmall;
+      font-size: map-get($font-sizes, 'xxsmall');
       list-style-type: disc;
       margin-top: 0;
 
       a {
-        color: $gradient-gray-light;
+        color: map-get($gradient-colors, 'light-gray');
 
         &:link,
         &:visited {
-          color: $gradient-gray-light;
+          color: map-get($gradient-colors, 'light-gray');
         }
 
         &:hover,
         &:active {
-          color: $ucar-primary-light;
+          color: map-get($gradient-colors, 'dark-gray');
         }
       }
     }
@@ -65,7 +65,7 @@
   }
 }
 
-@media only screen and (min-width: $mlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .members-details-list {
     dt {
       font-size: .8125rem;

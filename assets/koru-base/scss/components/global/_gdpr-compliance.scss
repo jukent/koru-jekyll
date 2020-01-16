@@ -13,9 +13,9 @@
 
 .eu-cookie-compliance-default-button {
   background: none;
-  border: 3px solid $white;
+  border: 3px solid map-get($colors, 'white');
   box-shadow: none;
-  color: $white;
+  color: map-get($colors, 'white');
   font-family: Poppins, sans-serif;
   font-size: 15px;
   margin-top: 10px;
@@ -24,7 +24,7 @@
   text-transform: uppercase;
 
   &:hover {
-    background-color: $white;
-    color: $cool-blue;
+    background-color: map-get($colors, 'white');
+    color: map-get($colors, 'cool-blue');
   }
 }

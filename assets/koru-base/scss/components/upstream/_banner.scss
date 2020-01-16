@@ -1,12 +1,10 @@
 .banner {
-  background-color: $dark-blue;
+  background-color: map-get($colors, 'dark-blue');
 
   &.with-image {
-    @include banner-image-heights;
-
     h1,
     h2 {
-      @include text-shadow(rgba($black, .5));
+      @include text-shadow(rgba(map-get($colors, 'black'), .5));
     }
   }
 
@@ -17,14 +15,14 @@
   h1 {
     @include heading-semi-bold;
     @include heading-xsmall;
-    color: $lime-green;
+    color: map-get($colors, 'lime-green');
     margin-bottom: .25rem;
   }
 
   h2 {
     @include heading-bold;
     @include heading-large;
-    color: $white;
+    color: map-get($colors, 'white');
     line-height: 1;
   }
 
@@ -44,10 +42,14 @@
 .cell {
   &.banner {
     @include banner-default-heights;
+
+    &.with-image {
+      @include banner-image-heights;
+    }
   }
 }
 
-@media only screen and (min-width: $mlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .banner {
     h1 {
       @include heading-small;

@@ -8,11 +8,11 @@
   }
 
   a {
-    color: $light-blue-tinted;
+    color: map-get($news-colors, 'base');
 
     &:hover,
     &:active {
-      color: $light-blue;
+      color: map-get($news-colors, 'light');
     }
   }
 
@@ -24,12 +24,12 @@
     .newsletter-signup {
       form {
         &::after {
-          border-color: transparent $light-blue-tinted;
+          border-color: transparent map-get($news-colors, 'base');
         }
 
         input {
           &.button {
-            background: $light-blue-tinted;
+            background: map-get($news-colors, 'base');
           }
         }
       }
@@ -40,26 +40,26 @@
   h4,
   h5,
   h6 {
-    color: $light-blue-tinted;
+    color: map-get($news-colors, 'base');
   }
 
   header {
     .description {
       a {
-        color: $dark-blue;
+        color: map-get($colors, 'dark-blue');
       }
     }
 
     .submenu {
-      background: transparentize($light-blue-tinted, .08);
+      background: transparentize(map-get($news-colors, 'base'), .08);
 
       li {
         &:first-child {
           a {
-            background-color: $light-blue-tinted;
+            background-color: map-get($news-colors, 'base');
 
             &::after {
-              border-color: transparent $light-blue-tinted;
+              border-color: transparent map-get($news-colors, 'base');
             }
           }
         }
@@ -69,36 +69,36 @@
 
   .cta-link {
     &.white-on-color {
-      background: $light-blue-tinted-darker;
+      background: map-get($news-colors, 'dark');
 
       &::after {
-        border-color: transparent $light-blue-tinted-darker;
+        border-color: transparent map-get($news-colors, 'dark');
       }
 
       &:link,
       &:visited {
-        color: $white;
+        color: map-get($colors, 'white');
       }
 
       &:hover,
       &:active {
-        color: $lime-green;
+        color: map-get($colors, 'lime-green');
       }
     }
 
     &.dark-blue-on-gray {
       &:hover {
-        border-color: $light-blue-tinted-darker;
+        border-color: map-get($news-colors, 'dark');
 
         &::before {
-          border-color: transparent $light-blue-tinted-darker;
+          border-color: transparent map-get($news-colors, 'dark');
         }
       }
 
       &.back-button {
         &:hover {
           &::before {
-            border-color: transparent $light-blue-tinted-darker;
+            border-color: transparent map-get($news-colors, 'dark');
           }
         }
       }
@@ -107,13 +107,13 @@
 
   .featured-section {
     &:hover {
-      background: $light-blue-tinted-darker;
+      background: map-get($news-colors, 'dark');
     }
   }
 
   .header-default-search-mobile {
     &::after {
-      border-color: transparent $light-blue-tinted;
+      border-color: transparent map-get($news-colors, 'base');
     }
   }
 
@@ -150,27 +150,27 @@
   }
 
   .news-archive {
-    color: $light-blue-tinted-darker;
+    color: map-get($news-colors, 'dark');
   }
 
   .post-list {
     .date {
-      color: $light-blue-tinted-darker;
+      color: map-get($news-colors, 'dark');
     }
   }
 
   .programs-listing {
-    background-color: $light-blue-tinted-darker;
+    background-color: map-get($news-colors, 'dark');
   }
 
   .related-links {
-    background: $light-blue-tinted-darker;
+    background: map-get($news-colors, 'dark');
   }
 
   .related-page-section {
     .details,
     .figure {
-      background: $light-blue-tinted-darker;
+      background: map-get($news-colors, 'dark');
     }
 
     h1,
@@ -179,18 +179,18 @@
     h4,
     h5,
     h6 {
-      color: $darkest-gray;
+      color: map-get($colors, 'darkest-gray');
     }
   }
 
   .stay-connected {
-    background: $light-blue-tinted-darker;
+    background: map-get($news-colors, 'dark');
 
     .newsletter-signup {
       input {
         &[type='email'] {
           &::placeholder {
-            color: $light-blue-tinted-darker;
+            color: map-get($news-colors, 'dark');
           }
         }
       }
@@ -201,46 +201,46 @@
     li {
       a {
         &::before {
-          border-right-color: $light-blue-tinted-darker;
+          border-right-color: map-get($news-colors, 'dark');
         }
       }
 
       &.active {
         > a {
-          background: $light-blue-tinted-darker;
-          color: $white;
+          background: map-get($news-colors, 'dark');
+          color: map-get($colors, 'white');
         }
       }
     }
 
     .home {
       &::before {
-        border-right-color: $light-blue-tinted-darker;
+        border-right-color: map-get($news-colors, 'dark');
       }
     }
   }
 
   .title-bar {
     button {
-      @include linear-gradient(bottom, $light-blue, $light-blue-tinted-darker);
+      @include linear-gradient(bottom, map-get($news-colors, 'light'), map-get($news-colors, 'dark'));
     }
   }
 
   .top-bar {
     .accordion-menu {
-      background: $light-blue;
+      background: map-get($news-colors, 'light');
     }
   }
 
   .utility-mobile-wrapper {
-    @include linear-gradient(right, $light-blue, $light-blue-tinted-darker);
+    @include linear-gradient(right, map-get($news-colors, 'light'), map-get($news-colors, 'dark'));
   }
 }
 
 .news-filters {
   label {
-    color: $dark-blue;
-    font-family: $font-family;
+    color: map-get($colors, 'dark-blue');
+    font-family: map-get($font-families, 'poppins');
     font-size: 1.25rem;
     font-weight: 600;
     letter-spacing: .05em;
@@ -262,7 +262,7 @@
   margin-left: 0;
 
   > .grid-x {
-    border-bottom: solid 2px $gray;
+    border-bottom: solid 2px map-get($colors, 'gray');
   }
 
   p {
@@ -270,16 +270,16 @@
     margin-top: .75rem;
 
     &.date {
-      color: $lightest-gray;
+      color: map-get($colors, 'lightest-gray');
       display: inline-flex;
-      font-weight: $font-weight-bold;
+      font-weight: map-get($font-weights, 'bold');
       margin: 0;
       padding-right: 10px;
       position: relative;
 
       &::after {
         @include pseudo-element;
-        background: $darkest-gray;
+        background: map-get($colors, 'darkest-gray');
         height: 100%;
         right: 0;
         top: 0;
@@ -319,7 +319,7 @@
   }
 }
 
-@media only screen and (min-width: $medium) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
   .post-list {
     .table {
       border: 0;
@@ -352,14 +352,14 @@
   }
 }
 
-@media only screen and (min-width: $mlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .banner-news {
     margin-top: -60px;
     padding-top: 0;
 
     .stay-connected,
     .featured-section {
-      box-shadow: 0 0 5px 2px rgba($black, .25);
+      box-shadow: 0 0 5px 2px rgba(map-get($colors, 'black'), .25);
     }
   }
 
@@ -372,7 +372,7 @@
 
     header {
       nav {
-        background: $white;
+        background: map-get($colors, 'white');
       }
     }
 
@@ -381,7 +381,7 @@
         > li {
           &:hover {
             > a {
-              color: $light-blue-tinted;
+              color: map-get($news-colors, 'base');
             }
           }
         }

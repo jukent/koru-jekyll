@@ -3,7 +3,7 @@
 }
 
 .header-default-search-mobile {
-  border: solid 2px $white;
+  border: solid 2px map-get($colors, 'white');
   height: 44px;
   margin: 0 auto;
   position: relative;
@@ -28,7 +28,7 @@
   }
 
   &::before {
-    @include button-arrow(transparent $white, 22px 0 22px 20px);
+    @include button-arrow(transparent map-get($colors, 'white'), 22px 0 22px 20px);
     height: 0;
     right: -22px;
     top: -2px;
@@ -36,7 +36,7 @@
   }
 
   &::after {
-    @include button-arrow(transparent $white, 20px 0 20px 18px);
+    @include button-arrow(transparent map-get($colors, 'white'), 20px 0 20px 18px);
     right: -18px;
     top: 0;
   }
@@ -45,10 +45,10 @@
     background: transparent;
     border: 0;
     box-shadow: none;
-    color: $white;
+    color: map-get($colors, 'white');
 
     &::placeholder {
-      color: $white;
+      color: map-get($colors, 'white');
     }
 
     &:focus {
@@ -69,11 +69,11 @@
   }
 }
 
-@media only screen and (min-width: $mlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .button-search {
     .fa {
-      background: $white;
-      color: $darkest-gray;
+      background: map-get($colors, 'white');
+      color: map-get($colors, 'darkest-gray');
       font-size: .9rem;
       padding: .34rem;
     }
@@ -81,15 +81,15 @@
 
   .header-default-search {
     @include flex;
-    background-color: $white;
+    background-color: map-get($colors, 'white');
     margin: 0;
     padding-left: 10px;
     width: auto;
   }
 
   .search-form {
-    border: 1px solid $light-gray;
-    box-shadow: inset 0 1px 2px rgba($black, .1);
+    border: 1px solid map-get($colors, 'light-gray');
+    box-shadow: inset 0 1px 2px rgba(map-get($colors, 'black'), .1);
     display: flex;
     width: 125px;
   }
@@ -103,7 +103,7 @@
       margin: 0;
 
       &::placeholder {
-        color: $dark-gray;
+        color: map-get($colors, 'dark-gray');
       }
     }
   }

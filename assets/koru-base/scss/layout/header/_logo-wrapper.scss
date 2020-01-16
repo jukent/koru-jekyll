@@ -36,18 +36,18 @@
 
 .logo-wrapper {
   a {
-    color: $dark-blue;
+    color: map-get($colors, 'dark-blue');
     display: block;
     outline: none;
 
     &:link,
     &:visited {
-      color: $dark-blue;
+      color: map-get($colors, 'dark-blue');
     }
 
     &:hover,
     &:active {
-      color: $dark-blue;
+      color: map-get($colors, 'dark-blue');
     }
   }
 
@@ -62,13 +62,13 @@
     h1,
     p {
       @include sentence-case;
-      color: $dark-blue;
-      font-weight: $font-weight-semi-bold;
+      color: map-get($colors, 'dark-blue');
+      font-weight: map-get($font-weights, 'semi-bold');
     }
   }
 
   .acronym-wrapper {
-    border-right: solid 3px $dark-blue;
+    border-right: solid 3px map-get($colors, 'dark-blue');
 
     h1,
     p {
@@ -78,7 +78,7 @@
 
         &::after {
           @include pseudo-element;
-          @include button-arrow(transparent $dark-blue, 9px 0 9px 9px);
+          @include button-arrow(transparent map-get($colors, 'dark-blue'), 9px 0 9px 9px);
           display: none;
           height: 0;
           right: -12px;
@@ -95,16 +95,16 @@
 }
 
 .mobile-logo {
-  background-color: $white;
+  background-color: map-get($colors, 'white');
   width: 100%;
 
   .acronym {
-    border-right: solid 2px $dark-blue;
+    border-right: solid 2px map-get($colors, 'dark-blue');
     position: relative;
 
     &::after {
       @include pseudo-element;
-      @include button-arrow(transparent $dark-blue, 9px 0 9px 12px);
+      @include button-arrow(transparent map-get($colors, 'dark-blue'), 9px 0 9px 12px);
       height: 0;
       right: -12px;
       top: 4px;
@@ -114,7 +114,7 @@
 
   .description {
     @include sentence-case;
-    color: $dark-blue;
+    color: map-get($colors, 'dark-blue');
     font-size: .7rem;
     margin-left: .7rem;
   }
@@ -126,7 +126,7 @@
   }
 }
 
-@media only screen and (min-width: $mlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .logo-wrapper {
     .acronym-definition {
       h1,
@@ -161,7 +161,7 @@
   }
 }
 
-@media only screen and (min-width: $large) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'large')) {
   .logo-wrapper {
     .acronym-definition {
       h1,
@@ -187,7 +187,7 @@
   }
 }
 
-@media only screen and (min-width: $xlarge) {
+@media only screen and (min-width: map-get($custom-breakpoints, 'xlarge')) {
   .is-stuck {
     .logo-wrapper {
       .acronym-wrapper {
@@ -206,7 +206,7 @@
     .acronym-definition {
       h1,
       p {
-        font-size: $font-size-xxsmall;
+        font-size: map-get($font-sizes, 'xxsmall');
       }
     }
   }
