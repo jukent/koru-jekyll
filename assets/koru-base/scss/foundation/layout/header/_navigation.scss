@@ -335,6 +335,7 @@ header {
       li {
         a {
           color: map-get($colors, 'darkest-gray');
+          font-size: .75rem;
           position: relative;
 
           &:hover {
@@ -422,6 +423,18 @@ header {
   }
 }
 
+@media only screen and (min-width: map-get($custom-breakpoints, 'large')) {
+  .main-nav {
+    .menu {
+      li {
+        a {
+          font-size: .9rem;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: map-get($custom-breakpoints, 'xlarge')) {
   header {
     .is-dropdown-submenu {
@@ -430,6 +443,14 @@ header {
   }
 
   .main-nav {
+    .menu {
+      li {
+        a {
+          font-size: map-get($font-sizes, 'xxsmall');
+        }
+      }
+    }
+
     .submenu {
       li {
         &:first-child {

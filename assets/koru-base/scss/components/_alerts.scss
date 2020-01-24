@@ -1,7 +1,7 @@
 .alert {
   a {
     &:link {
-      color: map-get($alert-colors, 'yellow');
+      color: map-get($alert-colors, 'warning');
     }
   }
 
@@ -17,6 +17,6 @@
 }
 
 .highlighted {
-  color: map-get($alert-colors, 'red');
+  color: map-get($alert-colors, 'alert');
   font-weight: map-get($font-weights, 'bold');
 }

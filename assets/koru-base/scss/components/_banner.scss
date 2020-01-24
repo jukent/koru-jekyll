@@ -1,14 +1,17 @@
 .banner {
+  @include banner-default-heights;
   background-color: map-get($colors, 'dark-blue');
 
   &.with-image {
+    @include banner-image-heights;
+
     h1,
     h2 {
       @include text-shadow(rgba(map-get($colors, 'black'), .5));
     }
   }
 
-  > .grid-x {
+  > div {
     height: 100%;
   }
 
@@ -21,7 +24,7 @@
 
   h2 {
     @include heading-bold;
-    @include heading-large;
+    @include heading-mlarge;
     color: map-get($colors, 'white');
     line-height: 1;
   }
@@ -39,20 +42,18 @@
   }
 }
 
-.cell {
-  &.banner {
-    @include banner-default-heights;
-
-    &.with-image {
-      @include banner-image-heights;
-    }
-  }
-}
-
 @media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .banner {
     h1 {
       @include heading-small;
+    }
+  }
+}
+
+@media only screen and (min-width: map-get($custom-breakpoints, 'xxlarge')) {
+  .banner {
+    h2 {
+      font-size: map-get($font-sizes, 'large');
     }
   }
 }

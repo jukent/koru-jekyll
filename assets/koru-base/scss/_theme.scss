@@ -43,7 +43,7 @@ article {
         &.image-download {
           a {
             color: map-get($colors, 'lime-green');
-            font-size: 13px;
+            font-size: .8125rem;
             text-decoration: none;
 
             &:hover,
@@ -59,7 +59,7 @@ article {
         }
 
         p {
-          font-size: 13px;
+          font-size: .8125rem;
           margin: 0;
 
           a {
@@ -222,19 +222,6 @@ tr {
   color: map-get($colors, 'darkest-gray');
 }
 
-.primary-content {
-  .content {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-weight: map-get($font-weights, 'bold');
-    }
-  }
-}
-
 .body-content {
   flex: 1 0 auto;
 }
@@ -243,7 +230,7 @@ tr {
   background: map-get($colors, 'dark-gray');
   content: '';
   display: block;
-  font-size: 1px;
+  font-size: .0625rem;
   height: 1px;
   line-height: 1px;
 }
@@ -251,25 +238,6 @@ tr {
 .content {
   a {
     text-decoration: underline;
-  }
-
-  h1,
-  h2 {
-    @include heading-mlarge;
-    @include heading-semi-bold;
-    color: map-get($colors, 'darkest-gray');
-  }
-
-  h3,
-  h4 {
-    @include heading-bold;
-    @include heading-xsmall;
-  }
-
-  h5,
-  h6 {
-    @include heading-semi-bold;
-    @include heading-xsmall;
   }
 
   img {
@@ -395,13 +363,6 @@ tr {
     border-bottom: 1px solid map-get($colors, 'gray');
     display: table-row;
     margin-bottom: 0;
-  }
-
-  .content {
-    h3,
-    h4 {
-      @include heading-small;
-    }
   }
 
   .featured-image {

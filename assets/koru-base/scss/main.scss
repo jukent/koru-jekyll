@@ -1,11 +1,11 @@
 // Dependencies
-@import 'settings/variables';
+@import 'variables';
 @import 'vendor';
 
 // Utilities
 @import 'util/util';
 
-// Global styles
+// Layout
 @import 'theme';
 
 // Theme colors specific to parent organization
@@ -13,31 +13,9 @@
 @import 'ncar';
 @import 'news';
 
-// Layout
-@import 'layout/layout';
-
 // Global Components
-@import 'components/global/alerts';
-@import 'components/global/cta-link';
-@import 'components/global/gdpr-compliance';
-@import 'components/global/organizational-sitemap';
-@import 'components/global/social';
-@import 'components/global/stay-connected';
-
-// Upstream Components
-@import 'components/upstream/home-hero';
-@import 'components/upstream/home-primary-cta';
-@import 'components/upstream/banner';
-@import 'components/upstream/home-happenings';
-@import 'components/upstream/related-links';
-@import 'components/upstream/sidebar-breadcrumb';
-@import 'components/upstream/featured-sections';
-@import 'components/upstream/main-content';
-@import 'components/upstream/members-details-list';
-@import 'components/upstream/offerings';
-@import 'components/upstream/post-content';
-@import 'components/upstream/programs-listing';
-@import 'components/upstream/related-page-section';
-@import 'components/upstream/related-posts';
-@import 'components/upstream/related-sections';
-@import 'components/upstream/spotlight';
+@import 'components/alerts';
+@import 'components/banner';
+@import 'components/cta-link';
+@import 'components/gdpr-compliance';
+@import 'components/social';
