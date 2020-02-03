@@ -23,14 +23,14 @@
   h4 {
     @include sentence-case;
     background: map-get($colors, 'darkest-gray');
-    bottom: -1px;
+    bottom: 0;
     color: map-get($colors, 'white');
-    font-size: map-get($font-sizes, 'xxsmall');
+    font-size: map-get($font-sizes, 'default');
     font-weight: map-get($font-weights, 'regular');
     left: 0;
-    letter-spacing: .06em;
+    letter-spacing: .05em;
     margin: 0;
-    padding-top: 10px;
+    padding-top: 14px;
     position: absolute;
     width: 100%;
 
@@ -45,8 +45,8 @@
 
   .featured-post {
     h4 {
-      @include body-large;
       color: map-get($colors, 'white');
+      font-size: map-get($font-sizes, 'large');
       font-weight: map-get($font-weights, 'semi-bold');
     }
   }
@@ -60,6 +60,22 @@
 
     .last-post {
       margin-top: 0;
+    }
+
+    .featured-post {
+      h4 {
+        font-size: map-get($font-sizes, 'xlarge');
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: map-get($custom-breakpoints, 'xlarge')) {
+  .related-posts {
+    .featured-post {
+      h4 {
+        font-size: map-get($font-sizes, 'xxlarge');
+      }
     }
   }
 }

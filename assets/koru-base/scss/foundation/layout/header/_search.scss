@@ -74,7 +74,7 @@
     .fa {
       background: map-get($colors, 'white');
       color: map-get($colors, 'darkest-gray');
-      font-size: .9rem;
+      font-size: map-get($font-sizes, 'xsmall');
       padding: .34rem;
     }
   }
@@ -98,7 +98,7 @@
     .input-group-field {
       border: 0;
       box-shadow: none;
-      font-size: .87rem;
+      font-size: map-get($font-sizes, 'xsmall');
       height: 1.55rem;
       margin: 0;
 

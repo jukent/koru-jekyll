@@ -115,7 +115,7 @@
   .description {
     @include sentence-case;
     color: map-get($colors, 'dark-blue');
-    font-size: .7rem;
+    font-size: map-get($font-sizes, 'xxxsmall');
     margin-left: .7rem;
   }
 }
@@ -135,7 +135,7 @@
       }
 
       h1 {
-        font-size: .75rem;
+        font-size: map-get($font-sizes, 'xxxsmall');
       }
     }
 
@@ -170,7 +170,7 @@
       }
 
       h1 {
-        font-size: .8rem;
+        font-size: map-get($font-sizes, 'small');
       }
     }
 
@@ -194,7 +194,7 @@
         h1 {
           a {
             &::after {
-              top: 6px;
+              top: 5px;
             }
           }
         }
@@ -206,7 +206,7 @@
     .acronym-definition {
       h1,
       p {
-        font-size: map-get($font-sizes, 'xxsmall');
+        font-size: map-get($font-sizes, 'default');
       }
     }
   }

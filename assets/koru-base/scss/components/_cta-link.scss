@@ -5,9 +5,10 @@ a {
 }
 
 .cta-link {
-  @include heading-semi-bold;
-  @include heading-xsmall;
+  @include uppercase;
   display: inline-block;
+  font-size: map-get($font-sizes, 'large');
+  font-weight: map-get($font-weights, 'semi-bold');
   line-height: 1.2;
   margin: 0;
   padding: 0;
@@ -71,7 +72,7 @@ a {
 
   &.large {
     border: 3px solid;
-    font-size: .6875rem;
+    font-size: map-get($font-sizes, 'xxxxsmall');
     height: 30px;
     padding: 6px 6px 1px 12px;
     text-decoration: none;
@@ -107,8 +108,8 @@ a {
 
   &.small {
     border: 3px solid;
-    font-size: .6875rem;
-    font-weight: map-get($font-weights, 'bold');
+    font-size: map-get($font-sizes, 'xxxxsmall');
+    //font-weight: map-get($font-weights, 'bold');
     padding: 7px 10px;
 
     &::after {
@@ -181,7 +182,7 @@ a {
 @media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .cta-link {
     &.large {
-      font-size: 1.1875rem;
+      font-size: map-get($font-sizes, 'medium');
       height: 46px;
       padding: 10px 15px 10px 30px;
 

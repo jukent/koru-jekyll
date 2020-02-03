@@ -41,7 +41,7 @@ li {
 
 .utility-parents {
   display: table;
-  font-size: 1.2rem;
+  font-size: map-get($font-sizes, 'medium');
   padding-top: 15px;
   table-layout: fixed;
   text-align: center;
@@ -124,7 +124,7 @@ li {
     background: none;
 
     li {
-      font-size: .69rem;
+      font-size: map-get($font-sizes, 'xxxxsmall');
       padding: 0;
     }
   }
@@ -173,7 +173,7 @@ li {
 @media only screen and (min-width: map-get($custom-breakpoints, 'large')) {
   .utility-menu {
     li {
-      font-size: .75rem;
+      font-size: map-get($font-sizes, 'xxxsmall');
       line-height: 1.7rem;
     }
   }
@@ -194,7 +194,7 @@ li {
 
   .utility-menu {
     li {
-      font-size: .87rem;
+      font-size: map-get($font-sizes, 'xsmall');
       font-weight: map-get($font-weights, 'regular');
     }
   }

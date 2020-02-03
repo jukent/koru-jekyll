@@ -40,8 +40,6 @@
       }
 
       p {
-        font-size: 1.1rem;
-        line-height: $paragraph-lineheight;
         text-align: left;
       }
 
@@ -71,7 +69,7 @@
       }
 
       .more {
-        font-size: 1.8rem;
+        font-size: map-get($font-sizes, 'xxlarge');
         margin-bottom: 1rem;
         margin-top: 1rem;
 
@@ -83,7 +81,7 @@
           border-right: 0;
           color: map-get($colors, 'white');
           display: flex;
-          font-size: .8rem;
+          font-size: map-get($font-sizes, 'xxsmall');
           line-height: 1rem;
           padding: .3rem .7rem;
         }
@@ -118,7 +116,7 @@
     &.banner {
       &.with-image {
         p {
-          font-size: 1.5rem;
+          font-size: map-get($font-sizes, 'xlarge');
         }
       }
     }
@@ -136,7 +134,7 @@
         }
 
         p {
-          font-size: 1.8rem;
+          font-size: map-get($font-sizes, 'xxlarge');
         }
       }
     }

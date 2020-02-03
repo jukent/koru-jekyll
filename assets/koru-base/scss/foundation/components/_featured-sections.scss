@@ -14,13 +14,13 @@
 
   h4 {
     color: map-get($colors, 'lime-green');
-    font-size: .65rem;
+    font-size: map-get($font-sizes, 'xxxxsmall');
     margin-bottom: 0;
   }
 
   i {
     color: map-get($colors, 'white');
-    font-size: map-get($font-sizes, 'medium');
+    font-size: map-get($font-sizes, 'xxxxlarge');
   }
 }
 
@@ -29,11 +29,11 @@
     min-height: 13.4375rem;
 
     h4 {
-      font-size: map-get($font-sizes, 'xxsmall');
+      font-size: map-get($font-sizes, 'default');
     }
 
     i {
-      font-size: 4rem;
+      font-size: map-get($font-sizes, 'xxxxxxxlarge');
     }
   }
 }

@@ -8,7 +8,7 @@
 @media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .pagination {
     li {
-      font-size: map-get($font-sizes, 'xxsmall');
+      font-size: map-get($font-sizes, 'default');
     }
   }
 }

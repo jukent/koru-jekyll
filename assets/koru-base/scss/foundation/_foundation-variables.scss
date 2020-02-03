@@ -30,6 +30,7 @@ $accordionmenu-arrow-color: map-get($colors, 'white');
 $dropdownmenu-arrows: false;
 $dropdownmenu-background: none;
 $dropdown-menu-item-color-active: map-get($colors, 'black');
+
 $accordionmenu-arrows: false;
 $menu-icon-spacing: .5rem;
 
@@ -39,6 +40,8 @@ $pagination-item-background-current: none;
 $pagination-item-color-current: #262526;
 
 $body-antialiased: false;
+
+$header-font-family: map-get($font-families, 'default');
 
 $print-hrefs: false;
 $print-transparent-backgrounds: false;

@@ -16,16 +16,14 @@
   position: relative;
 
   h4 {
-    @include heading-semi-bold;
-    @include heading-xsmall;
     color: map-get($colors, 'lime-green');
+    font-size: map-get($font-sizes, 'large');
     margin-bottom: 0;
   }
 
   h5 {
-    @include heading-mlarge;
-    @include heading-semi-bold;
     color: map-get($colors, 'white');
+    font-size: map-get($font-sizes, 'xxlarge');
   }
 
   h4,
@@ -39,6 +37,14 @@
   }
 }
 
+@media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
+  .spotlight {
+    h5 {
+      font-size: map-get($font-sizes, 'xxxxlarge');
+    }
+  }
+}
+
 @media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .spotlight-wrapper {
     margin-bottom: 3rem;
@@ -46,5 +52,9 @@
 
   .spotlight {
     height: 100%;
+
+    h5 {
+      font-size: map-get($font-sizes, 'xxxxxxlarge');
+    }
   }
 }

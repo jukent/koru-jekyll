@@ -132,7 +132,7 @@
   .logo-wrapper {
     .acronym-definition {
       h1 {
-        font-size: 1.2rem;
+        font-size: map-get($font-sizes, 'medium');
       }
     }
   }
@@ -145,7 +145,7 @@
     }
 
     .description {
-      font-size: 1.2rem;
+      font-size: map-get($font-sizes, 'medium');
     }
   }
 
@@ -240,8 +240,7 @@
 .news-filters {
   label {
     color: map-get($colors, 'dark-blue');
-    font-family: map-get($font-families, 'poppins');
-    font-size: 1.25rem;
+    font-size: map-get($font-sizes, 'large');
     font-weight: 600;
     letter-spacing: .05em;
     line-height: 1.2;
@@ -290,7 +289,7 @@
 
   .article-details {
     @include uppercase;
-    font-size: .875rem;
+    font-size: map-get($font-sizes, 'xsmall');
 
     ul {
       display: inline-flex;
@@ -312,8 +311,8 @@
 
   .description {
     h3 {
-      @include heading-semi-bold;
-      @include heading-xsmall;
+      font-size: map-get($font-sizes, 'large');
+      font-weight: map-get($font-weights, 'semi-bold');
       margin-bottom: .75rem;
     }
   }

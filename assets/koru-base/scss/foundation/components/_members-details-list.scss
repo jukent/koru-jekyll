@@ -11,14 +11,17 @@
   }
 
   dt {
-    @include heading-semi-bold;
-    @include heading-xsmall;
-    font-size: .6875rem;
+    font-size: map-get($font-sizes, 'xxxxsmall');
+    font-weight: map-get($font-weights, 'semi-bold');
     margin-bottom: .25rem;
   }
 
   h3 {
-    font-size: map-get($font-sizes, 'xxsmall');
+    color: map-get($colors, 'darkest-gray');
+  }
+
+  h4 {
+    font-size: map-get($font-sizes, 'default');
     margin-bottom: .5rem;
     margin-top: .35rem;
   }
@@ -27,7 +30,7 @@
     border-left: solid .125rem map-get($default-colors, 'light');
 
     p {
-      font-size: .875rem;
+      font-size: map-get($font-sizes, 'xsmall');
       margin: 0;
     }
   }
@@ -38,8 +41,8 @@
     }
 
     ul {
-      font-size: map-get($font-sizes, 'xxsmall');
       list-style-type: disc;
+      margin-bottom: 0;
       margin-top: 0;
 
       a {
@@ -68,7 +71,7 @@
 @media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .members-details-list {
     dt {
-      font-size: .8125rem;
+      font-size: map-get($font-sizes, 'xxsmall');
     }
   }
 }

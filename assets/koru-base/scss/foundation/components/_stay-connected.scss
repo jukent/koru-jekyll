@@ -30,7 +30,7 @@
 
   .social {
     .cell {
-      font-size: 1.8rem;
+      font-size: map-get($font-sizes, 'xxlarge');
 
       a {
         &:link,

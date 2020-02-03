@@ -84,14 +84,14 @@
               padding-left: 70px;
 
               i {
-                font-size: .65rem;
+                font-size: map-get($font-sizes, 'xxxxsmall');
                 left: 45px;
-                padding-top: 9px;
+                padding-top: 10px;
               }
 
               &:hover {
                 i {
-                  font-size: 1.1rem;
+                  font-size: map-get($font-sizes, 'default');
                   left: 42px;
                   padding-top: 6px;
                 }
@@ -110,18 +110,6 @@
                   i {
                     left: 66px;
                   }
-                }
-              }
-            }
-
-            &.active {
-              > a > i {
-                font-size: 1.1rem;
-                left: 42px;
-                padding-top: 6px;
-
-                &::before {
-                  content: '\f10c';
                 }
               }
             }

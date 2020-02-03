@@ -6,6 +6,14 @@
     color: map-get($colors, 'lime-green');
   }
 
+  h4 {
+    @include sentence-case;
+    font-size: map-get($font-sizes, 'large');
+    font-weight: map-get($font-weights, 'bold');
+    letter-spacing: .05em;
+    margin-bottom: .25em;
+  }
+
   p {
     color: map-get($colors, 'white');
   }
@@ -15,20 +23,18 @@
       margin-top: 8px;
     }
 
-    h4 {
-      @include body-large;
-      @include sentence-case;
-      font-weight: map-get($font-weights, 'bold');
-      letter-spacing: .02em;
-      margin-bottom: .25em;
-    }
-
     p {
-      font-size: .875rem;
+      font-size: map-get($font-sizes, 'xsmall');
       font-weight: map-get($font-weights, 'semi-bold');
       letter-spacing: .05em;
       line-height: 1.7;
       margin: 0;
+    }
+  }
+
+  @media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
+    h4 {
+      font-size: map-get($font-sizes, 'xlarge');
     }
   }
 
@@ -39,12 +45,8 @@
   }
 
   @media only screen and (min-width: map-get($custom-breakpoints, 'xlarge')) {
-    > .cell {
-      margin-top: 0;
-    }
-
-    p {
-      font-size: 1.8rem;
+    h4 {
+      font-size: map-get($font-sizes, 'xxlarge');
     }
   }
 }

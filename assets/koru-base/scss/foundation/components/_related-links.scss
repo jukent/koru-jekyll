@@ -9,16 +9,16 @@
   h4,
   h5,
   h6 {
-    @include heading-semi-bold;
-    @include heading-xsmall;
     color: map-get($colors, 'lime-green');
+    font-size: map-get($font-sizes, 'large');
+    font-weight: map-get($font-weights, 'semi-bold');
     margin-bottom: .75rem;
     margin-top: 0;
   }
 
   li {
     border-bottom: solid 1px map-get($colors, 'darkest-gray');
-    font-family: map-get($font-families, 'poppins');
+    font-family: map-get($font-families, 'default'); //icomoon override
 
     &:last-child {
       border: 0;
@@ -58,9 +58,11 @@
       }
 
       cite {
-        font-size: .87rem;
+        @include uppercase;
+        font-size: map-get($font-sizes, 'xsmall');
         font-style: normal;
         font-weight: map-get($font-weights, 'regular');
+        line-height: 1.2;
         padding: .5rem 0;
       }
     }

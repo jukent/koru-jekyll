@@ -57,7 +57,7 @@
         @include xy-cell(4, $breakpoint: 'large');
 
         i {
-          font-size: 4rem;
+          font-size: map-get($font-sizes, 'xxxxxxxlarge');
         }
       }
 

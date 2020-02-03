@@ -2,7 +2,10 @@
 @import 'variables';
 
 // Utilities
-@import 'util/util';
+@import 'mixins';
+
+// Typography
+@import 'typography/typography';
 
 // Layout
 @import 'theme';
@@ -18,3 +21,4 @@
 @import 'components/cta-link';
 @import 'components/gdpr-compliance';
 @import 'components/social';
+@import 'components/table';

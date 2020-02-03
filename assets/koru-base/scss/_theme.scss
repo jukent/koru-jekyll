@@ -28,67 +28,10 @@ a {
   }
 }
 
-article {
-  &.content {
-    figure {
-      @include button-arrow(map-get($colors, 'darkest-gray'), 10px);
-      margin: 1.5rem 0;
-
-      figcaption {
-        background: map-get($colors, 'darkest-gray');
-        color: map-get($colors, 'white');
-        padding: 10px 10px 1px;
-        right: 0;
-
-        &.image-download {
-          a {
-            color: map-get($colors, 'lime-green');
-            font-size: .8125rem;
-            text-decoration: none;
-
-            &:hover,
-            &:active {
-              color: map-get($colors, 'lime-green');
-              text-decoration: underline;
-            }
-          }
-
-          p {
-            margin-top: 10px;
-          }
-        }
-
-        p {
-          font-size: .8125rem;
-          margin: 0;
-
-          a {
-            color: map-get($colors, 'lime-green');
-
-            &:link,
-            &:visited {
-              color: map-get($colors, 'lime-green');
-            }
-
-            &:hover,
-            &:active {
-              color: map-get($colors, 'lime-green');
-              text-decoration: underline;
-            }
-          }
-        }
-      }
-
-      img {
-        margin-bottom: 0;
-        width: 100%;
-      }
-    }
-  }
-}
-
 body {
   background-color: map-get($colors, 'light-gray');
+  font-family: map-get($font-families, 'default');
+  font-size: map-get($font-sizes, 'default');
   overflow-x: hidden;
 }
 
@@ -112,40 +55,11 @@ cite {
   }
 }
 
-footer,
-.banner {
-  ol,
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-h3,
-h4,
-h5,
-h6 {
-  color: map-get($default-colors, 'light');
-}
-
-header,
-footer {
-  flex-shrink: 0;
-}
-
 hr {
   background: map-get($colors, 'darkest-gray');
   border: 0;
   color: map-get($colors, 'darkest-gray');
   height: 1px;
-}
-
-ol,
-ul {
-  margin-bottom: 0;
-  margin-left: 2.5rem;
-  margin-top: 0;
 }
 
 pre {
@@ -154,67 +68,6 @@ pre {
     overflow-x: auto;
     padding: 1rem 4rem 1rem 1rem;
   }
-}
-
-table {
-  border: 0;
-
-  ul {
-    list-style-type: none;
-
-    li {
-      list-style-type: none;
-      margin-bottom: 10px;
-    }
-  }
-}
-
-tbody {
-  tr {
-    &:nth-child(even) {
-      background: rgba(map-get($colors, 'white'), .5);
-      border-bottom: 3px solid map-get($colors, 'white');
-    }
-
-    &:last-child {
-      border-bottom: 0;
-    }
-  }
-}
-
-tbody,
-thead {
-  background: none;
-  border: 0;
-}
-
-td {
-  border-bottom: 1px solid map-get($colors, 'white');
-  display: block;
-  font-size: .8rem;
-  text-align: right;
-
-  &::before {
-    @include uppercase;
-    content: attr(data-label);
-    float: left;
-    font-weight: map-get($font-weights, 'bold');
-  }
-
-  &:last-child {
-    border-bottom: 0;
-  }
-}
-
-thead {
-  display: none;
-}
-
-tr {
-  background: rgba(map-get($colors, 'white'), .5);
-  border-bottom: 3px solid map-get($colors, 'white');
-  display: block;
-  margin-bottom: .625rem;
 }
 
 ::selection {
@@ -226,18 +79,64 @@ tr {
   flex: 1 0 auto;
 }
 
-.bottom-edge {
-  background: map-get($colors, 'dark-gray');
-  content: '';
-  display: block;
-  font-size: .0625rem;
-  height: 1px;
-  line-height: 1px;
-}
-
 .content {
   a {
     text-decoration: underline;
+  }
+
+  figure {
+    @include button-arrow(map-get($colors, 'darkest-gray'), 10px);
+    margin: 1.5rem 0;
+
+    figcaption {
+      background: map-get($colors, 'darkest-gray');
+      color: map-get($colors, 'white');
+      padding: 10px 10px 1px;
+      right: 0;
+
+      &.image-download {
+        a {
+          color: map-get($colors, 'lime-green');
+          font-size: map-get($font-sizes, 'xxsmall');
+          text-decoration: none;
+
+          &:hover,
+          &:active {
+            color: map-get($colors, 'lime-green');
+            text-decoration: underline;
+          }
+        }
+
+        p {
+          margin-top: 10px;
+        }
+      }
+
+      p {
+        font-size: map-get($font-sizes, 'xxsmall');
+        margin: 0;
+
+        a {
+          color: map-get($colors, 'lime-green');
+
+          &:link,
+          &:visited {
+            color: map-get($colors, 'lime-green');
+          }
+
+          &:hover,
+          &:active {
+            color: map-get($colors, 'lime-green');
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    img {
+      margin-bottom: 0;
+      width: 100%;
+    }
   }
 
   img {
@@ -263,106 +162,11 @@ tr {
   padding: 40px 0;
 }
 
-@media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
-  table {
-    border-collapse: collapse;
-    margin-bottom: 1.5rem;
-
-    ul {
-      margin-bottom: 0;
-      margin-top: 0;
-    }
-  }
-
-  td,
-  th {
-    padding: 10px;
-    vertical-align: top;
-  }
-
-  thead,
-  tbody {
-    tr {
-      &:nth-child(even) {
-        background-color: lighten(map-get($colors, 'light-gray'), 75%);
-      }
-    }
-  }
-
-  tr {
-    &:last-child {
-      border-bottom: 0;
-    }
-  }
-}
-
 @media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
-  article {
-    &.content {
-      figure {
-        border-width: 14px;
-      }
+  .content {
+    figure {
+      border-width: 14px;
     }
-  }
-
-  table {
-    ul {
-      list-style-type: disc;
-
-      li {
-        list-style-type: inherit;
-        margin-bottom: 0;
-      }
-
-      ul {
-        ul {
-          list-style-type: square;
-        }
-      }
-    }
-  }
-
-  tbody {
-    tr {
-      &:nth-child(even) {
-        border-bottom: 1px solid map-get($colors, 'gray');
-      }
-    }
-  }
-
-  td {
-    border: 0;
-    display: table-cell;
-    font-size: map-get($font-sizes, 'xxsmall');
-    text-align: left;
-
-    &::before {
-      display: none;
-    }
-  }
-
-  thead {
-    display: table-header-group;
-  }
-
-  thead,
-  tfoot {
-    tr {
-      background: rgba(map-get($colors, 'white'), .5);
-    }
-  }
-
-  th {
-    @include heading-semi-bold;
-    @include heading-xsmall;
-    padding: 15px 10px 10px;
-    text-align: left;
-  }
-
-  tr {
-    border-bottom: 1px solid map-get($colors, 'gray');
-    display: table-row;
-    margin-bottom: 0;
   }
 
   .featured-image {
@@ -373,7 +177,7 @@ tr {
 @media only screen and (min-width: map-get($custom-breakpoints, 'xlarge')) {
   .content {
     p {
-      font-size: 1.2rem;
+      font-size: map-get($font-sizes, 'medium');
     }
   }
 }

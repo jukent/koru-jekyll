@@ -21,9 +21,8 @@
   .group-listing {
     .panel-title {
       h3 {
-        @include heading-semi-bold;
-        @include heading-xsmall;
         color: map-get($colors, 'dark-blue');
+        font-size: map-get($font-sizes, 'large');
       }
     }
   }
@@ -33,8 +32,7 @@
     transition: 200ms ease-in-out;
 
     h4 {
-      @include heading-semi-bold;
-      @include heading-xsmall;
+      font-size: map-get($font-sizes, 'large');
 
       a {
         color: map-get($default-colors, 'light');
@@ -95,7 +93,7 @@
     .group-listing {
       .panel-title {
         h3 {
-          font-size: map-get($font-sizes, 'small');
+          font-size: map-get($font-sizes, 'xxlarge');
         }
       }
     }
@@ -105,8 +103,6 @@
 @media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
   .offerings {
     .offering {
-      font-size: .9rem;
-
       .post-image {
         float: left;
         width: 45%;
@@ -135,7 +131,6 @@
 @media only screen and (min-width: map-get($custom-breakpoints, 'large')) {
   .offerings {
     .offering {
-      font-size: map-get($font-sizes, 'xxsmall');
       min-height: 550px;
 
       .post-image,

@@ -1,13 +1,13 @@
 .related-page-section {
   h3 {
-    @include body-large;
     @include sentence-case;
+    font-size: map-get($font-sizes, 'large');
     font-weight: map-get($font-weights, 'semi-bold');
     margin-top: 0;
   }
 
   p {
-    font-size: .9em;
+    font-size: map-get($font-sizes, 'small');
     line-height: 1.5;
   }
 
@@ -41,12 +41,16 @@
 
 @media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .related-page-section {
+    h3 {
+      font-size: map-get($font-sizes, 'xlarge');
+    }
+
     img {
       min-height: 400px;
     }
 
     p {
-      font-size: map-get($font-sizes, 'xxsmall');
+      font-size: map-get($font-sizes, 'default');
     }
 
     .figure {
@@ -69,6 +73,12 @@
       img {
         max-height: 400px;
       }
+    }
+  }
+
+  .related-page-section {
+    h3 {
+      font-size: map-get($font-sizes, 'xxlarge');
     }
   }
 }

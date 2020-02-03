@@ -10,10 +10,8 @@
   }
 
   h4 {
-    @include heading-semi-bold;
-    @include heading-xsmall;
     color: map-get($colors, 'lime-green');
-    font-size: .65rem;
+    font-size: map-get($font-sizes, 'xxxxsmall');
     margin-bottom: 0;
     margin-top: 0;
   }
@@ -21,7 +19,7 @@
   i {
     color: map-get($colors, 'white');
     display: block;
-    font-size: map-get($font-sizes, 'mlarge');
+    font-size: map-get($font-sizes, 'xxxxxxlarge');
     margin-bottom: 20px;
   }
 
@@ -40,11 +38,11 @@
 @media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
   .related-sections {
     h4 {
-      font-size: 1rem;
+      font-size: map-get($font-sizes, 'default');
     }
 
     i {
-      font-size: 4rem;
+      font-size: map-get($font-sizes, 'xxxxxxxlarge');
     }
   }
 }
