@@ -281,6 +281,10 @@ header {
 .title-bar {
   background: map-get($colors, 'white');
   padding: 0;
+
+  button {
+    background: map-get($default-colors, 'light');
+  }
 }
 
 .top-bar {

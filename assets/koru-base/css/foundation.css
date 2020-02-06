@@ -8393,6 +8393,8 @@ header {
 .title-bar {
   background: #fff;
   padding: 0; }
+  .title-bar button {
+    background: #7f7c81; }
 
 .top-bar > .grid-x {
   width: 100%; }
