@@ -8,19 +8,15 @@
   }
 
   a {
-    color: map-get($news-colors, 'base');
+    color: map-get($news-colors, 'dark');
 
     &:hover,
     &:active {
-      color: map-get($news-colors, 'light');
+      color: map-get($news-colors, 'base');
     }
   }
 
   footer {
-    .footer-menu-tertiary {
-      text-align: center;
-    }
-
     .newsletter-signup {
       form {
         &::after {
@@ -51,15 +47,15 @@
     }
 
     .submenu {
-      background: transparentize(map-get($news-colors, 'base'), .08);
+      background: transparentize(map-get($news-colors, 'dark'), .08);
 
       li {
         &:first-child {
           a {
-            background-color: map-get($news-colors, 'base');
+            background-color: map-get($news-colors, 'dark');
 
             &::after {
-              border-color: transparent map-get($news-colors, 'base');
+              border-color: transparent map-get($news-colors, 'dark');
             }
           }
         }
@@ -67,53 +63,47 @@
     }
   }
 
+  .banner {
+    background-color: map-get($news-colors, 'base');
+  }
+
   .cta-link {
-    &.white-on-color {
-      background: map-get($news-colors, 'dark');
-
-      &::after {
-        border-color: transparent map-get($news-colors, 'dark');
-      }
-
-      &:link,
-      &:visited {
-        color: map-get($colors, 'white');
-      }
-
-      &:hover,
-      &:active {
-        color: map-get($colors, 'lime-green');
-      }
-    }
-
     &.dark-blue-on-gray {
       &:hover {
-        border-color: map-get($news-colors, 'dark');
+        border-color: map-get($news-colors, 'base');
 
         &::before {
-          border-color: transparent map-get($news-colors, 'dark');
+          border-color: transparent map-get($news-colors, 'base');
         }
       }
 
       &.back-button {
         &:hover {
           &::before {
-            border-color: transparent map-get($news-colors, 'dark');
+            border-color: transparent map-get($news-colors, 'base');
           }
         }
+      }
+    }
+
+    &.white-on-color {
+      background: map-get($news-colors, 'base');
+
+      &::after {
+        border-color: transparent map-get($news-colors, 'base');
       }
     }
   }
 
   .featured-section {
     &:hover {
-      background: map-get($news-colors, 'dark');
+      @include radial-gradient(map-get($news-colors, 'base'), map-get($news-colors, 'dark'));
     }
   }
 
   .header-default-search-mobile {
     &::after {
-      border-color: transparent map-get($news-colors, 'base');
+      border-color: transparent map-get($news-colors, 'dark');
     }
   }
 
@@ -137,6 +127,23 @@
     }
   }
 
+  .members-details-list {
+    .item-details {
+      border-color: transparent map-get($news-colors, 'base');
+    }
+
+    .item-titles {
+      ul {
+        a {
+          &:hover,
+          &:active {
+            color: map-get($news-colors, 'base');
+          }
+        }
+      }
+    }
+  }
+
   .mobile-logo {
     .acronym {
       &::after {
@@ -153,6 +160,32 @@
     color: map-get($news-colors, 'dark');
   }
 
+  .offerings {
+    .offering {
+      h4 {
+        a {
+          color: map-get($news-colors, 'dark');
+
+          &:link,
+          &:visited {
+            color: map-get($news-colors, 'dark');
+          }
+
+          &:hover,
+          &:active {
+            color: map-get($colors, 'dark-blue');
+          }
+        }
+      }
+
+      .post-image {
+        &::before {
+          border-color: map-get($news-colors, 'base');
+        }
+      }
+    }
+  }
+
   .post-list {
     .date {
       color: map-get($news-colors, 'dark');
@@ -160,38 +193,37 @@
   }
 
   .programs-listing {
-    background-color: map-get($news-colors, 'dark');
+    background-color: map-get($news-colors, 'base');
   }
 
   .related-links {
-    background: map-get($news-colors, 'dark');
+    @include radial-gradient(map-get($news-colors, 'base'), map-get($news-colors, 'dark'));
   }
 
   .related-page-section {
     .details,
     .figure {
-      background: map-get($news-colors, 'dark');
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: map-get($colors, 'darkest-gray');
+      background: map-get($news-colors, 'base');
     }
   }
 
-  .stay-connected {
-    background: map-get($news-colors, 'dark');
+  .related-posts {
+    a {
+      &:hover {
+        border-color: map-get($news-colors, 'dark');
 
-    .newsletter-signup {
-      input {
-        &[type='email'] {
-          &::placeholder {
-            color: map-get($news-colors, 'dark');
-          }
+        h4 {
+          background: map-get($news-colors, 'dark');
+        }
+      }
+    }
+  }
+
+  .related-sections {
+    a {
+      &:hover {
+        .figure {
+          @include radial-gradient(map-get($news-colors, 'base'), map-get($news-colors, 'dark'));
         }
       }
     }
@@ -208,7 +240,6 @@
       &.active {
         > a {
           background: map-get($news-colors, 'dark');
-          color: map-get($colors, 'white');
         }
       }
     }
@@ -220,20 +251,34 @@
     }
   }
 
+  .stay-connected {
+    background: map-get($news-colors, 'base');
+
+    .newsletter-signup {
+      input {
+        &[type='email'] {
+          &::placeholder {
+            color: map-get($news-colors, 'dark');
+          }
+        }
+      }
+    }
+  }
+
   .title-bar {
     button {
-      @include linear-gradient(bottom, map-get($news-colors, 'light'), map-get($news-colors, 'dark'));
+      @include linear-gradient(bottom, map-get($news-colors, 'base'), map-get($news-colors, 'dark'));
     }
   }
 
   .top-bar {
     .accordion-menu {
-      background: map-get($news-colors, 'light');
+      background: map-get($news-colors, 'base');
     }
   }
 
   .utility-mobile-wrapper {
-    @include linear-gradient(right, map-get($news-colors, 'light'), map-get($news-colors, 'dark'));
+    @include linear-gradient(right, map-get($news-colors, 'base'), map-get($news-colors, 'dark'));
   }
 }
 
@@ -369,17 +414,11 @@
       }
     }
 
-    header {
-      nav {
-        background: map-get($colors, 'white');
-      }
-    }
-
     .main-nav {
-      > .menu {
-        > li {
-          &:hover {
-            > a {
+      .menu {
+        li {
+          a {
+            &:hover {
               color: map-get($news-colors, 'base');
             }
           }

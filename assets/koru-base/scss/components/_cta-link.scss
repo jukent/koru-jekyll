@@ -1,5 +1,5 @@
 a {
-  .cta-link {
+  &.cta-link {
     text-decoration: none;
   }
 }
@@ -75,7 +75,6 @@ a {
     font-size: map-get($font-sizes, 'xxxxsmall');
     height: 30px;
     padding: 6px 6px 1px 12px;
-    text-decoration: none;
 
     &::after {
       @include button-arrow(transparent map-get($colors, 'light-gray'), 12px 0 12px 12px);
@@ -92,7 +91,7 @@ a {
     &.back-button {
       margin-left: 2rem;
       padding-left: 15px;
-      padding-right: 30px;
+      padding-right: 15px;
 
       &::after {
         border-width: 12px 12px 12px 0;
@@ -109,11 +108,10 @@ a {
   &.small {
     border: 3px solid;
     font-size: map-get($font-sizes, 'xxxxsmall');
-    //font-weight: map-get($font-weights, 'bold');
     padding: 7px 10px;
 
     &::after {
-      @include button-arrow(transparent map-get($colors, 'cool-gray'), 13px 0 13px 11px);
+      @include button-arrow(transparent map-get($colors, 'light-gray'), 13px 0 13px 11px);
       right: -11px;
       top: 0;
     }
@@ -156,7 +154,7 @@ a {
   }
 
   &.white-on-color {
-    background: map-get($colors, 'white');
+    background: map-get($colors, 'dark-gray');
     border-color: map-get($colors, 'white');
 
     &::before {
@@ -164,17 +162,17 @@ a {
     }
 
     &::after {
-      border-color: transparent map-get($colors, 'white');
+      border-color: transparent map-get($colors, 'dark-gray');
     }
 
     &:link,
     &:visited {
-      color: map-get($default-colors, 'dark');
+      color: map-get($colors, 'white');
     }
 
     &:hover,
     &:active {
-      color: map-get($default-colors, 'dark');
+      color: map-get($colors, 'lime-green');
     }
   }
 }
@@ -184,11 +182,11 @@ a {
     &.large {
       font-size: map-get($font-sizes, 'medium');
       height: 46px;
-      padding: 10px 15px 10px 30px;
+      padding: 10px 15px;
 
       &::after {
         border-width: 20px 0 20px 18px;
-        right: -17px;
+        right: -18px;
       }
 
       &::before {

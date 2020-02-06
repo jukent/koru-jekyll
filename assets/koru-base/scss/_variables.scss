@@ -72,6 +72,24 @@ $header-styles: (
   )
 );
 
+$test-colors: (
+  'default': (
+    'base': #007fa3,
+    'dark': #1a658f,
+    'light': #00c1d5,
+  ),
+  'ucar': (
+    'base': #28938d,
+    'dark': #00797c,
+    'light': #40c1ac
+  ),
+  'news': (
+    'base': #0092cb,
+    'dark': #0085ca,
+    'light': #5bc2e7
+  )
+);
+
 // Colors
 $colors: (
   'white': #fff,
