@@ -7323,6 +7323,9 @@ hr {
   color: #332f21;
   height: 1px; }
 
+iframe {
+  border: none; }
+
 pre code {
   display: block;
   overflow-x: auto;
