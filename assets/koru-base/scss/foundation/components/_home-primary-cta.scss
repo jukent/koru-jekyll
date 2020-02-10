@@ -9,7 +9,7 @@
   .cell {
     &.featured-section {
       @include xy-cell(4);
-      box-shadow: 0 0 5px 2px rgba(map-get($colors, 'black'), .25);
+      box-shadow: 0 0 5px 2px rgba(map-get($base-colors, 'black'), .25);
       min-height: 105px;
     }
 

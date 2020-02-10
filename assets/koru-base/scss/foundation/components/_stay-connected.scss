@@ -1,12 +1,20 @@
 .stay-connected {
   padding: 20px;
 
-  > .grid-x {
+  > div {
     height: 100%;
   }
 
+  a {
+    &:hover {
+      i {
+        color: map-get($base-colors, 'dark-blue');
+      }
+    }
+  }
+
   h5 {
-    color: map-get($colors, 'white');
+    color: map-get($base-colors, 'white');
   }
 
   .newsletter-signup {
@@ -17,39 +25,18 @@
       margin: 0;
 
       &::after {
-        border-color: transparent map-get($colors, 'dark-blue');
+        border-color: transparent map-get($base-colors, 'dark-blue');
       }
     }
 
     input {
       &.button {
-        background: map-get($colors, 'dark-blue');
+        background: map-get($base-colors, 'dark-blue');
       }
     }
   }
 
-  .social {
-    .cell {
-      font-size: map-get($font-sizes, 'xxlarge');
-
-      a {
-        &:link,
-        &:visited {
-          color: map-get($colors, 'white');
-        }
-
-        &:hover {
-          i {
-            color: map-get($colors, 'dark-blue');
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
-  .stay-connected {
+  @media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
     h5 {
       margin-top: 0;
     }
@@ -58,10 +45,8 @@
       width: 100%;
     }
   }
-}
 
-@media only screen and (min-width: map-get($custom-breakpoints, 'xlarge')) {
-  .stay-connected {
+  @media only screen and (min-width: map-get($custom-breakpoints, 'xlarge')) {
     .newsletter-signup {
       width: 75%;
     }

@@ -14,8 +14,8 @@ table {
 tbody {
   tr {
     &:nth-child(even) {
-      background: rgba(map-get($colors, 'white'), .5);
-      border-bottom: 3px solid map-get($colors, 'white');
+      background: rgba(map-get($base-colors, 'white'), .5);
+      border-bottom: 3px solid map-get($base-colors, 'white');
     }
 
     &:last-child {
@@ -31,7 +31,7 @@ thead {
 }
 
 td {
-  border-bottom: 1px solid map-get($colors, 'white');
+  border-bottom: 1px solid map-get($base-colors, 'white');
   display: block;
   font-size: map-get($font-sizes, 'xxsmall');
   text-align: right;
@@ -53,8 +53,8 @@ thead {
 }
 
 tr {
-  background: rgba(map-get($colors, 'white'), .5);
-  border-bottom: 3px solid map-get($colors, 'white');
+  background: rgba(map-get($base-colors, 'white'), .5);
+  border-bottom: 3px solid map-get($base-colors, 'white');
   display: block;
   margin-bottom: .625rem;
 }
@@ -80,7 +80,7 @@ tr {
   tbody {
     tr {
       &:nth-child(even) {
-        background-color: lighten(map-get($colors, 'light-gray'), 75%);
+        background-color: lighten(map-get($base-colors, 'lightest-gray'), 75%);
       }
     }
   }
@@ -113,7 +113,7 @@ tr {
   tbody {
     tr {
       &:nth-child(even) {
-        border-bottom: 1px solid map-get($colors, 'gray');
+        border-bottom: 1px solid map-get($base-colors, 'light-gray');
       }
     }
   }
@@ -136,7 +136,7 @@ tr {
   thead,
   tfoot {
     tr {
-      background: rgba(map-get($colors, 'white'), .5);
+      background: rgba(map-get($base-colors, 'white'), .5);
     }
   }
 
@@ -148,7 +148,7 @@ tr {
   }
 
   tr {
-    border-bottom: 1px solid map-get($colors, 'gray');
+    border-bottom: 1px solid map-get($base-colors, 'light-gray');
     display: table-row;
     margin-bottom: 0;
   }

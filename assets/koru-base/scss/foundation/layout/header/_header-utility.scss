@@ -5,7 +5,7 @@ li {
         &::after {
           border: inset 12px;
           border-bottom-width: 0;
-          border-color: map-get($colors, 'white') transparent transparent;
+          border-color: map-get($base-colors, 'white') transparent transparent;
           border-top-style: solid;
           content: '';
           display: block;
@@ -25,7 +25,7 @@ li {
 }
 
 .utility-menu {
-  background: map-get($gradient-colors, 'dark-gray');
+  background: map-get($base-colors, 'dark-gray');
   padding: 15px 20px;
 
   li {
@@ -35,7 +35,6 @@ li {
 }
 
 .utility-mobile-wrapper {
-  background: map-get($default-colors, 'light');
   padding-top: 15px;
 }
 
@@ -53,12 +52,12 @@ li {
 
     &:link,
     &:visited {
-      color: map-get($colors, 'white');
+      color: map-get($base-colors, 'white');
     }
 
     &:hover,
     &:active {
-      color: map-get($colors, 'darkest-gray');
+      color: map-get($base-colors, 'darkest-gray');
     }
   }
 
@@ -77,13 +76,13 @@ li {
 .utility-wrapper {
   li {
     a {
-      color: map-get($colors, 'white');
+      color: map-get($base-colors, 'white');
       font-weight: map-get($font-weights, 'semi-bold');
       padding: 5px 0;
 
       &:hover,
       &:active {
-        color: map-get($colors, 'white');
+        color: map-get($base-colors, 'white');
       }
     }
   }
@@ -113,10 +112,10 @@ li {
   }
 
   .top-bar {
-    background-color: map-get($colors, 'white');
+    background-color: map-get($base-colors, 'white');
 
     ul {
-      background-color: map-get($colors, 'white');
+      background-color: map-get($base-colors, 'white');
     }
   }
 
@@ -152,13 +151,13 @@ li {
       line-height: 1.6rem;
 
       a {
-        color: map-get($colors, 'dark-gray');
+        color: map-get($base-colors, 'gray');
         font-weight: map-get($font-weights, 'regular');
         padding: 0 10px;
 
         &:active,
         &:hover {
-          color: map-get($colors, 'gray');
+          color: map-get($base-colors, 'light-gray');
         }
       }
     }

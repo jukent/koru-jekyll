@@ -7,11 +7,11 @@ strong {
 blockquote {
   @include body-large;
   border: 0;
-  color: map-get($colors, 'darkest-gray');
+  color: map-get($base-colors, 'darkest-gray');
 
   p {
     @include body-large;
-    color: map-get($colors, 'darkest-gray');
+    color: map-get($base-colors, 'darkest-gray');
   }
 }
 
@@ -34,13 +34,6 @@ h5,
 h6 {
   @include uppercase;
   line-height: 1.05;
-}
-
-h3,
-h4,
-h5,
-h6 {
-  color: map-get($default-colors, 'light');
 }
 
 h1,

@@ -36,18 +36,18 @@
 
 .logo-wrapper {
   a {
-    color: map-get($colors, 'dark-blue');
+    color: map-get($base-colors, 'dark-blue');
     display: block;
     outline: none;
 
     &:link,
     &:visited {
-      color: map-get($colors, 'dark-blue');
+      color: map-get($base-colors, 'dark-blue');
     }
 
     &:hover,
     &:active {
-      color: map-get($colors, 'dark-blue');
+      color: map-get($base-colors, 'dark-blue');
     }
   }
 
@@ -62,13 +62,13 @@
     h1,
     p {
       @include sentence-case;
-      color: map-get($colors, 'dark-blue');
+      color: map-get($base-colors, 'dark-blue');
       font-weight: map-get($font-weights, 'semi-bold');
     }
   }
 
   .acronym-wrapper {
-    border-right: solid 3px map-get($colors, 'dark-blue');
+    border-right: solid 3px map-get($base-colors, 'dark-blue');
 
     h1,
     p {
@@ -78,7 +78,7 @@
 
         &::after {
           @include pseudo-element;
-          @include button-arrow(transparent map-get($colors, 'dark-blue'), 9px 0 9px 9px);
+          @include button-arrow(transparent map-get($base-colors, 'dark-blue'), 9px 0 9px 9px);
           display: none;
           height: 0;
           right: -12px;
@@ -95,16 +95,16 @@
 }
 
 .mobile-logo {
-  background-color: map-get($colors, 'white');
+  background-color: map-get($base-colors, 'white');
   width: 100%;
 
   .acronym {
-    border-right: solid 2px map-get($colors, 'dark-blue');
+    border-right: solid 2px map-get($base-colors, 'dark-blue');
     position: relative;
 
     &::after {
       @include pseudo-element;
-      @include button-arrow(transparent map-get($colors, 'dark-blue'), 9px 0 9px 12px);
+      @include button-arrow(transparent map-get($base-colors, 'dark-blue'), 9px 0 9px 12px);
       height: 0;
       right: -12px;
       top: 4px;
@@ -114,7 +114,7 @@
 
   .description {
     @include sentence-case;
-    color: map-get($colors, 'dark-blue');
+    color: map-get($base-colors, 'dark-blue');
     font-size: map-get($font-sizes, 'xxxsmall');
     margin-left: .7rem;
   }

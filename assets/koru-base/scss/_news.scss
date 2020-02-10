@@ -7,137 +7,12 @@
     }
   }
 
-  a {
-    color: map-get($news-colors, 'dark');
-
-    &:hover,
-    &:active {
-      color: map-get($news-colors, 'base');
-    }
-  }
-
-  footer {
-    .newsletter-signup {
-      form {
-        &::after {
-          border-color: transparent map-get($news-colors, 'base');
-        }
-
-        input {
-          &.button {
-            background: map-get($news-colors, 'base');
-          }
-        }
-      }
-    }
-  }
-
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: map-get($news-colors, 'base');
-  }
-
-  header {
-    .description {
-      a {
-        color: map-get($colors, 'dark-blue');
-      }
-    }
-
-    .submenu {
-      background: transparentize(map-get($news-colors, 'dark'), .08);
-
-      li {
-        &:first-child {
-          a {
-            background-color: map-get($news-colors, 'dark');
-
-            &::after {
-              border-color: transparent map-get($news-colors, 'dark');
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .banner {
-    background-color: map-get($news-colors, 'base');
-  }
-
-  .cta-link {
-    &.dark-blue-on-gray {
-      &:hover {
-        border-color: map-get($news-colors, 'base');
-
-        &::before {
-          border-color: transparent map-get($news-colors, 'base');
-        }
-      }
-
-      &.back-button {
-        &:hover {
-          &::before {
-            border-color: transparent map-get($news-colors, 'base');
-          }
-        }
-      }
-    }
-
-    &.white-on-color {
-      background: map-get($news-colors, 'base');
-
-      &::after {
-        border-color: transparent map-get($news-colors, 'base');
-      }
-    }
-  }
-
-  .featured-section {
-    &:hover {
-      @include radial-gradient(map-get($news-colors, 'base'), map-get($news-colors, 'dark'));
-    }
-  }
-
-  .header-default-search-mobile {
-    &::after {
-      border-color: transparent map-get($news-colors, 'dark');
-    }
-  }
-
   .is-stuck {
     .logo-wrapper {
       .acronym-wrapper {
         h1 {
           &:first-child {
             padding-bottom: 5px;
-          }
-        }
-      }
-    }
-  }
-
-  .logo-wrapper {
-    .acronym-definition {
-      h1 {
-        font-size: map-get($font-sizes, 'medium');
-      }
-    }
-  }
-
-  .members-details-list {
-    .item-details {
-      border-color: transparent map-get($news-colors, 'base');
-    }
-
-    .item-titles {
-      ul {
-        a {
-          &:hover,
-          &:active {
-            color: map-get($news-colors, 'base');
           }
         }
       }
@@ -155,136 +30,11 @@
       font-size: map-get($font-sizes, 'medium');
     }
   }
-
-  .news-archive {
-    color: map-get($news-colors, 'dark');
-  }
-
-  .offerings {
-    .offering {
-      h4 {
-        a {
-          color: map-get($news-colors, 'dark');
-
-          &:link,
-          &:visited {
-            color: map-get($news-colors, 'dark');
-          }
-
-          &:hover,
-          &:active {
-            color: map-get($colors, 'dark-blue');
-          }
-        }
-      }
-
-      .post-image {
-        &::before {
-          border-color: map-get($news-colors, 'base');
-        }
-      }
-    }
-  }
-
-  .post-list {
-    .date {
-      color: map-get($news-colors, 'dark');
-    }
-  }
-
-  .programs-listing {
-    background-color: map-get($news-colors, 'base');
-  }
-
-  .related-links {
-    @include radial-gradient(map-get($news-colors, 'base'), map-get($news-colors, 'dark'));
-  }
-
-  .related-page-section {
-    .details,
-    .figure {
-      background: map-get($news-colors, 'base');
-    }
-  }
-
-  .related-posts {
-    a {
-      &:hover {
-        border-color: map-get($news-colors, 'dark');
-
-        h4 {
-          background: map-get($news-colors, 'dark');
-        }
-      }
-    }
-  }
-
-  .related-sections {
-    a {
-      &:hover {
-        .figure {
-          @include radial-gradient(map-get($news-colors, 'base'), map-get($news-colors, 'dark'));
-        }
-      }
-    }
-  }
-
-  .sidebar-breadcrumb {
-    li {
-      a {
-        &::before {
-          border-right-color: map-get($news-colors, 'dark');
-        }
-      }
-
-      &.active {
-        > a {
-          background: map-get($news-colors, 'dark');
-        }
-      }
-    }
-
-    .home {
-      &::before {
-        border-right-color: map-get($news-colors, 'dark');
-      }
-    }
-  }
-
-  .stay-connected {
-    background: map-get($news-colors, 'base');
-
-    .newsletter-signup {
-      input {
-        &[type='email'] {
-          &::placeholder {
-            color: map-get($news-colors, 'dark');
-          }
-        }
-      }
-    }
-  }
-
-  .title-bar {
-    button {
-      @include linear-gradient(bottom, map-get($news-colors, 'base'), map-get($news-colors, 'dark'));
-    }
-  }
-
-  .top-bar {
-    .accordion-menu {
-      background: map-get($news-colors, 'base');
-    }
-  }
-
-  .utility-mobile-wrapper {
-    @include linear-gradient(right, map-get($news-colors, 'base'), map-get($news-colors, 'dark'));
-  }
 }
 
 .news-filters {
   label {
-    color: map-get($colors, 'dark-blue');
+    color: map-get($base-colors, 'dark-blue');
     font-size: map-get($font-sizes, 'large');
     font-weight: 600;
     letter-spacing: .05em;
@@ -306,7 +56,7 @@
   margin-left: 0;
 
   > .grid-x {
-    border-bottom: solid 2px map-get($colors, 'gray');
+    border-bottom: solid 2px map-get($base-colors, 'light-gray');
   }
 
   p {
@@ -314,7 +64,6 @@
     margin-top: .75rem;
 
     &.date {
-      color: map-get($colors, 'lightest-gray');
       display: inline-flex;
       font-weight: map-get($font-weights, 'bold');
       margin: 0;
@@ -323,7 +72,7 @@
 
       &::after {
         @include pseudo-element;
-        background: map-get($colors, 'darkest-gray');
+        background: map-get($base-colors, 'darkest-gray');
         height: 100%;
         right: 0;
         top: 0;
@@ -403,29 +152,8 @@
 
     .stay-connected,
     .featured-section {
-      box-shadow: 0 0 5px 2px rgba(map-get($colors, 'black'), .25);
+      box-shadow: 0 0 5px 2px rgba(map-get($base-colors, 'black'), .25);
     }
-  }
-
-  .news {
-    footer {
-      .footer-menu-tertiary {
-        margin-top: 0;
-      }
-    }
-
-    .main-nav {
-      .menu {
-        li {
-          a {
-            &:hover {
-              color: map-get($news-colors, 'base');
-            }
-          }
-        }
-      }
-    }
-
   }
 
   .post-list {

@@ -1,5 +1,5 @@
 footer {
-  background: map-get($colors, 'darkest-gray');
+  background: map-get($base-colors, 'darkest-gray');
   flex-shrink: 0;
   font-size: map-get($font-sizes, 'xsmall');
 
@@ -15,17 +15,17 @@ footer {
   }
 
   p {
-    color: map-get($colors, 'light-gray');
+    color: map-get($base-colors, 'lightest-gray');
   }
 }
 
 .footer-sponsor {
-  background: map-get($colors, 'dark-gray');
+  background: map-get($base-colors, 'gray');
   padding-bottom: 30px;
   padding-top: 30px;
 
   p {
-    color: map-get($colors, 'white');
+    color: map-get($base-colors, 'white');
     margin: 0;
   }
 
@@ -46,7 +46,7 @@ footer {
     margin-bottom: 5px;
 
     a {
-      color: map-get($colors, 'light-gray');
+      color: map-get($base-colors, 'lightest-gray');
 
       i {
         padding-right: 5px;
@@ -54,12 +54,12 @@ footer {
 
       &:link,
       &:visited {
-        color: map-get($colors, 'light-gray');
+        color: map-get($base-colors, 'lightest-gray');
       }
 
       &:hover,
       &:active {
-        color: map-get($colors, 'lime-green');
+        color: map-get($base-colors, 'lime-green');
       }
     }
   }
@@ -71,16 +71,16 @@ footer {
   li {
     a {
       @include uppercase;
-      color: map-get($colors, 'light-gray');
+      color: map-get($base-colors, 'lightest-gray');
 
       &:link,
       &:visited {
-        color: map-get($colors, 'light-gray');
+        color: map-get($base-colors, 'lightest-gray');
       }
 
       &:hover,
       &:active {
-        color: map-get($colors, 'lime-green');
+        color: map-get($base-colors, 'lime-green');
       }
     }
 
@@ -96,7 +96,7 @@ footer {
   small,
   li,
   ul {
-    color: map-get($colors, 'light-gray');
+    color: map-get($base-colors, 'lightest-gray');
   }
 }
 
@@ -108,7 +108,8 @@ footer {
 
     &::after {
       @include pseudo-element;
-      @include button-arrow (transparent map-get($default-colors, 'light'), 15px 0 15px 15px);
+      border-style: solid;
+      border-width: 15px 0 15px 15px;
       height: 0;
       right: -15px;
       top: 0;
@@ -118,7 +119,7 @@ footer {
 
   input {
     &[type='email'] {
-      background: map-get($colors, 'white');
+      background: map-get($base-colors, 'white');
       border: 0;
       height: 30px;
       margin: 0;
@@ -128,9 +129,8 @@ footer {
 
     &[type='submit'] {
       @include uppercase;
-      background: map-get($default-colors, 'light');
       border: 0;
-      color: map-get($colors, 'white');
+      color: map-get($base-colors, 'white');
       cursor: pointer;
       font-size: map-get($font-sizes, 'xxxsmall');
       font-weight: 700;
@@ -160,8 +160,7 @@ footer {
 
 // foundation medium begins
 @media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
-  footer,
-  .footer-sponsor {
+  footer {
     font-size: map-get($font-sizes, 'small');
 
     .grid-x {
@@ -203,8 +202,7 @@ footer {
 
 // foundation large begins
 @media only screen and (min-width: map-get($custom-breakpoints, 'large')) {
-  footer,
-  .footer-sponsor {
+  footer {
     font-size: map-get($font-sizes, 'default');
   }
 

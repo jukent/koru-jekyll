@@ -72,8 +72,9 @@ $header-styles: (
   )
 );
 
-$test-colors: (
-  'default': (
+// Colors
+$theme-colors: (
+  'base': (
     'base': #007fa3,
     'dark': #1a658f,
     'light': #00c1d5,
@@ -90,54 +91,23 @@ $test-colors: (
   )
 );
 
-// Colors
-$colors: (
+$base-colors: (
   'white': #fff,
-  'lightest-gray': #ced9e5,
-  'light-gray': #dbe2e9,
-  'cool-gray': #eff2f5,
-  'medium-gray': #97999b,
-  'gray': #63666a,
-  'dark-gray': #414143,
+  'lightest-gray': #dbe2e9,
+  'light-gray': #63666a,
+  'gray': #414143,
+  'dark-gray': #323133,
   'darkest-gray': #332f21,
   'black': #000,
-  'cool-blue': #0779bf,
+  'cool-blue': #0779bf, // used for GDPR Compliance
   'dark-blue': #012169,
   'lime-green': #bfd600,
 );
 
-$alert-colors: (
+$notification-colors: (
   'primary': #d8e8ff,
   'secondary': #767676,
   'success': #3adb76,
   'warning': #ffff32,
   'alert': #e50000,
-);
-
-$gradient-colors: (
-  'dark-gray': #323133,
-  'light-gray': #454648
-);
-
-$default-colors: (
-  'dark': #58565a,
-  'light': #7f7c81
-);
-
-$ncar-colors: (
-  'base': #007fa3,
-  'dark': #1a658f,
-  'light': #00c1d5
-);
-
-$ucar-colors: (
-  'base': #28938d,
-  'dark': #00797c,
-  'light': #40c1ac
-);
-
-$news-colors: (
-  'base': #0092cb,
-  'dark': #0085ca,
-  'light': #5bc2e7
 );

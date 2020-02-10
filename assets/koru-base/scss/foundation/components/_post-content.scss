@@ -4,26 +4,26 @@
     margin-bottom: 0;
 
     a {
-      color: map-get($colors, 'lime-green');
+      color: map-get($base-colors, 'lime-green');
     }
   }
 
   a {
     .term {
-      color: map-get($colors, 'lime-green');
+      color: map-get($base-colors, 'lime-green');
     }
 
     &:link,
     &:visited {
       .term {
-        color: map-get($colors, 'lime-green');
+        color: map-get($base-colors, 'lime-green');
       }
     }
 
     &:hover,
     &:active {
       .term {
-        color: map-get($colors, 'lime-green');
+        color: map-get($base-colors, 'lime-green');
         text-decoration: underline;
       }
     }
@@ -56,7 +56,7 @@
 
 .post {
   h1 {
-    color: map-get($colors, 'darkest-gray');
+    color: map-get($base-colors, 'darkest-gray');
     margin-bottom: 0;
   }
 

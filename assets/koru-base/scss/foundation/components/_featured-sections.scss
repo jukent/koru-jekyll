@@ -1,25 +1,23 @@
 .featured-section {
   @include flex;
-  @include radial-gradient(map-get($gradient-colors, 'light-gray'), map-get($gradient-colors, 'dark-gray'));
+  @include radial-gradient(map-get($base-colors, 'gray'), map-get($base-colors, 'dark-gray'));
   justify-content: center;
   min-height: 10.3125rem;
 
   &:hover {
-    background: map-get($default-colors, 'light');
-
     h4 {
-      color: map-get($colors, 'white');
+      color: map-get($base-colors, 'white');
     }
   }
 
   h4 {
-    color: map-get($colors, 'lime-green');
+    color: map-get($base-colors, 'lime-green');
     font-size: map-get($font-sizes, 'xxxxsmall');
     margin-bottom: 0;
   }
 
   i {
-    color: map-get($colors, 'white');
+    color: map-get($base-colors, 'white');
     font-size: map-get($font-sizes, 'xxxxlarge');
   }
 }

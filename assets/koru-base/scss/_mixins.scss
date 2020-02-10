@@ -3,22 +3,21 @@
   position: absolute;
 }
 
-@mixin radial-gradient ($inside, $outside) {
+@mixin radial-gradient($inside, $outside) {
   background: $inside radial-gradient(ellipse at center, $inside 0%, $outside 100%);
 }
 
-@mixin linear-gradient ($position, $top, $bottom) {
+@mixin linear-gradient($position, $top, $bottom) {
   background: $top linear-gradient(to $position, $top 0%, $bottom 100%);
 }
 
-@mixin button-arrow ($color, $width) {
+@mixin button-arrow($color, $width) {
   border-color: $color;
   border-style: solid;
   border-width: $width;
 }
 
-// typography mixins
-@mixin fontawesome {
+@mixin font-awesome {
   display: inline-block;
   font: normal normal normal 14px/1 map-get($font-families, 'icons');
   font-size: inherit;
@@ -36,7 +35,7 @@
   text-transform: none;
 }
 
-@mixin text-shadow ($color) {
+@mixin text-shadow($color) {
   text-shadow: 0 0 1.875rem $color;
 }
 
@@ -53,12 +52,22 @@
   @each $breakpoint, $size in $custom-breakpoints {
     @if $point == $breakpoint {
       @if $breakpoint == 'small' {
-        @content
+        @content;
       } @else {
         @media only screen and (min-width: #{$size}) {
-          @content
+          @content;
         }
       }
     }
   }
-};
+}
+
+@mixin themes($theme) {
+  @if $theme != 'base' {
+    .#{$theme} {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}

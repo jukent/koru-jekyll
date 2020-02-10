@@ -1,12 +1,12 @@
 .alert {
   a {
     &:link {
-      color: map-get($alert-colors, 'warning');
+      color: map-get($notification-colors, 'warning');
     }
   }
 
   .close-button {
-    color: map-get($colors, 'white');
+    color: map-get($base-colors, 'white');
   }
 }
 
@@ -17,6 +17,6 @@
 }
 
 .highlighted {
-  color: map-get($alert-colors, 'alert');
+  color: map-get($notification-colors, 'alert');
   font-weight: map-get($font-weights, 'bold');
 }

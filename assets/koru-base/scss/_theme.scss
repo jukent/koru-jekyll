@@ -6,21 +6,7 @@
 }
 
 a {
-  color: map-get($default-colors, 'light');
   text-decoration: none;
-
-  &:link {
-    color: map-get($default-colors, 'light');
-  }
-
-  &:visited {
-    color: map-get($gradient-colors, 'dark-gray');
-  }
-
-  &:hover,
-  &:active {
-    color: map-get($default-colors, 'dark');
-  }
 
   img {
     border: 0;
@@ -29,7 +15,7 @@ a {
 }
 
 body {
-  background-color: map-get($colors, 'light-gray');
+  background-color: map-get($base-colors, 'lightest-gray');
   font-family: map-get($font-families, 'default');
   font-size: map-get($font-sizes, 'default');
   overflow-x: hidden;
@@ -37,7 +23,7 @@ body {
 
 body,
 html {
-  color: map-get($colors, 'darkest-gray');
+  color: map-get($base-colors, 'darkest-gray');
   height: 100%;
 }
 
@@ -48,7 +34,7 @@ figure {
 }
 
 cite {
-  color: map-get($colors, 'white');
+  color: map-get($base-colors, 'white');
 
   &::before {
     display: none;
@@ -56,9 +42,9 @@ cite {
 }
 
 hr {
-  background: map-get($colors, 'darkest-gray');
+  background: map-get($base-colors, 'darkest-gray');
   border: 0;
-  color: map-get($colors, 'darkest-gray');
+  color: map-get($base-colors, 'darkest-gray');
   height: 1px;
 }
 
@@ -71,8 +57,8 @@ pre {
 }
 
 ::selection {
-  background: map-get($colors, 'lime-green');
-  color: map-get($colors, 'darkest-gray');
+  background: map-get($base-colors, 'lime-green');
+  color: map-get($base-colors, 'darkest-gray');
 }
 
 .body-content {
@@ -85,24 +71,24 @@ pre {
   }
 
   figure {
-    @include button-arrow(map-get($colors, 'darkest-gray'), 10px);
+    @include button-arrow(map-get($base-colors, 'darkest-gray'), 10px);
     margin: 1.5rem 0;
 
     figcaption {
-      background: map-get($colors, 'darkest-gray');
-      color: map-get($colors, 'white');
+      background: map-get($base-colors, 'darkest-gray');
+      color: map-get($base-colors, 'white');
       padding: 10px 10px 1px;
       right: 0;
 
       &.image-download {
         a {
-          color: map-get($colors, 'lime-green');
+          color: map-get($base-colors, 'lime-green');
           font-size: map-get($font-sizes, 'xxsmall');
           text-decoration: none;
 
           &:hover,
           &:active {
-            color: map-get($colors, 'lime-green');
+            color: map-get($base-colors, 'lime-green');
             text-decoration: underline;
           }
         }
@@ -117,16 +103,16 @@ pre {
         margin: 0;
 
         a {
-          color: map-get($colors, 'lime-green');
+          color: map-get($base-colors, 'lime-green');
 
           &:link,
           &:visited {
-            color: map-get($colors, 'lime-green');
+            color: map-get($base-colors, 'lime-green');
           }
 
           &:hover,
           &:active {
-            color: map-get($colors, 'lime-green');
+            color: map-get($base-colors, 'lime-green');
             text-decoration: underline;
           }
         }

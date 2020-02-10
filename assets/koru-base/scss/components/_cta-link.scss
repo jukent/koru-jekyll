@@ -6,18 +6,21 @@ a {
 
 .cta-link {
   @include uppercase;
+  border: 3px solid map-get($base-colors, 'dark-blue') ;
+  color: map-get($base-colors, 'dark-blue');
   display: inline-block;
-  font-size: map-get($font-sizes, 'large');
+  font-size: map-get($font-sizes, 'xxxxsmall');
   font-weight: map-get($font-weights, 'semi-bold');
   line-height: 1.2;
   margin: 0;
-  padding: 0;
+  padding: 7px 10px;
   position: relative;
   transition: 200ms ease-in-out;
 
   &::after,
   &::before {
     @include pseudo-element;
+    border-style: solid;
     height: 0;
     right: -18px;
     top: 0;
@@ -25,160 +28,73 @@ a {
     width: 0;
   }
 
-  &.dark-blue-on-gray {
-    border-color: map-get($colors, 'dark-blue');
-    color: map-get($colors, 'dark-blue');
-
-    &:hover {
-      border-color: map-get($default-colors, 'dark');
-
-      &::before {
-        border-color: transparent map-get($default-colors, 'dark');
-      }
-    }
-
-    &:link,
-    &:visited,
-    &:hover,
-    &:active {
-      color: map-get($colors, 'dark-blue');
-    }
-
-    &::after {
-      border-color: transparent map-get($colors, 'cool-gray');
-    }
-
-    &::before {
-      border-color: transparent map-get($colors, 'dark-blue');
-    }
-
-    // for the back button
-    &.back-button {
-      &::after {
-        border-color: transparent map-get($colors, 'light-gray');
-      }
-
-      &::before {
-        border-color: transparent map-get($colors, 'dark-blue');
-      }
-
-      &:hover {
-        &::before {
-          border-color: transparent map-get($default-colors, 'dark');
-        }
-      }
-    }
+  &::after {
+    border-color: transparent map-get($base-colors, 'lightest-gray');
+    border-width: 13px 0 13px 13px;
+    right: -13px;
   }
 
-  &.large {
-    border: 3px solid;
-    font-size: map-get($font-sizes, 'xxxxsmall');
-    height: 30px;
-    padding: 6px 6px 1px 12px;
-
-    &::after {
-      @include button-arrow(transparent map-get($colors, 'light-gray'), 12px 0 12px 12px);
-      right: -12px;
-    }
-
-    &::before {
-      @include button-arrow(transparent map-get($colors, 'dark-blue'), 14px 0 14px 14px);
-      right: -17px;
-      top: -2px;
-    }
-
-    // for the back button, only used with dark-blue-on-gray class
-    &.back-button {
-      margin-left: 2rem;
-      padding-left: 15px;
-      padding-right: 15px;
-
-      &::after {
-        border-width: 12px 12px 12px 0;
-        left: -12px;
-      }
-
-      &::before {
-        border-width: 14px 14px 14px 0;
-        left: -16px;
-      }
-    }
+  &::before {
+    border-color: transparent map-get($base-colors, 'dark-blue');
+    border-width: 15px 0 15px 15px;
+    right: -18px;
+    top: -2px;
   }
 
-  &.small {
-    border: 3px solid;
-    font-size: map-get($font-sizes, 'xxxxsmall');
-    padding: 7px 10px;
+  &:link,
+  &:visited,
+  &:active {
+    color: map-get($base-colors, 'dark-blue');
+  }
+
+  &.back-button {
+    margin-left: 2rem;
 
     &::after {
-      @include button-arrow(transparent map-get($colors, 'light-gray'), 13px 0 13px 11px);
-      right: -11px;
-      top: 0;
+      border-width: 13px 13px 13px 0;
+      left: -13px;
     }
 
     &::before {
-      @include button-arrow(transparent map-get($colors, 'dark-blue'), 14px 0 14px 14px);
-      right: -17px;
-      top: -1px;
-      width: 0;
+      border-width: 15px 15px 15px 0;
+      left: -18px;
     }
   }
 
   &.lime-green-on-gray {
-    background: map-get($gradient-colors, 'light-gray');
-    border-color: map-get($colors, 'white');
-    color: map-get($colors, 'white');
-
-    &:hover {
-      border-color: map-get($colors, 'lime-green');
-
-      &::before {
-        border-color: transparent map-get($colors, 'lime-green');
-      }
-    }
+    background: map-get($base-colors, 'gray');
+    border-color: map-get($base-colors, 'white');
 
     &:link,
     &:visited,
     &:hover,
     &:active {
-      color: map-get($colors, 'white');
+      color: map-get($base-colors, 'white');
     }
 
     &::before {
-      border-color: transparent map-get($colors, 'white');
+      border-color: transparent map-get($base-colors, 'white');
     }
 
     &::after {
-      border-color: transparent map-get($gradient-colors, 'light-gray');
+      border-color: transparent map-get($base-colors, 'gray');
     }
   }
 
   &.white-on-color {
-    background: map-get($colors, 'dark-gray');
-    border-color: map-get($colors, 'white');
+    border-color: map-get($base-colors, 'white');
 
     &::before {
-      border-color: transparent map-get($colors, 'white');
-    }
-
-    &::after {
-      border-color: transparent map-get($colors, 'dark-gray');
+      border-color: transparent map-get($base-colors, 'white');
     }
 
     &:link,
     &:visited {
-      color: map-get($colors, 'white');
-    }
-
-    &:hover,
-    &:active {
-      color: map-get($colors, 'lime-green');
+      color: map-get($base-colors, 'white');
     }
   }
-}
 
-@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
-  .cta-link {
+  @media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
     &.large {
       font-size: map-get($font-sizes, 'medium');
       height: 46px;
@@ -195,6 +111,8 @@ a {
       }
 
       &.back-button {
+        margin-left: 2.2rem;
+
         &::after {
           border-width: 20px 18px 20px 0;
           left: -18px;

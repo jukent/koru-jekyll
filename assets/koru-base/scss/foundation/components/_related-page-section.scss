@@ -22,7 +22,6 @@
   }
 
   .details {
-    background: map-get($colors, 'darkest-gray');
     padding: 15px 20px;
 
     h1,
@@ -31,11 +30,11 @@
     h4,
     h5,
     h6 {
-      color: map-get($colors, 'darkest-gray');
+      color: map-get($base-colors, 'darkest-gray');
     }
 
     p {
-      color: map-get($colors, 'white');
+      color: map-get($base-colors, 'white');
     }
   }
 }

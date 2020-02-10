@@ -1,5 +1,6 @@
 .home-happenings {
   .related-links {
+    background: transparent;
     box-shadow: unset;
 
     ul {
@@ -18,7 +19,7 @@
       h4,
       h5,
       h6 {
-        color: map-get($colors, 'darkest-gray');
+        color: map-get($base-colors, 'darkest-gray');
       }
     }
   }
@@ -34,8 +35,8 @@
 
   .publications,
   .news {
-    @include linear-gradient(right, map-get($gradient-colors, 'dark-gray'), map-get($gradient-colors, 'light-gray'));
-    box-shadow: -.3125rem -.3125rem .75rem -.25rem rgba(map-get($gradient-colors, 'light-gray'), .56);
+    @include linear-gradient(right, map-get($base-colors, 'dark-gray'), map-get($base-colors, 'gray'));
+    box-shadow: -.3125rem -.3125rem .75rem -.25rem rgba(map-get($base-colors, 'gray'), .56);
     padding: 1.25rem;
   }
 }

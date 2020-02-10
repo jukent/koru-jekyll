@@ -4,14 +4,14 @@
     padding-left: 1.875rem;
 
     .article-details {
-      @include radial-gradient(map-get($gradient-colors, 'light-gray'), map-get($gradient-colors, 'dark-gray'));
-      box-shadow: -5px -5px 24px -4px rgba(map-get($gradient-colors, 'light-gray'), .56);
+      @include radial-gradient(map-get($base-colors, 'gray'), map-get($base-colors, 'dark-gray'));
+      box-shadow: -5px -5px 24px -4px rgba(map-get($base-colors, 'gray'), .56);
       padding: 1.5rem;
 
       h5,
       h6,
       p {
-        color: map-get($colors, 'white');
+        color: map-get($base-colors, 'white');
       }
     }
   }

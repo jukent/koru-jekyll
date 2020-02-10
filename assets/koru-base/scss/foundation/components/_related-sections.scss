@@ -1,30 +1,24 @@
 .related-sections {
   a {
     height: 190px;
-
-    &:hover {
-      .figure {
-        background: map-get($default-colors, 'light');
-      }
-    }
   }
 
   h4 {
-    color: map-get($colors, 'lime-green');
+    color: map-get($base-colors, 'lime-green');
     font-size: map-get($font-sizes, 'xxxxsmall');
     margin-bottom: 0;
     margin-top: 0;
   }
 
   i {
-    color: map-get($colors, 'white');
+    color: map-get($base-colors, 'white');
     display: block;
     font-size: map-get($font-sizes, 'xxxxxxlarge');
     margin-bottom: 20px;
   }
 
   .figure {
-    @include radial-gradient(map-get($gradient-colors, 'light-gray'), map-get($gradient-colors, 'dark-gray'));
+    @include radial-gradient(map-get($base-colors, 'gray'), map-get($base-colors, 'dark-gray'));
     @include flex;
     justify-content: center;
     padding: 20px;
@@ -51,12 +45,12 @@
   .related-sections {
     .figcaption {
       @include flex;
-      background: map-get($colors, 'white');
+      background: map-get($base-colors, 'white');
       justify-content: center;
       padding: 10px;
 
       .excerpt {
-        color: map-get($colors, 'darkest-gray');
+        color: map-get($base-colors, 'darkest-gray');
       }
 
       p {

@@ -1,9 +1,7 @@
 .programs-listing {
-  background: map-get($default-colors, 'light');
-
   h3,
   h4 {
-    color: map-get($colors, 'lime-green');
+    color: map-get($base-colors, 'lime-green');
   }
 
   h4 {
@@ -15,12 +13,12 @@
   }
 
   p {
-    color: map-get($colors, 'white');
+    color: map-get($base-colors, 'white');
   }
 
   .program-listing {
     .cta-link {
-      margin-top: 8px;
+      margin-top: 1.5rem;
     }
 
     p {

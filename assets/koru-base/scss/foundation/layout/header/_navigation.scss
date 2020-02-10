@@ -1,11 +1,11 @@
 header {
-  background-color: map-get($colors, 'white');
+  background-color: map-get($base-colors, 'white');
   flex-shrink: 0;
 
   button {
     &.fa,
     .fa {
-      color: map-get($colors, 'white');
+      color: map-get($base-colors, 'white');
     }
 
     &.fa {
@@ -37,13 +37,21 @@ header {
 
         &:hover,
         &:active {
-          color: map-get($colors, 'darkest-gray');
+          color: map-get($base-colors, 'darkest-gray');
         }
       }
 
       i {
         font-size: map-get($font-sizes, 'xlarge');
         line-height: .5;
+      }
+    }
+  }
+
+  .mobile-logo {
+    .description {
+      a {
+        color: map-get($base-colors, 'dark-blue');
       }
     }
   }
@@ -82,8 +90,8 @@ header {
 }
 
 .is-stuck {
-  background: map-get($colors, 'white');
-  box-shadow: 0 8px 6px -6px rgba(map-get($colors, 'black'), .1);
+  background: map-get($base-colors, 'white');
+  box-shadow: 0 8px 6px -6px rgba(map-get($base-colors, 'black'), .1);
   width: 100%;
 }
 
@@ -98,10 +106,10 @@ header {
       &.is-accordion-submenu-parent {
         &[aria-expanded='true'] {
           > a {
-            color: map-get($colors, 'lime-green');
+            color: map-get($base-colors, 'lime-green');
 
             &::after {
-              border-color: map-get($colors, 'lime-green') transparent transparent;
+              border-color: map-get($base-colors, 'lime-green') transparent transparent;
               top: 12px;
             }
           }
@@ -113,21 +121,12 @@ header {
   .menu {
     li {
       a {
-        color: map-get($colors, 'white');
-
-        &:hover {
-          color: map-get($colors, 'darkest-gray');
-        }
-
-        &:active {
-          color: map-get($colors, 'darkest-gray');
-        }
+        color: map-get($base-colors, 'white');
       }
     }
   }
 
   .submenu {
-    background: map-get($default-colors, 'dark');
     border: 0;
     padding: 25px;
 
@@ -137,9 +136,9 @@ header {
 
         a {
           @include flex-align(center);
-          border: 2px solid map-get($colors, 'white');
+          border: 2px solid map-get($base-colors, 'white');
           border-right: 0;
-          color: map-get($colors, 'white');
+          color: map-get($base-colors, 'white');
           font-size: map-get($font-sizes, 'large');
           font-weight: map-get($font-weights, 'semi-bold');
           height: 44px;
@@ -153,7 +152,6 @@ header {
           &::before,
           &::after {
             @include pseudo-element;
-            @include button-arrow(transparent map-get($colors, 'white'), 20px 0 20px 19px);
             height: 0;
             margin-top: 0;
             right: -18px;
@@ -162,15 +160,20 @@ header {
             width: 0;
           }
 
+          &::after {
+            border-style: solid;
+            border-width: 20px 0 20px 19px;
+          }
+
           &::before {
             @include flex;
-            @include button-arrow(transparent map-get($colors, 'white'), 22px 0 22px 22px);
+            @include button-arrow(transparent map-get($base-colors, 'white'), 22px 0 22px 22px);
             left: 100%;
             top: -2px;
           }
 
           &:hover {
-            color: map-get($colors, 'lime-green');
+            color: map-get($base-colors, 'lime-green');
           }
         }
 
@@ -182,7 +185,7 @@ header {
 
       &:not(:first-child) {
         a {
-          color: map-get($colors, 'white');
+          color: map-get($base-colors, 'white');
           display: block;
           font-weight: map-get($font-weights, 'regular');
           padding: 6px 12px 16px 28px;
@@ -195,15 +198,15 @@ header {
           }
 
           &::before {
-            @include fontawesome;
-            color: map-get($colors, 'white');
+            @include font-awesome;
+            color: map-get($base-colors, 'white');
             content: '\f10c';
             left: 6px;
             top: 5px;
           }
 
           &::after {
-            background: map-get($colors, 'white');
+            background: map-get($base-colors, 'white');
             height: calc(100% - 12px);
             left: 12px;
             top: 20px;
@@ -211,10 +214,10 @@ header {
           }
 
           &:hover {
-            color: map-get($colors, 'lime-green');
+            color: map-get($base-colors, 'lime-green');
 
             &::before {
-              color: map-get($colors, 'lime-green');
+              color: map-get($base-colors, 'lime-green');
               content: '\f140'; // fa-bullseye
             }
           }
@@ -238,7 +241,7 @@ header {
   overflow: hidden;
 
   .top-bar {
-    background: map-get($colors, 'white');
+    background: map-get($base-colors, 'white');
     height: 100vh;
   }
 }
@@ -256,10 +259,10 @@ header {
   }
 
   a {
-    color: map-get($colors, 'white');
+    color: map-get($base-colors, 'white');
 
     &:hover {
-      color: map-get($colors, 'white');
+      color: map-get($base-colors, 'white');
     }
   }
 
@@ -269,7 +272,7 @@ header {
 
   p,
   img {
-    background: rgba(map-get($colors, 'black'), .5);
+    background: rgba(map-get($base-colors, 'black'), .5);
     padding: .5rem;
   }
 
@@ -279,12 +282,8 @@ header {
 }
 
 .title-bar {
-  background: map-get($colors, 'white');
+  background: map-get($base-colors, 'white');
   padding: 0;
-
-  button {
-    background: map-get($default-colors, 'light');
-  }
 }
 
 .top-bar {
@@ -324,13 +323,6 @@ header {
           }
         }
 
-        &:hover,
-        &.focus {
-          a {
-            color: map-get($default-colors, 'light');
-          }
-        }
-
         &:last-child {
           > a {
             padding-right: 0;
@@ -346,13 +338,9 @@ header {
 
       li {
         a {
-          color: map-get($colors, 'darkest-gray');
+          color: map-get($base-colors, 'darkest-gray');
           font-size: map-get($font-sizes, 'xxxsmall');
           position: relative;
-
-          &:hover {
-            color: map-get($default-colors, 'dark');
-          }
         }
 
         .submenu {
@@ -374,8 +362,7 @@ header {
     }
 
     .submenu {
-      background: map-get($default-colors, 'light');
-      box-shadow: 0 8px 6px -6px transparentize(map-get($gradient-colors, 'dark-gray'), .5);
+      box-shadow: 0 8px 6px -6px transparentize(map-get($base-colors, 'dark-gray'), .5);
 
       &.in-focus {
         height: auto;
@@ -395,16 +382,16 @@ header {
           width: 60%;
 
           a {
-            color: map-get($colors, 'white');
+            color: map-get($base-colors, 'white');
             margin-bottom: 1rem;
 
             &:hover {
-              color: map-get($colors, 'lime-green');
+              color: map-get($base-colors, 'lime-green');
             }
           }
 
           p {
-            color: map-get($colors, 'black');
+            color: map-get($base-colors, 'black');
             display: inline-flex;
             font-family: map-get($font-families, 'default'); //icomoon override
             font-weight: map-get($font-weights, 'bold');
@@ -418,7 +405,7 @@ header {
 
   .nsf-logo {
     p {
-      color: map-get($colors, 'white');
+      color: map-get($base-colors, 'white');
       display: flex;
       font-size: map-get($font-sizes, 'xxsmall');
       justify-content: center;

@@ -1,15 +1,15 @@
 .sidebar-breadcrumb {
-  @include radial-gradient(map-get($gradient-colors, 'light-gray'), map-get($gradient-colors, 'dark-gray'));
-  box-shadow: -5px -5px 24px -4px rgba(map-get($gradient-colors, 'light-gray'), .56);
+  @include radial-gradient(map-get($base-colors, 'gray'), map-get($base-colors, 'dark-gray'));
+  box-shadow: -5px -5px 24px -4px rgba(map-get($base-colors, 'gray'), .56);
   padding: 40px 0;
 
   a {
-    color: map-get($colors, 'light-gray');
+    color: map-get($base-colors, 'lightest-gray');
 
     &:link,
     &:visited,
     &:active {
-      color: map-get($colors, 'light-gray');
+      color: map-get($base-colors, 'lightest-gray');
     }
   }
 
@@ -25,7 +25,8 @@
       &::before {
         @include pseudo-element;
         border-bottom: 16px solid transparent;
-        border-right: 15px solid map-get($default-colors, 'light');
+        border-right-style: solid;
+        border-right-width: 15px;
         border-top: 16px solid transparent;
         display: none;
         height: 0;
@@ -35,7 +36,7 @@
       }
 
       &:hover {
-        color: map-get($colors, 'lime-green');
+        color: map-get($base-colors, 'lime-green');
 
         i {
           &::before {
@@ -54,70 +55,41 @@
     }
 
     &.active {
+      @include uppercase;
+
       > a {
-        background: map-get($default-colors, 'light');
-        color: map-get($colors, 'white');
+        color: map-get($base-colors, 'white');
       }
     }
-  }
 
-  ul {
-    li {
-      &.active {
-        @include uppercase;
+    &:not(:first-child) {
+      ul {
+        li {
+          @include sentence-case;
 
-        > a {
-          color: map-get($colors, 'white');
-        }
-      }
+          a {
+            padding-left: 70px;
 
-      &:first-child {
-        @include uppercase;
-      }
-
-      &:not(:first-child) {
-        ul {
-          > li {
-            @include sentence-case;
-
-            > a {
-              padding-left: 70px;
-
-              i {
-                font-size: map-get($font-sizes, 'xxxxsmall');
-                left: 45px;
-                padding-top: 10px;
-              }
-
-              &:hover {
-                i {
-                  font-size: map-get($font-sizes, 'default');
-                  left: 42px;
-                  padding-top: 6px;
-                }
-              }
+            i {
+              font-size: map-get($font-sizes, 'xxxxsmall');
+              left: 45px;
+              padding-top: 10px;
             }
 
-            > ul > li {
-              a {
-                padding-left: 95px;
-
-                i {
-                  left: 70px;
-                }
-
-                &:hover {
-                  i {
-                    left: 66px;
-                  }
-                }
+            &:hover {
+              i {
+                font-size: map-get($font-sizes, 'default');
+                left: 42px;
+                padding-top: 6px;
               }
             }
           }
         }
       }
     }
+  }
 
+  ul {
     ul {
       list-style-type: none;
       margin-left: 0;
@@ -134,18 +106,6 @@
     padding: 5px 20px 5px 45px;
     position: relative;
 
-    &::before {
-      @include pseudo-element;
-      border-bottom: 16px solid transparent;
-      border-right: 15px solid map-get($default-colors, 'light');
-      border-top: 16px solid transparent;
-      display: none;
-      height: 0;
-      left: -15px;
-      top: 0;
-      width: 0;
-    }
-
     i {
       left: 20px;
       padding-top: 6px;
@@ -155,7 +115,7 @@
     }
 
     &:hover {
-      color: map-get($colors, 'lime-green');
+      color: map-get($base-colors, 'lime-green');
 
       i {
         &::before {

@@ -10,11 +10,6 @@
 // Layout
 @import 'theme';
 
-// Theme colors specific to parent organization
-@import 'ucar';
-@import 'ncar';
-@import 'news';
-
 // Global Components
 @import 'components/alerts';
 @import 'components/banner';
@@ -22,3 +17,11 @@
 @import 'components/gdpr-compliance';
 @import 'components/social';
 @import 'components/table';
+
+// Theme specific colors
+@import 'theme-colors';
+
+// Theme specific styling
+@import 'ncar';
+@import 'news';
+@import 'ucar';

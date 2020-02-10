@@ -17,7 +17,7 @@
   }
 
   h3 {
-    color: map-get($colors, 'darkest-gray');
+    color: map-get($base-colors, 'darkest-gray');
   }
 
   h4 {
@@ -27,7 +27,8 @@
   }
 
   .item-details {
-    border-left: solid .125rem map-get($default-colors, 'light');
+    border-left-style: solid;
+    border-left-width: .125rem;
 
     p {
       font-size: map-get($font-sizes, 'xsmall');
@@ -46,17 +47,7 @@
       margin-top: 0;
 
       a {
-        color: map-get($gradient-colors, 'light-gray');
-
-        &:link,
-        &:visited {
-          color: map-get($gradient-colors, 'light-gray');
-        }
-
-        &:hover,
-        &:active {
-          color: map-get($gradient-colors, 'dark-gray');
-        }
+        color: map-get($base-colors, 'gray');
       }
     }
   }
