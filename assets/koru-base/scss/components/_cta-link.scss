@@ -12,7 +12,6 @@ a {
   font-size: map-get($font-sizes, 'xxxxsmall');
   font-weight: map-get($font-weights, 'semi-bold');
   line-height: 1.2;
-  margin: 0;
   padding: 7px 10px;
   position: relative;
   transition: 200ms ease-in-out;
@@ -42,6 +41,7 @@ a {
   }
 
   &:link,
+  &:hover,
   &:visited,
   &:active {
     color: map-get($base-colors, 'dark-blue');
