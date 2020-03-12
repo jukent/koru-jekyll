@@ -70,6 +70,18 @@
       }
     }
 
+    .dropdown {
+      &.menu {
+        > li {
+          &.is-active {
+            > a {
+              color: map-get($colors, 'base');
+            }
+          }
+        }
+      }
+    }
+
     .featured-section {
       &:hover {
         @include radial-gradient(map-get($colors, 'base'), map-get($colors, 'dark'));

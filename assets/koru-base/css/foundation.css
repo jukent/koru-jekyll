@@ -5643,7 +5643,7 @@ a.thumbnail {
 
 .dropdown.menu > li.is-active > a {
   background: transparent;
-  color: #000; }
+  color: #1779ba; }
 
 .no-js .dropdown.menu ul {
   display: none; }
@@ -7712,6 +7712,9 @@ footer .newsletter-signup input[type='submit'] {
     .cta-link.white-on-color:hover::before, .cta-link.white-on-color:active::before {
       border-color: transparent #fff; }
 
+.dropdown.menu > li.is-active > a {
+  color: #007fa3; }
+
 .featured-section:hover {
   background: #007fa3 radial-gradient(ellipse at center, #007fa3 0%, #1a658f 100%); }
 
@@ -7842,6 +7845,9 @@ footer .newsletter-signup input[type='submit'] {
     .ucar .cta-link.white-on-color:hover::before, .ucar .cta-link.white-on-color:active::before {
       border-color: transparent #fff; }
 
+.ucar .dropdown.menu > li.is-active > a {
+  color: #28938d; }
+
 .ucar .featured-section:hover {
   background: #28938d radial-gradient(ellipse at center, #28938d 0%, #00797c 100%); }
 
@@ -7971,6 +7977,9 @@ footer .newsletter-signup input[type='submit'] {
     color: #bfd600; }
     .news .cta-link.white-on-color:hover::before, .news .cta-link.white-on-color:active::before {
       border-color: transparent #fff; }
+
+.news .dropdown.menu > li.is-active > a {
+  color: #0092cb; }
 
 .news .featured-section:hover {
   background: #0092cb radial-gradient(ellipse at center, #0092cb 0%, #0085ca 100%); }
