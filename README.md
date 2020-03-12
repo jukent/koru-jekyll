@@ -63,13 +63,21 @@ menu:
 
 ## Jekyll Development
 
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-
-To add a custom directory to your theme-gem, please edit the regexp in `jekyll-koru.gemspec` accordingly.
+Run `docker-compose up --build` to run jekyll in a container.
 
 ## New Release for downstream sites
 
 * Commit and push your changes to Github
 * Create a new version on Github
 * Pull in the new release at https://github.com/NCAR/jekyll-koru-test in the _config.yml file.
+
+## Google Analytics
+
+To add Google Analytics code to your site:
+1. Log into Google Analytics
+2. If you have an existing site, go to your site's Admin dashboard
+3. Under the "Property" column, click on "Tracking Info"
+4. Click on "Tracking Code"
+5. Copy your "Tracking ID"
+5. In your Jekyll _config.yml file, add "analytics: *tracking-id*"
 
