@@ -1,28 +1,28 @@
 {
-  "_from": "@ncar/koru-base@2.1.102",
-  "_id": "@ncar/koru-base@2.1.102",
+  "_from": "@ncar/koru-base@2.1.103",
+  "_id": "@ncar/koru-base@2.1.103",
   "_inBundle": false,
-  "_integrity": "sha512-Nenp/UwWzoGj2lHCpK/sZ0qXhQbvzV/QBz2qosGuKNeeqU95EtzrkIQ9XdNrvRS4LsN551XSaGDNvDWwrdUfsA==",
+  "_integrity": "sha512-hVwPsgq1rDvVXf65kgykSPicXH2w4V7ox8rgOnNijFkGQIH+eoD96a4jnzDopA+JJ7YVkwnZUE+TeJRATl/avw==",
   "_location": "/@ncar/koru-base",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "@ncar/koru-base@2.1.102",
+    "raw": "@ncar/koru-base@2.1.103",
     "name": "@ncar/koru-base",
     "escapedName": "@ncar%2fkoru-base",
     "scope": "@ncar",
-    "rawSpec": "2.1.102",
+    "rawSpec": "2.1.103",
     "saveSpec": null,
-    "fetchSpec": "2.1.102"
+    "fetchSpec": "2.1.103"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://npm.pkg.github.com/download/@ncar/koru-base/2.1.102/4e8fbf0994d3e678ba884546bdb51f850800aabe932ab670ebf2780c75d3f69d",
-  "_shasum": "6209b9cfa96230aaf96c76994cc39507a5f52453",
-  "_spec": "@ncar/koru-base@2.1.102",
+  "_resolved": "https://npm.pkg.github.com/download/@ncar/koru-base/2.1.103/fea7d84a4b992c11e2e7bf2d18556b43405ee858140a89f69da5d9590a1350e8",
+  "_shasum": "654351e66a9ec1b9996cbc322ad311302db8ddcc",
+  "_spec": "@ncar/koru-base@2.1.103",
   "_where": "/home/circleci/project",
   "bugs": {
     "url": "https://github.com/ncar/koru-base/issues"
@@ -67,5 +67,5 @@
     "serve": "php -S localhost:8000 -t .",
     "test": "backstop test"
   },
-  "version": "2.1.102"
+  "version": "2.1.103"
 }

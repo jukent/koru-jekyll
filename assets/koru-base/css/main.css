@@ -181,8 +181,7 @@ pre code {
   color: #332f21; }
 
 .body-content {
-  -webkit-box-flex: 1;
-          flex: 1 0 auto; }
+  flex: 1 0 auto; }
 
 .content a {
   text-decoration: underline; }
@@ -228,11 +227,8 @@ pre code {
     margin-left: 1.5rem; }
 
 .content-wrapper {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
   min-height: 100vh; }
 
 .panel {
@@ -289,7 +285,6 @@ pre code {
     margin: auto;
     max-width: 60rem;
     padding: 2.5rem 0;
-    -webkit-transition: opacity 300ms ease-out;
     transition: opacity 300ms ease-out; }
 
 @media only screen and (min-width: 40rem) {
@@ -322,7 +317,6 @@ a.cta-link {
   line-height: 1.2;
   padding: 7px 10px;
   position: relative;
-  -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out; }
   .cta-link::after, .cta-link::before {
     content: '';
@@ -331,7 +325,6 @@ a.cta-link {
     height: 0;
     right: -18px;
     top: 0;
-    -webkit-transition: 200ms ease-in-out;
     transition: 200ms ease-in-out;
     width: 0; }
   .cta-link::after {
@@ -633,14 +626,12 @@ footer .newsletter-signup input[type='submit'] {
     color: #1a658f; }
 
 .title-bar button {
-  background: #007fa3 -webkit-gradient(linear, left top, left bottom, from(#007fa3), to(#1a658f));
   background: #007fa3 linear-gradient(to bottom, #007fa3 0%, #1a658f 100%); }
 
 .top-bar .accordion-menu {
   background: #007fa3; }
 
 .utility-mobile-wrapper {
-  background: #007fa3 -webkit-gradient(linear, left top, right top, from(#007fa3), to(#1a658f));
   background: #007fa3 linear-gradient(to right, #007fa3 0%, #1a658f 100%); }
 
 @media only screen and (min-width: 56.25rem) {
@@ -766,14 +757,12 @@ footer .newsletter-signup input[type='submit'] {
     color: #00797c; }
 
 .ucar .title-bar button {
-  background: #28938d -webkit-gradient(linear, left top, left bottom, from(#28938d), to(#00797c));
   background: #28938d linear-gradient(to bottom, #28938d 0%, #00797c 100%); }
 
 .ucar .top-bar .accordion-menu {
   background: #28938d; }
 
 .ucar .utility-mobile-wrapper {
-  background: #28938d -webkit-gradient(linear, left top, right top, from(#28938d), to(#00797c));
   background: #28938d linear-gradient(to right, #28938d 0%, #00797c 100%); }
 
 @media only screen and (min-width: 56.25rem) {
@@ -899,14 +888,12 @@ footer .newsletter-signup input[type='submit'] {
     color: #0085ca; }
 
 .news .title-bar button {
-  background: #0092cb -webkit-gradient(linear, left top, left bottom, from(#0092cb), to(#0085ca));
   background: #0092cb linear-gradient(to bottom, #0092cb 0%, #0085ca 100%); }
 
 .news .top-bar .accordion-menu {
   background: #0092cb; }
 
 .news .utility-mobile-wrapper {
-  background: #0092cb -webkit-gradient(linear, left top, right top, from(#0092cb), to(#0085ca));
   background: #0092cb linear-gradient(to right, #0092cb 0%, #0085ca 100%); }
 
 @media only screen and (min-width: 56.25rem) {
@@ -959,7 +946,6 @@ footer .newsletter-signup input[type='submit'] {
     margin-bottom: .75rem;
     margin-top: .75rem; }
     .post-list p.date {
-      display: -webkit-inline-box;
       display: inline-flex;
       font-weight: 700;
       margin: 0;
@@ -978,12 +964,10 @@ footer .newsletter-signup input[type='submit'] {
     text-transform: uppercase;
     font-size: 0.875rem; }
     .post-list .article-details ul {
-      display: -webkit-inline-box;
       display: inline-flex;
       margin: 0;
       padding: 0; }
       .post-list .article-details ul li {
-        display: -webkit-inline-box;
         display: inline-flex; }
         .post-list .article-details ul li:last-child .comma, .post-list .article-details ul li:only-child .comma {
           display: none; }
