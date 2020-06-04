@@ -1,28 +1,28 @@
 {
-  "_from": "@ncar/koru-base@2.1.103",
-  "_id": "@ncar/koru-base@2.1.103",
+  "_from": "@ncar/koru-base@2.1.104",
+  "_id": "@ncar/koru-base@2.1.104",
   "_inBundle": false,
-  "_integrity": "sha512-hVwPsgq1rDvVXf65kgykSPicXH2w4V7ox8rgOnNijFkGQIH+eoD96a4jnzDopA+JJ7YVkwnZUE+TeJRATl/avw==",
+  "_integrity": "sha512-kdQ8BcDJGvntNEnKIJolOAu1Up+wbIWDvrBKOXhm12CB+6Z64cuQ+JDQHCilPkv44WzAYacwvC9fZfu584Hj8A==",
   "_location": "/@ncar/koru-base",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "@ncar/koru-base@2.1.103",
+    "raw": "@ncar/koru-base@2.1.104",
     "name": "@ncar/koru-base",
     "escapedName": "@ncar%2fkoru-base",
     "scope": "@ncar",
-    "rawSpec": "2.1.103",
+    "rawSpec": "2.1.104",
     "saveSpec": null,
-    "fetchSpec": "2.1.103"
+    "fetchSpec": "2.1.104"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://npm.pkg.github.com/download/@ncar/koru-base/2.1.103/fea7d84a4b992c11e2e7bf2d18556b43405ee858140a89f69da5d9590a1350e8",
-  "_shasum": "654351e66a9ec1b9996cbc322ad311302db8ddcc",
-  "_spec": "@ncar/koru-base@2.1.103",
+  "_resolved": "https://npm.pkg.github.com/download/@ncar/koru-base/2.1.104/30b7b20bf6aa96e85438621f3e0e95ebcdc00cf74f7b234622f6fac3a3b230fc",
+  "_shasum": "f513e32eebb57e7d251b6726d133bc3cdd2d3dbd",
+  "_spec": "@ncar/koru-base@2.1.104",
   "_where": "/home/circleci/project",
   "bugs": {
     "url": "https://github.com/ncar/koru-base/issues"
@@ -33,11 +33,11 @@
     "core-js": "^3.6.1",
     "font-awesome": "^4.7.0",
     "foundation-sites": "^6.6.1",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.1"
   },
   "deprecated": false,
   "devDependencies": {
-    "backstopjs": "^4.4.2",
+    "backstopjs": "^4.5.1",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
@@ -47,11 +47,11 @@
     "gulp-clean-css": "^4.2.0",
     "gulp-connect-php": "^1.0.3",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-sass-lint": "^1.4.0",
     "gulp-tag-version": "^1.3.1",
     "gulp-uglify": "^3.0.2",
-    "what-input": "^5.2.6"
+    "what-input": "^5.2.10"
   },
   "homepage": "https://github.com/ncar/koru-base#readme",
   "license": "UNLICENSED",
@@ -67,5 +67,5 @@
     "serve": "php -S localhost:8000 -t .",
     "test": "backstop test"
   },
-  "version": "2.1.103"
+  "version": "2.1.104"
 }

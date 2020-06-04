@@ -7783,6 +7783,8 @@ header {
     line-height: .5; }
   header .mobile-logo .description a {
     color: #012169; }
+  header .sticky {
+    z-index: 5; }
 
 .dropdown.menu li a {
   padding: .7rem; }
