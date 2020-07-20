@@ -48,6 +48,10 @@ hr {
   height: 1px;
 }
 
+html {
+  scroll-padding-top: 3.125rem;
+}
+
 iframe {
   border: 0;
 }
@@ -153,6 +157,10 @@ pre {
 }
 
 @media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
+  html {
+    scroll-padding-top: 2.875rem;
+  }
+
   .content {
     figure {
       border-width: 14px;
@@ -160,7 +168,17 @@ pre {
   }
 }
 
+@media only screen and (min-width: map-get($custom-breakpoints, 'large')) {
+  html {
+    scroll-padding-top: 3.375rem;
+  }
+}
+
 @media only screen and (min-width: map-get($custom-breakpoints, 'xlarge')) {
+  html {
+    scroll-padding-top: 3.5rem;
+  }
+
   .content {
     p {
       font-size: map-get($font-sizes, 'medium');

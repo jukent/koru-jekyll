@@ -6906,6 +6906,9 @@ hr {
   color: #332f21;
   height: 1px; }
 
+html {
+  scroll-padding-top: 3.125rem; }
+
 iframe {
   border: 0; }
 
@@ -6977,10 +6980,18 @@ pre code {
   padding: 40px 0; }
 
 @media only screen and (min-width: 56.25rem) {
+  html {
+    scroll-padding-top: 2.875rem; }
   .content figure {
     border-width: 14px; } }
 
+@media only screen and (min-width: 64rem) {
+  html {
+    scroll-padding-top: 3.375rem; } }
+
 @media only screen and (min-width: 78.75rem) {
+  html {
+    scroll-padding-top: 3.5rem; }
   .content p {
     font-size: 1.1875rem; } }
 
