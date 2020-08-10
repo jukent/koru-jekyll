@@ -1,3 +1,5 @@
+> Please follow this repository if you plan to create a Github Pages website using [koru-jeykll-template](https://github.com/NCAR/koru-jekyll-template) and want to be notified of version updates to the Jekyll theme.
+
 # Using the koru-jekyll theme
 
 This is a theme based on UCAR/NCAR's custom 'koru' design. It is built on top the Foundation framework. This provides users and developers with responsiveness and accessibility.
