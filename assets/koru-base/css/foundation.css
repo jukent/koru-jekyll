@@ -287,9 +287,6 @@ input[type='search'] {
 :-ms-input-placeholder {
   color: #cacaca; }
 
-::-ms-input-placeholder {
-  color: #cacaca; }
-
 ::placeholder {
   color: #cacaca; }
 
@@ -453,8 +450,6 @@ select {
   .is-invalid-input:not(:focus)::-moz-placeholder {
     color: #cc4b37; }
   .is-invalid-input:not(:focus):-ms-input-placeholder {
-    color: #cc4b37; }
-  .is-invalid-input:not(:focus)::-ms-input-placeholder {
     color: #cc4b37; }
   .is-invalid-input:not(:focus)::placeholder {
     color: #cc4b37; }
@@ -7366,8 +7361,6 @@ footer .newsletter-signup input[type='submit'] {
     color: #1a658f; }
   .stay-connected .newsletter-signup input[type='email']:-ms-input-placeholder {
     color: #1a658f; }
-  .stay-connected .newsletter-signup input[type='email']::-ms-input-placeholder {
-    color: #1a658f; }
   .stay-connected .newsletter-signup input[type='email']::placeholder {
     color: #1a658f; }
 
@@ -7495,8 +7488,6 @@ footer .newsletter-signup input[type='submit'] {
     color: #00797c; }
   .ucar .stay-connected .newsletter-signup input[type='email']:-ms-input-placeholder {
     color: #00797c; }
-  .ucar .stay-connected .newsletter-signup input[type='email']::-ms-input-placeholder {
-    color: #00797c; }
   .ucar .stay-connected .newsletter-signup input[type='email']::placeholder {
     color: #00797c; }
 
@@ -7623,8 +7614,6 @@ footer .newsletter-signup input[type='submit'] {
   .news .stay-connected .newsletter-signup input[type='email']::-moz-placeholder {
     color: #0085ca; }
   .news .stay-connected .newsletter-signup input[type='email']:-ms-input-placeholder {
-    color: #0085ca; }
-  .news .stay-connected .newsletter-signup input[type='email']::-ms-input-placeholder {
     color: #0085ca; }
   .news .stay-connected .newsletter-signup input[type='email']::placeholder {
     color: #0085ca; }
@@ -8291,8 +8280,6 @@ li:hover.is-dropdown-submenu-parent > a::after {
       color: #fff; }
     .header-default-search-mobile .searchbox-input:-ms-input-placeholder {
       color: #fff; }
-    .header-default-search-mobile .searchbox-input::-ms-input-placeholder {
-      color: #fff; }
     .header-default-search-mobile .searchbox-input::placeholder {
       color: #fff; }
     .header-default-search-mobile .searchbox-input:focus {
@@ -8331,8 +8318,6 @@ li:hover.is-dropdown-submenu-parent > a::after {
     .top-bar .input-group-field::-moz-placeholder {
       color: #414143; }
     .top-bar .input-group-field:-ms-input-placeholder {
-      color: #414143; }
-    .top-bar .input-group-field::-ms-input-placeholder {
       color: #414143; }
     .top-bar .input-group-field::placeholder {
       color: #414143; } }

@@ -629,8 +629,6 @@ footer .newsletter-signup input[type='submit'] {
     color: #1a658f; }
   .stay-connected .newsletter-signup input[type='email']:-ms-input-placeholder {
     color: #1a658f; }
-  .stay-connected .newsletter-signup input[type='email']::-ms-input-placeholder {
-    color: #1a658f; }
   .stay-connected .newsletter-signup input[type='email']::placeholder {
     color: #1a658f; }
 
@@ -758,8 +756,6 @@ footer .newsletter-signup input[type='submit'] {
     color: #00797c; }
   .ucar .stay-connected .newsletter-signup input[type='email']:-ms-input-placeholder {
     color: #00797c; }
-  .ucar .stay-connected .newsletter-signup input[type='email']::-ms-input-placeholder {
-    color: #00797c; }
   .ucar .stay-connected .newsletter-signup input[type='email']::placeholder {
     color: #00797c; }
 
@@ -886,8 +882,6 @@ footer .newsletter-signup input[type='submit'] {
   .news .stay-connected .newsletter-signup input[type='email']::-moz-placeholder {
     color: #0085ca; }
   .news .stay-connected .newsletter-signup input[type='email']:-ms-input-placeholder {
-    color: #0085ca; }
-  .news .stay-connected .newsletter-signup input[type='email']::-ms-input-placeholder {
     color: #0085ca; }
   .news .stay-connected .newsletter-signup input[type='email']::placeholder {
     color: #0085ca; }
