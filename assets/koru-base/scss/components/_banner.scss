@@ -1,10 +1,16 @@
 .banner {
-  padding: 1.5rem 0;
+  &-gradient {
+    padding: 1.5rem 0;
+  }
 
   &.with-image {
     h1,
     h2 {
       @include text-shadow(rgba(map-get($base-colors, 'black'), .5));
+    }
+
+    .banner-gradient {
+      background:linear-gradient(0deg ,rgba(38, 37, 38, .2),rgba(38, 37, 38, .2));
     }
   }
 
@@ -46,7 +52,7 @@
 }
 
 @media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
-  .banner {
+  .banner-gradient {
     padding: 3rem 0;
   }
 }
@@ -62,7 +68,9 @@
 @media only screen and (min-width: map-get($custom-breakpoints, 'large')) {
   .banner {
     &.with-image {
-      padding: 5rem 0;
+      .banner-gradient {
+        padding: 5rem 0;
+      }
     }
   }
 }

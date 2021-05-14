@@ -55,6 +55,15 @@
 
     .news,
     .publications {
+      padding: 2em;
+    }
+  }
+}
+
+@media only screen and (min-width: map-get($custom-breakpoints, 'large')) {
+  .home-happenings {
+    .news,
+    .publications {
       padding: 3em;
     }
   }

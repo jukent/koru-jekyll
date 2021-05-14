@@ -269,38 +269,48 @@ pre code {
   color: #e50000;
   font-weight: 700; }
 
-.banner {
+.banner-gradient {
   padding: 1.5rem 0; }
-  .banner.with-image h1,
-  .banner.with-image h2 {
-    text-shadow: 0 0 1.875rem rgba(0, 0, 0, 0.5); }
-  .banner > div {
-    height: 100%; }
-  .banner h1 {
-    color: #bfd600;
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: .25rem; }
-  .banner h2 {
-    color: #fff;
-    font-weight: 700;
-    line-height: 1; }
-  .banner h1,
-  .banner h2 {
-    margin: 0; }
-  .banner ol,
-  .banner ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0; }
-  .banner .banner-content {
-    margin: auto;
-    max-width: 60rem;
-    padding: 2.5rem 0;
-    transition: opacity 300ms ease-out; }
+
+.banner.with-image h1,
+.banner.with-image h2 {
+  text-shadow: 0 0 1.875rem rgba(0, 0, 0, 0.5); }
+
+.banner.with-image .banner-gradient {
+  background: linear-gradient(0deg, rgba(38, 37, 38, 0.2), rgba(38, 37, 38, 0.2)); }
+
+.banner > div {
+  height: 100%; }
+
+.banner h1 {
+  color: #bfd600;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: .25rem; }
+
+.banner h2 {
+  color: #fff;
+  font-weight: 700;
+  line-height: 1; }
+
+.banner h1,
+.banner h2 {
+  margin: 0; }
+
+.banner ol,
+.banner ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.banner .banner-content {
+  margin: auto;
+  max-width: 60rem;
+  padding: 2.5rem 0;
+  transition: opacity 300ms ease-out; }
 
 @media only screen and (min-width: 40rem) {
-  .banner {
+  .banner-gradient {
     padding: 3rem 0; } }
 
 @media only screen and (min-width: 56.25rem) {
@@ -308,7 +318,7 @@ pre code {
     font-size: 1.75rem; } }
 
 @media only screen and (min-width: 64rem) {
-  .banner.with-image {
+  .banner.with-image .banner-gradient {
     padding: 5rem 0; } }
 
 @media only screen and (min-width: 90rem) {
