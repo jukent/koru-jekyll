@@ -1,10 +1,13 @@
 {
+<<<<<<< HEAD
   "_args": [
     [
       "@ncar/koru-base@2.1.114",
       "/project"
     ]
   ],
+=======
+>>>>>>> a48d52c5afc4d7d6fc8c9dd456e4478a3f74cb15
   "_from": "@ncar/koru-base@2.1.114",
   "_id": "@ncar/koru-base@2.1.114",
   "_inBundle": false,
@@ -26,8 +29,14 @@
     "/"
   ],
   "_resolved": "https://npm.pkg.github.com/download/@ncar/koru-base/2.1.114/484050f74147e284d98f36b3236ab88a34b7dce2efdf11bc3df220881f2b5fc4",
+<<<<<<< HEAD
   "_spec": "2.1.114",
   "_where": "/project",
+=======
+  "_shasum": "422702d92e258db00897cc3bc2c8356d9000289e",
+  "_spec": "@ncar/koru-base@2.1.114",
+  "_where": "/home/circleci/project",
+>>>>>>> a48d52c5afc4d7d6fc8c9dd456e4478a3f74cb15
   "bugs": {
     "url": "https://github.com/ncar/koru-base/issues"
   },
