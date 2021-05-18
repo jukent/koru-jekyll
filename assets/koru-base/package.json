@@ -1,33 +1,36 @@
 {
-  "_from": "@ncar/koru-base@2.1.112",
-  "_id": "@ncar/koru-base@2.1.112",
+  "_args": [
+    [
+      "@ncar/koru-base@2.1.114",
+      "/project"
+    ]
+  ],
+  "_from": "@ncar/koru-base@2.1.114",
+  "_id": "@ncar/koru-base@2.1.114",
   "_inBundle": false,
-  "_integrity": "sha512-3kz0+75WXxg/O5DcMSQEit1Fp/541lRqWVAEpgQ5HAxLu4q+JOq7NCR5Dt7Bmxp1Su/6jiLNB/hyoRUw0GzzIA==",
+  "_integrity": "sha512-HYqcs9/4rUxmjhs/zj1nTEdU4Jx7f08+MNgUrXJNT6Nlqw0EyYWGsSyXjyiJhLq5A06BvyD3TikN3pocq+4yYg==",
   "_location": "/@ncar/koru-base",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "@ncar/koru-base@2.1.112",
+    "raw": "@ncar/koru-base@2.1.114",
     "name": "@ncar/koru-base",
     "escapedName": "@ncar%2fkoru-base",
     "scope": "@ncar",
-    "rawSpec": "2.1.112",
+    "rawSpec": "2.1.114",
     "saveSpec": null,
-    "fetchSpec": "2.1.112"
+    "fetchSpec": "2.1.114"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
-  "_resolved": "https://npm.pkg.github.com/download/@ncar/koru-base/2.1.112/1837a50ca16f7615ec93bb1b558e8145d9d31ae809abf018887e93edb1181d1b",
-  "_shasum": "659b64545203bf6dfe8af704f568a9e24fba81f8",
-  "_spec": "@ncar/koru-base@2.1.112",
-  "_where": "/home/circleci/project",
+  "_resolved": "https://npm.pkg.github.com/download/@ncar/koru-base/2.1.114/484050f74147e284d98f36b3236ab88a34b7dce2efdf11bc3df220881f2b5fc4",
+  "_spec": "2.1.114",
+  "_where": "/project",
   "bugs": {
     "url": "https://github.com/ncar/koru-base/issues"
   },
-  "bundleDependencies": false,
   "dependencies": {
     "@ncar/icomoon": "^1.0.10",
     "core-js": "^3.6.1",
@@ -35,9 +38,8 @@
     "foundation-sites": "^6.6.1",
     "jquery": "^3.5.1"
   },
-  "deprecated": false,
   "devDependencies": {
-    "backstopjs": "^4.5.1",
+    "backstopjs": "5.3.2",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
@@ -67,5 +69,5 @@
     "serve": "php -S localhost:8000 -t .",
     "test": "backstop test"
   },
-  "version": "2.1.112"
+  "version": "2.1.114"
 }
