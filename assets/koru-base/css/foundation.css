@@ -7909,7 +7909,8 @@ header {
   overflow: hidden; }
   .nav-open .top-bar {
     background: #fff;
-    height: 100vh; }
+    height: 100vh;
+    overflow: scroll; }
 
 .nsf-logo {
   margin: 0 auto;
