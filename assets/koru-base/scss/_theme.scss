@@ -80,7 +80,7 @@ pre {
 
   figure {
     @include button-arrow(map-get($base-colors, 'darkest-gray'), 10px);
-    margin: 1.5rem 0;
+    margin: 1.5rem;
 
     figcaption {
       background: map-get($base-colors, 'darkest-gray');
