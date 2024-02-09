@@ -65,9 +65,11 @@ menu:
 
 ## Jekyll Development
 
-1. If you haven't already, [set up a Github Access Token](https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#authenticating-to-github-packages) to publish, install, and delete packages.
-2. Create a .env file and add `AUTH_TOKEN=your-token-here`
-3. Run `docker-compose up --build` to run jekyll in a container.
+1. If you haven't already, [set up a GitHub Access Token](https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#authenticating-to-github-packages) to publish, install, and delete packages.
+2. Set a `NPM_TOKEN` variable locally that will use the GitHub access token you just created.
+   * To add the variable in your current session, run `export NPM_TOKEN=your-token-here`
+   * Or add the variable to the configuration file of your shell environment (.bashrc, .zshrc, etc.)
+3. Run ` docker-compose build --build-arg NPM_TOKEN=${NPM_TOKEN} && docker-compose up` to run jekyll in a container.
 
 ## New Release for downstream sites
 
@@ -83,5 +85,5 @@ To add Google Analytics code to your site:
 3. Under the "Property" column, click on "Tracking Info"
 4. Click on "Tracking Code"
 5. Copy your "Tracking ID"
-5. In your Jekyll _config.yml file, add "analytics: *tracking-id*"
+6. In your Jekyll _config.yml file, add "analytics: *tracking-id*"
 

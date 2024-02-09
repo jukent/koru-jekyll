@@ -1,4 +1,4 @@
-.acronym-wrapper {
+.nsf-logo {
   h1,
   p {
     &:first-child {
@@ -9,14 +9,14 @@
 
 .is-stuck {
   .logo-wrapper {
-    .acronym-definition {
+    .acronym-main {
       h1,
       p {
         line-height: 1.3;
       }
     }
 
-    .acronym-wrapper {
+    .nsf-logo {
       h1 {
         padding: 0;
 
@@ -56,9 +56,7 @@
     margin: 0;
   }
 
-  .acronym-definition {
-    padding-left: 25px;
-
+  .acronym-main {
     h1,
     p {
       @include sentence-case;
@@ -67,8 +65,10 @@
     }
   }
 
-  .acronym-wrapper {
-    border-right: solid 3px map-get($base-colors, 'dark-blue');
+  .nsf-logo {
+    border-right: solid 2px map-get($base-colors, 'dark-blue');
+    margin-right: 5px;
+    padding-right: 5px;
 
     h1,
     p {
@@ -101,22 +101,14 @@
   .acronym {
     border-right: solid 2px map-get($base-colors, 'dark-blue');
     position: relative;
-
-    &::after {
-      @include pseudo-element;
-      @include button-arrow(transparent map-get($base-colors, 'dark-blue'), 9px 0 9px 12px);
-      height: 0;
-      right: -12px;
-      top: 4px;
-      width: 0;
-    }
+    width: 14%;
   }
 
   .description {
     @include sentence-case;
     color: map-get($base-colors, 'dark-blue');
     font-size: map-get($font-sizes, 'xxxsmall');
-    margin-left: .7rem;
+    width: 23%;
   }
 }
 
@@ -126,9 +118,19 @@
   }
 }
 
+.top-bar-wrapper {
+  &.top-bar {
+    ul {
+      &:first-child {
+        background-color: map-get($base-colors, 'dark-white');
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
   .logo-wrapper {
-    .acronym-definition {
+    .acronym-main {
       h1,
       p {
         line-height: 1.6;
@@ -139,7 +141,7 @@
       }
     }
 
-    .acronym-wrapper {
+    .nsf-logo {
       h1,
       p {
         a {
@@ -152,18 +154,20 @@
   }
 
   .top-bar {
-    @include xy-grid-container(85rem, 1.875rem);
-
     .top-bar-title {
       @include flex;
       margin-right: 0;
     }
   }
+
+  .top-bar-wrapper {
+    @include xy-grid-container(85rem, 1.875rem);
+  }
 }
 
 @media only screen and (min-width: map-get($custom-breakpoints, 'large')) {
   .logo-wrapper {
-    .acronym-definition {
+    .acronym-main {
       h1,
       p {
         line-height: 1.8;
@@ -174,7 +178,7 @@
       }
     }
 
-    .acronym-wrapper {
+    .nsf-logo {
       h1,
       p {
         a {
@@ -190,7 +194,7 @@
 @media only screen and (min-width: map-get($custom-breakpoints, 'xlarge')) {
   .is-stuck {
     .logo-wrapper {
-      .acronym-wrapper {
+      .nsf-logo {
         h1 {
           a {
             &::after {
@@ -203,7 +207,7 @@
   }
 
   .logo-wrapper {
-    .acronym-definition {
+    .acronym-main {
       h1,
       p {
         font-size: map-get($font-sizes, 'default');

@@ -32,6 +32,10 @@ footer {
   .grid-x {
     @include flex-align(center);
   }
+
+  .logo {
+    padding-right: 20px;
+  }
 }
 
 .footer-addresses {

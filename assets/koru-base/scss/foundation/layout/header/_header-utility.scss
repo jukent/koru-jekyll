@@ -105,17 +105,15 @@ li {
     }
   }
 
-  .is-stuck {
-    .utility-wrapper {
-      display: none;
-    }
-  }
-
   .top-bar {
     background-color: map-get($base-colors, 'white');
+  }
+
+  .top-bar-menus {
+    background-color: map-get($base-colors, 'dark-white');
 
     ul {
-      background-color: map-get($base-colors, 'white');
+      background-color: map-get($base-colors, 'dark-white');
     }
   }
 
@@ -129,7 +127,14 @@ li {
   }
 
   .utility-menu-primary {
-    @include flex-align(right, bottom);
+    @include flex-align(right, middle);
+
+    .input-group-button {
+      button {
+        padding-bottom: .5rem;
+        padding-top: .5rem;
+      }
+    }
   }
 
   .utility-mobile-wrapper {
@@ -184,7 +189,7 @@ li {
       &.is-dropdown-submenu-parent {
         > a {
           &::after {
-            top: 115%;
+            top: 125%;
           }
         }
       }

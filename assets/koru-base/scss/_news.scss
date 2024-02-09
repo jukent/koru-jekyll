@@ -9,7 +9,7 @@
 
   .is-stuck {
     .logo-wrapper {
-      .acronym-wrapper {
+      .nsf-logo {
         h1 {
           &:first-child {
             padding-bottom: 5px;
@@ -20,12 +20,6 @@
   }
 
   .mobile-logo {
-    .acronym {
-      &::after {
-        display: none;
-      }
-    }
-
     .description {
       font-size: map-get($font-sizes, 'medium');
     }

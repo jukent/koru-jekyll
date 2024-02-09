@@ -1,5 +1,7 @@
 version: '3.7'
 
+
+
 services:
   web:
     container_name: koru-jekyll
@@ -7,7 +9,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        - NPM_TOKEN=${NPM_TOKEN}
     volumes:
-      - ./:/project
+      - ./:/srv/jekyll
+      - /srv/jekyll/node_modules
+      - /srv/jekyll/build
     ports:
       - "4000:4000"

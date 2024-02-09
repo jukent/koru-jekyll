@@ -4,23 +4,13 @@
   background-repeat: repeat-y;
 
   .logo-wrapper {
-    .acronym-wrapper {
+    .nsf-logo {
       h1 {
         a {
           &::after {
             display: block;
           }
         }
-      }
-    }
-  }
-
-  .nsf-logo {
-    a {
-      color: map-get($base-colors, 'white');
-
-      &:hover {
-        color: map-get($base-colors, 'white');
       }
     }
   }

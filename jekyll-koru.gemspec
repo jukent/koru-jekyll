@@ -2,18 +2,13 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-koru"
-  spec.version       = "0.1.3"
+  spec.version       = "1.0.0"
   spec.authors       = ["Steve Geinosky"]
-  spec.email         = ["geinosky@ucar.edu"]
+  spec.email         = ["eip@ucar.edu"]
 
   spec.summary       = "Koru based jekyll theme"
-  spec.homepage      = "https://www.ucar.edu"
+  spec.homepage      = "https://ncar.github.io/koru-jekyll-template/"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
-
-  spec.add_runtime_dependency "github-pages"
-
-  spec.add_development_dependency "bundler", "~> 2.0"
-  spec.add_development_dependency "rake", "~> 12.0"
+  spec.add_runtime_dependency "jekyll", "~> 4"
 end
