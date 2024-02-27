@@ -95,12 +95,17 @@ footer {
 
   small {
     font-size: inherit;
+    padding-left: .7rem;
   }
 
   small,
   li,
   ul {
     color: map-get($base-colors, 'lightest-gray');
+  }
+
+  .menu {
+    margin-left: 0;
   }
 }
 

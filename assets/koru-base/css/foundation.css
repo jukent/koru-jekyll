@@ -11247,11 +11247,15 @@ footer p {
 }
 .footer-menu-tertiary small {
   font-size: inherit;
+  padding-left: 0.7rem;
 }
 .footer-menu-tertiary small,
 .footer-menu-tertiary li,
 .footer-menu-tertiary ul {
   color: #dbe2e9;
+}
+.footer-menu-tertiary .menu {
+  margin-left: 0;
 }
 
 .newsletter-signup {
