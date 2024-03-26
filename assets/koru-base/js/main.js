@@ -1,3 +1,5 @@
+'use strict';
+
 // init modules when doc is ready
 jQuery(document).ready(function($) {
   //reset any and all of body main-menu menu-button top-bar
