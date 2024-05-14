@@ -5,17 +5,9 @@ jQuery(document).ready(function($) {
   //reset any and all of body main-menu menu-button top-bar
   $(window).on('changed.zf.mediaquery', function(event, newSize, oldSize){
     if (Foundation.MediaQuery.atLeast('mlarge')) {
-
-      $('#body').removeClass('nav-open');
-
-      var $main_menu = $('#main-menu');
+      var $main_menu = $('#utility-menu');
       if($main_menu.hasClass('show-for-mlarge') === false) {
         $main_menu.addClass('show-for-mlarge');
-      }
-
-      var $menu_button = $('#menu-button');
-      if($menu_button.hasClass('fa-minus-circle')) {
-        $menu_button.addClass('fa-bars').removeClass('fa-minus-circle');
       }
     }
   });
