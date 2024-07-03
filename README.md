@@ -1,4 +1,4 @@
-> Please follow this repository if you plan to create a Github Pages website using [koru-jeykll-template](https://github.com/NCAR/koru-jekyll-template) and want to be notified of version updates to the Jekyll theme.
+> Please follow this repository if you plan to create a GitHub Pages website using [koru-jeykll-template](https://github.com/NCAR/koru-jekyll-template) and want to be notified of version updates to the Jekyll theme.
 
 # Using the koru-jekyll theme
 
@@ -59,7 +59,7 @@ menu:
 
 ## Update Koru base to Latest Version
 
-* Run `npm update koru-base` (pulls in latest version from Github Registry)
+* Run `npm update koru-base` (pulls in latest version from GitHub Registry)
 * Commit changes
     > Note: when in doubt, delete node_modules and re-run the previous steps
 
@@ -69,12 +69,12 @@ menu:
 2. Set a `NPM_TOKEN` variable locally that will use the GitHub access token you just created.
    * To add the variable in your current session, run `export NPM_TOKEN=your-token-here`
    * Or add the variable to the configuration file of your shell environment (.bashrc, .zshrc, etc.)
-3. Run ` docker-compose build --build-arg NPM_TOKEN=${NPM_TOKEN} && docker-compose up` to run jekyll in a container.
+3. Run `docker-compose build --build-arg NPM_TOKEN=${NPM_TOKEN} && docker-compose up` to run jekyll in a container.
 
 ## New Release for downstream sites
 
-* Commit and push your changes to Github
-* Create a new version on Github
+* Commit and push your changes to GitHub
+* Create a new version on GitHub
 * Pull in the new release at https://github.com/NCAR/jekyll-koru-test in the _config.yml file.
 
 ## Google Analytics
