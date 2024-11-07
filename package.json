@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/NCAR/jekyll-koru#readme",
   "devDependencies": {
-    "backstopjs": "^6.3.23"
+    "backstopjs": "^6.3.23",
+    "patch-package": "^8.0.0"
   },
   "dependencies": {
     "@ncar/koru-base": "^2.1.116"
