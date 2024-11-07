@@ -34,7 +34,7 @@
   }
 
   .publications,
-  .news {
+  .front-news {
     @include linear-gradient(right, map-get($base-colors, 'dark-gray'), map-get($base-colors, 'gray'));
     box-shadow: -.3125rem -.3125rem .75rem -.25rem rgba(map-get($base-colors, 'gray'), .56);
     padding: 1.25rem;
@@ -47,13 +47,13 @@
       height: 25rem;
     }
 
-    .news {
+    .front-news {
       &::after {
         display: none;
       }
     }
 
-    .news,
+    .front-news,
     .publications {
       padding: 2em;
     }
@@ -62,7 +62,7 @@
 
 @media only screen and (min-width: map-get($custom-breakpoints, 'large')) {
   .home-happenings {
-    .news,
+    .front-news,
     .publications {
       padding: 3em;
     }

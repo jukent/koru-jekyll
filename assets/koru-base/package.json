@@ -1,6 +1,6 @@
 {
   "name": "@ncar/koru-base",
-  "version": "2.1.143",
+  "version": "2.1.148",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
@@ -10,9 +10,12 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
+    "@nightwatch/vrt": "^3.5.2",
     "@rollup/plugin-terser": "^0.4.3",
     "autoprefixer": "10.0.1",
     "del": "^5.1.0",
+    "nightwatch": "^3.6.3",
+    "patch-package": "^8.0.0",
     "rollup": "^2.50.6",
     "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-postcss": "^4.0.0",
@@ -21,7 +24,8 @@
     "sass": "^1.67.0"
   },
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@ncar/icomoon": "^1.0.10",

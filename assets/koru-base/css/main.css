@@ -527,6 +527,57 @@ a.cta-link {
   color: #0779bf;
 }
 
+.person {
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+}
+.person:hover .post-image::before {
+  opacity: 1;
+}
+.person:not(:last-child) {
+  border-bottom: 1px solid #63666a;
+}
+.person h1 {
+  margin: 0;
+}
+.person h3 {
+  font-size: 1.75rem;
+  letter-spacing: 0;
+  margin: 0;
+  text-transform: capitalize;
+}
+.person h3 a {
+  text-decoration: none;
+}
+.person a {
+  text-decoration: none;
+}
+.person img {
+  margin: 0;
+}
+.person .photo + .information {
+  padding-left: 1.75rem;
+}
+.person .post-image {
+  display: inline-flex;
+  height: 100%;
+  position: relative;
+}
+.person .post-image::before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 14px;
+  height: 100%;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  width: 100%;
+}
+
+.personal-wrapper {
+  margin-bottom: 1.25rem;
+}
+
 .social {
   line-height: 2rem;
   list-style-type: none;
@@ -907,6 +958,21 @@ footer .newsletter-signup input[type=submit] {
   background: #007fa3 linear-gradient(to right, #007fa3 0%, #1a658f 100%);
 }
 
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+ui-widget-header .ui-state-active,
+a.ui-button:active, .ui-button:active,
+ui-button.ui-state-active:hover {
+  background-color: #007fa3;
+  color: #fff;
+}
+
+.ui-state-active:hover,
+.ui-widget-content .ui-state-active:hover,
+ui-widget-header .ui-state-active:hover {
+  color: #fff;
+}
+
 @media only screen and (min-width: 56.25rem) {
   .main-nav .menu li a:hover {
     color: #007fa3;
@@ -1044,6 +1110,19 @@ footer .newsletter-signup input[type=submit] {
 }
 .ucar .utility-mobile-wrapper {
   background: #28938d linear-gradient(to right, #28938d 0%, #00797c 100%);
+}
+.ucar .ui-state-active,
+.ucar .ui-widget-content .ui-state-active,
+.ucar ui-widget-header .ui-state-active,
+.ucar a.ui-button:active, .ucar .ui-button:active,
+.ucar ui-button.ui-state-active:hover {
+  background-color: #28938d;
+  color: #fff;
+}
+.ucar .ui-state-active:hover,
+.ucar .ui-widget-content .ui-state-active:hover,
+.ucar ui-widget-header .ui-state-active:hover {
+  color: #fff;
 }
 @media only screen and (min-width: 56.25rem) {
   .ucar .main-nav .menu li a:hover {
@@ -1183,6 +1262,19 @@ footer .newsletter-signup input[type=submit] {
 }
 .news .utility-mobile-wrapper {
   background: #0092cb linear-gradient(to right, #0092cb 0%, #0085ca 100%);
+}
+.news .ui-state-active,
+.news .ui-widget-content .ui-state-active,
+.news ui-widget-header .ui-state-active,
+.news a.ui-button:active, .news .ui-button:active,
+.news ui-button.ui-state-active:hover {
+  background-color: #0092cb;
+  color: #fff;
+}
+.news .ui-state-active:hover,
+.news .ui-widget-content .ui-state-active:hover,
+.news ui-widget-header .ui-state-active:hover {
+  color: #fff;
 }
 @media only screen and (min-width: 56.25rem) {
   .news .main-nav .menu li a:hover {

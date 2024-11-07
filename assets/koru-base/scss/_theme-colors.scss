@@ -263,6 +263,24 @@
       @include linear-gradient(right, map-get($colors, 'base'), map-get($colors, 'dark'));
     }
 
+    .ui-state-active,
+    .ui-widget-content .ui-state-active,
+    ui-widget-header .ui-state-active,
+    a.ui-button:active, .ui-button:active,
+    ui-button.ui-state-active:hover {
+      background-color: map-get($colors, 'base');
+      color: map-get($base-colors, 'white');
+    }
+
+    .ui-state-active,
+    .ui-widget-content .ui-state-active,
+    ui-widget-header .ui-state-active {
+      &:hover {
+        color: map-get($base-colors, 'white');
+      }
+    }
+
+
     @media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
       .main-nav {
         .menu {
