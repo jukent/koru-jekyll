@@ -11,11 +11,11 @@ To update the IcoMoon icon set (add, remove, etc):
  6. If the resulting page looks good, click "Download" on the same tab
  7. Unzip the download and overwrite the files in this repository
 
-## Publish the icomoon package to Github Registry
-Commit all new changes to Github. This will trigger a CircleCI build that will update the patch version, commit and push the changes to github (skipping the ci build in the process), packaging the code and publishing it to Github's registry.
+## Publish the icomoon package to GitHub Registry
+Commit all new changes to GitHub repository. This will trigger a CircleCI build that will update the patch version, commit and push the changes to github (skipping the ci build in the process), packaging the code and publishing it to GitHub's registry.
 
 To perform a minor update, run `npm version minor`.
 
 To perform a major update, run `npm version major`.
 
-After you've updated the minor or major version, commit and push the changes to Github.
+After you've updated the minor or major version, commit and push the changes to GitHub.
