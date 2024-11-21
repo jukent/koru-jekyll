@@ -1,6 +1,6 @@
 {
   "name": "@ncar/icomoon",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "NPM package of custom icomoon icons.",
   "repository": {
     "type": "git",
