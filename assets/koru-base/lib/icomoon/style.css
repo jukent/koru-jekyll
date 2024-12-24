@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?o1kgp4');
-  src:  url('fonts/icomoon.eot?o1kgp4#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?o1kgp4') format('truetype'),
-    url('fonts/icomoon.woff?o1kgp4') format('woff'),
-    url('fonts/icomoon.svg?o1kgp4#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ddtq6z');
+  src:  url('fonts/icomoon.eot?ddtq6z#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ddtq6z') format('truetype'),
+    url('fonts/icomoon.woff?ddtq6z') format('woff'),
+    url('fonts/icomoon.svg?ddtq6z#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -34,7 +34,7 @@
 .icon-bystander:before {
   content: "\e902";
 }
-.icon-coaching-social-justice:before {
+.icon-keeping-it-curious:before {
   content: "\e903";
 }
 .icon-supervisor-leadership-training:before {
@@ -70,7 +70,7 @@
 .icon-data-software-services:before {
   content: "\e90e";
 }
-.icon-diversity-inclusion:before {
+.icon-access-culture:before {
   content: "\e90f";
 }
 .icon-documents:before {
