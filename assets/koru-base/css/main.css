@@ -807,19 +807,22 @@ a:hover, a:active {
   color: #007fa3;
 }
 
-h3,
-h4,
-h5,
-h6 {
-  color: #007fa3;
-}
-
 footer .newsletter-signup input[type=submit] {
   background: #007fa3;
+}
+footer h4 {
+  color: #007fa3;
 }
 
 .banner {
   background-color: #007fa3;
+}
+
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  color: #1a658f;
 }
 
 .cta-link:hover {
@@ -909,10 +912,6 @@ footer .newsletter-signup input[type=submit] {
   background-color: #007fa3;
 }
 
-.related-links {
-  background: #007fa3 radial-gradient(ellipse at center, #007fa3 0%, #1a658f 100%);
-}
-
 .related-page-section .details,
 .related-page-section .figure {
   background: #007fa3;
@@ -924,8 +923,17 @@ footer .newsletter-signup input[type=submit] {
 .related-posts a:hover h4 {
   background: #1a658f;
 }
+.related-posts h4,
+.related-posts h5,
+.related-posts h6 {
+  color: #fff;
+}
 
 .related-sections a:hover .figure {
+  background: #007fa3 radial-gradient(ellipse at center, #007fa3 0%, #1a658f 100%);
+}
+
+.sidebar .related-links {
   background: #007fa3 radial-gradient(ellipse at center, #007fa3 0%, #1a658f 100%);
 }
 
@@ -973,28 +981,26 @@ ui-widget-header .ui-state-active:hover {
   color: #fff;
 }
 
-@media only screen and (min-width: 56.25rem) {
-  .main-nav .menu li a:hover {
-    color: #007fa3;
-  }
-}
 .ucar a {
   color: #00797c;
 }
 .ucar a:hover, .ucar a:active {
   color: #28938d;
 }
-.ucar h3,
-.ucar h4,
-.ucar h5,
-.ucar h6 {
-  color: #28938d;
-}
 .ucar footer .newsletter-signup input[type=submit] {
   background: #28938d;
 }
+.ucar footer h4 {
+  color: #28938d;
+}
 .ucar .banner {
   background-color: #28938d;
+}
+.ucar .content h3,
+.ucar .content h4,
+.ucar .content h5,
+.ucar .content h6 {
+  color: #00797c;
 }
 .ucar .cta-link:hover {
   border-color: #28938d;
@@ -1071,9 +1077,6 @@ ui-widget-header .ui-state-active:hover {
 .ucar .programs-listing {
   background-color: #28938d;
 }
-.ucar .related-links {
-  background: #28938d radial-gradient(ellipse at center, #28938d 0%, #00797c 100%);
-}
 .ucar .related-page-section .details,
 .ucar .related-page-section .figure {
   background: #28938d;
@@ -1084,7 +1087,15 @@ ui-widget-header .ui-state-active:hover {
 .ucar .related-posts a:hover h4 {
   background: #00797c;
 }
+.ucar .related-posts h4,
+.ucar .related-posts h5,
+.ucar .related-posts h6 {
+  color: #fff;
+}
 .ucar .related-sections a:hover .figure {
+  background: #28938d radial-gradient(ellipse at center, #28938d 0%, #00797c 100%);
+}
+.ucar .sidebar .related-links {
   background: #28938d radial-gradient(ellipse at center, #28938d 0%, #00797c 100%);
 }
 .ucar .sidebar-breadcrumb li a::before {
@@ -1124,11 +1135,6 @@ ui-widget-header .ui-state-active:hover {
 .ucar ui-widget-header .ui-state-active:hover {
   color: #fff;
 }
-@media only screen and (min-width: 56.25rem) {
-  .ucar .main-nav .menu li a:hover {
-    color: #28938d;
-  }
-}
 
 .news a {
   color: #0085ca;
@@ -1136,17 +1142,20 @@ ui-widget-header .ui-state-active:hover {
 .news a:hover, .news a:active {
   color: #0092cb;
 }
-.news h3,
-.news h4,
-.news h5,
-.news h6 {
-  color: #0092cb;
-}
 .news footer .newsletter-signup input[type=submit] {
   background: #0092cb;
 }
+.news footer h4 {
+  color: #0092cb;
+}
 .news .banner {
   background-color: #0092cb;
+}
+.news .content h3,
+.news .content h4,
+.news .content h5,
+.news .content h6 {
+  color: #0085ca;
 }
 .news .cta-link:hover {
   border-color: #0092cb;
@@ -1223,9 +1232,6 @@ ui-widget-header .ui-state-active:hover {
 .news .programs-listing {
   background-color: #0092cb;
 }
-.news .related-links {
-  background: #0092cb radial-gradient(ellipse at center, #0092cb 0%, #0085ca 100%);
-}
 .news .related-page-section .details,
 .news .related-page-section .figure {
   background: #0092cb;
@@ -1236,7 +1242,15 @@ ui-widget-header .ui-state-active:hover {
 .news .related-posts a:hover h4 {
   background: #0085ca;
 }
+.news .related-posts h4,
+.news .related-posts h5,
+.news .related-posts h6 {
+  color: #fff;
+}
 .news .related-sections a:hover .figure {
+  background: #0092cb radial-gradient(ellipse at center, #0092cb 0%, #0085ca 100%);
+}
+.news .sidebar .related-links {
   background: #0092cb radial-gradient(ellipse at center, #0092cb 0%, #0085ca 100%);
 }
 .news .sidebar-breadcrumb li a::before {
@@ -1275,11 +1289,6 @@ ui-widget-header .ui-state-active:hover {
 .news .ui-widget-content .ui-state-active:hover,
 .news ui-widget-header .ui-state-active:hover {
   color: #fff;
-}
-@media only screen and (min-width: 56.25rem) {
-  .news .main-nav .menu li a:hover {
-    color: #0092cb;
-  }
 }
 
 .ncar {

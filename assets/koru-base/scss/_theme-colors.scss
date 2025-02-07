@@ -1,70 +1,78 @@
+@use "sass:map";
+
 @each $theme, $colors in $theme-colors {
   @include themes($theme) {
     a {
-      color: map-get($colors, 'dark');
+      color: map.get($colors, 'dark');
 
       &:hover,
       &:active {
-        color: map-get($colors, 'base');
+        color: map.get($colors, 'base');
       }
-    }
-
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: map-get($colors, 'base');
     }
 
     footer {
       .newsletter-signup {
         input {
           &[type='submit'] {
-            background: map-get($colors, 'base');
+            background: map.get($colors, 'base');
           }
         }
+      }
+
+      h4 {
+        color: map.get($colors, 'base');
       }
     }
 
     .banner {
-      background-color: map-get($colors, 'base');
+      background-color: map.get($colors, 'base');
+    }
+
+    .content {
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: map.get($colors, 'dark');
+      }
     }
 
     .cta-link {
       &:hover {
-        border-color: map-get($colors, 'base');
-        color: map-get($base-colors, 'dark-blue');
+        border-color: map.get($colors, 'base');
+        color: map.get($base-colors, 'dark-blue');
 
         &::before {
-          border-color: transparent map-get($colors, 'base');
+          border-color: transparent map.get($colors, 'base');
         }
       }
 
       &.lime-green-on-gray {
         &:hover {
-          border-color: map-get($base-colors, 'lime-green');
-          color: map-get($base-colors, 'white');
+          border-color: map.get($base-colors, 'lime-green');
+          color: map.get($base-colors, 'white');
 
           &::before {
-            border-color: transparent map-get($base-colors, 'lime-green');
+            border-color: transparent map.get($base-colors, 'lime-green');
           }
         }
       }
 
       &.white-on-color {
-        background: map-get($colors, 'base');
+        background: map.get($colors, 'base');
 
         &::after {
-          border-color: transparent map-get($colors, 'base');
+          border-color: transparent map.get($colors, 'base');
         }
 
         &:hover,
         &:active {
-          border-color: map-get($base-colors, 'white');
-          color: map-get($base-colors, 'lime-green');
+          border-color: map.get($base-colors, 'white');
+          color: map.get($base-colors, 'lime-green');
 
           &::before {
-            border-color: transparent map-get($base-colors, 'white');
+            border-color: transparent map.get($base-colors, 'white');
           }
         }
       }
@@ -75,7 +83,7 @@
         > li {
           &.is-active {
             > a {
-              color: map-get($colors, 'base');
+              color: map.get($colors, 'base');
             }
           }
         }
@@ -84,13 +92,13 @@
 
     .featured-section {
       &:hover {
-        @include radial-gradient(map-get($colors, 'base'), map-get($colors, 'dark'));
+        @include radial-gradient(map.get($colors, 'base'), map.get($colors, 'dark'));
       }
     }
 
     .header-default-search-mobile {
       &::after {
-        border-color: transparent map-get($colors, 'dark');
+        border-color: transparent map.get($colors, 'dark');
       }
     }
 
@@ -99,7 +107,7 @@
         &.with-image {
           &.open {
             .banner-content {
-              background: transparentize(map-get($colors, 'base'), .3);
+              background: transparentize(map.get($colors, 'base'), .3);
             }
           }
         }
@@ -108,15 +116,15 @@
 
     .main-nav {
       .submenu {
-        background: transparentize(map-get($colors, 'dark'), .08);
+        background: transparentize(map.get($colors, 'dark'), .08);
 
         li {
           &:first-child {
             a {
-              background-color: map-get($colors, 'dark');
+              background-color: map.get($colors, 'dark');
 
               &::after {
-                border-color: transparent map-get($colors, 'dark');
+                border-color: transparent map.get($colors, 'dark');
               }
             }
           }
@@ -126,7 +134,7 @@
 
     .members-details-list {
       .item-details {
-        border-left-color: map-get($colors, 'base');
+        border-left-color: map.get($colors, 'base');
       }
 
       .item-titles {
@@ -134,7 +142,7 @@
           a {
             &:hover,
             &:active {
-              color: map-get($colors, 'base');
+              color: map.get($colors, 'base');
             }
           }
         }
@@ -142,13 +150,13 @@
     }
 
     .news-archive {
-      color: map-get($colors, 'dark');
+      color: map.get($colors, 'dark');
     }
 
     .newsletter-signup {
       form {
         &::after {
-          border-color: transparent map-get($colors, 'base');
+          border-color: transparent map.get($colors, 'base');
         }
       }
     }
@@ -157,18 +165,18 @@
       .offering {
         h4 {
           a {
-            color: map-get($colors, 'dark');
+            color: map.get($colors, 'dark');
 
             &:link,
             &:visited {
-              color: map-get($colors, 'dark');
+              color: map.get($colors, 'dark');
             }
           }
         }
 
         .post-image {
           &::before {
-            border-color: map-get($colors, 'base');
+            border-color: map.get($colors, 'base');
           }
         }
       }
@@ -176,34 +184,36 @@
 
     .post-list {
       .date {
-        color: map-get($colors, 'dark');
+        color: map.get($colors, 'dark');
       }
     }
 
     .programs-listing {
-      background-color: map-get($colors, 'base');
-    }
-
-    .related-links {
-      @include radial-gradient(map-get($colors, 'base'), map-get($colors, 'dark'));
+      background-color: map.get($colors, 'base');
     }
 
     .related-page-section {
       .details,
       .figure {
-        background: map-get($colors, 'base');
+        background: map.get($colors, 'base');
       }
     }
 
     .related-posts {
       a {
         &:hover {
-          border-color: map-get($colors, 'dark');
+          border-color: map.get($colors, 'dark');
 
           h4 {
-            background: map-get($colors, 'dark');
+            background: map.get($colors, 'dark');
           }
         }
+      }
+
+      h4,
+      h5,
+      h6 {
+        color: map.get($base-colors, 'white');
       }
     }
 
@@ -211,9 +221,15 @@
       a {
         &:hover {
           .figure {
-            @include radial-gradient(map-get($colors, 'base'), map-get($colors, 'dark'));
+            @include radial-gradient(map.get($colors, 'base'), map.get($colors, 'dark'));
           }
         }
+      }
+    }
+
+    .sidebar {
+      .related-links {
+        @include radial-gradient(map-get($colors, 'base'), map-get($colors, 'dark'));
       }
     }
 
@@ -221,26 +237,26 @@
       li {
         a {
           &::before {
-            border-right-color: map-get($colors, 'dark');
+            border-right-color: map.get($colors, 'dark');
           }
         }
 
         &.active {
           > a {
-            background: map-get($colors, 'dark');
+            background: map.get($colors, 'dark');
           }
         }
       }
     }
 
     .stay-connected {
-      background: map-get($colors, 'base');
+      background: map.get($colors, 'base');
 
       .newsletter-signup {
         input {
           &[type='email'] {
             &::placeholder {
-              color: map-get($colors, 'dark');
+              color: map.get($colors, 'dark');
             }
           }
         }
@@ -249,18 +265,18 @@
 
     .title-bar {
       button {
-        @include linear-gradient(bottom, map-get($colors, 'base'), map-get($colors, 'dark'));
+        @include linear-gradient(bottom, map.get($colors, 'base'), map.get($colors, 'dark'));
       }
     }
 
     .top-bar {
       .accordion-menu {
-        background: map-get($colors, 'base');
+        background: map.get($colors, 'base');
       }
     }
 
     .utility-mobile-wrapper {
-      @include linear-gradient(right, map-get($colors, 'base'), map-get($colors, 'dark'));
+      @include linear-gradient(right, map.get($colors, 'base'), map.get($colors, 'dark'));
     }
 
     .ui-state-active,
@@ -268,30 +284,15 @@
     ui-widget-header .ui-state-active,
     a.ui-button:active, .ui-button:active,
     ui-button.ui-state-active:hover {
-      background-color: map-get($colors, 'base');
-      color: map-get($base-colors, 'white');
+      background-color: map.get($colors, 'base');
+      color: map.get($base-colors, 'white');
     }
 
     .ui-state-active,
     .ui-widget-content .ui-state-active,
     ui-widget-header .ui-state-active {
       &:hover {
-        color: map-get($base-colors, 'white');
-      }
-    }
-
-
-    @media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
-      .main-nav {
-        .menu {
-          li {
-            a {
-              &:hover {
-                color: map-get($colors, 'base');
-              }
-            }
-          }
-        }
+        color: map.get($base-colors, 'white');
       }
     }
   }

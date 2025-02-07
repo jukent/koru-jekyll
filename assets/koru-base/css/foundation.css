@@ -10757,6 +10757,9 @@ form.general-styles {
 .programs-listing p {
   color: #fff;
 }
+.programs-listing .panel-title h4 {
+  color: #bfd600;
+}
 .programs-listing .program-listing .cta-link {
   margin-top: 1.5rem;
 }
@@ -10879,7 +10882,6 @@ form.general-styles {
   width: 100%;
 }
 .related-posts .featured-post h4 {
-  color: #fff;
   font-size: 1.25rem;
   font-weight: 600;
 }

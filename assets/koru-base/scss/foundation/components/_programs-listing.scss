@@ -16,6 +16,12 @@
     color: map-get($base-colors, 'white');
   }
 
+  .panel-title {
+    h4 {
+      color: map-get($base-colors, 'lime-green');
+    }
+  }
+
   .program-listing {
     .cta-link {
       margin-top: 1.5rem;
