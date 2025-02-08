@@ -65,6 +65,16 @@ header {
     }
   }
 
+  .submenu {
+    li {
+      &:first-child {
+        a::after {
+          border-color: transparent #012169;
+        }
+      }
+    }
+  }
+
   ul {
     &.accordion-menu {
       padding-top: 0;
