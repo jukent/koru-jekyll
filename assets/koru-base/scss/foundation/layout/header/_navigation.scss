@@ -3,12 +3,8 @@ header {
   flex-shrink: 0;
 
   button {
-    &.fa,
-    .fa {
+    &.fa-solid {
       color: map-get($base-colors, 'white');
-    }
-
-    &.fa {
       cursor: pointer;
       padding: 4%;
     }
@@ -203,7 +199,7 @@ header {
           &::before {
             @include font-awesome;
             color: map-get($base-colors, 'white');
-            content: '\f10c';
+            content: '\f111';
             left: 6px;
             top: 5px;
           }
@@ -273,7 +269,7 @@ header {
       }
 
       i {
-        &.fa {
+        &.fa-solid {
           display: none;
         }
       }

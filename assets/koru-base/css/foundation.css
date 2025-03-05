@@ -9189,11 +9189,8 @@ header {
   background-color: #fff;
   flex-shrink: 0;
 }
-header button.fa,
-header button .fa {
+header button.fa-solid {
   color: #fff;
-}
-header button.fa {
   cursor: pointer;
   padding: 4%;
 }
@@ -9341,12 +9338,12 @@ header .sticky {
 }
 .main-nav .submenu li:not(:first-child) a::before {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 14px/1 "Font Awesome 6 Free";
   font-size: inherit;
   text-rendering: auto;
   transform: translate(0, 0);
   color: #fff;
-  content: "\f10c";
+  content: "\f111";
   left: 6px;
   top: 5px;
 }
@@ -9397,7 +9394,7 @@ header .sticky {
   header a.mobile-menu-button {
     display: none;
   }
-  header a i.fa {
+  header a i.fa-solid {
     display: none;
   }
   header .menu li {
