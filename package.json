@@ -4,6 +4,9 @@
   "description": "Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.",
   "main": "index.js",
   "scripts": {
+    "clean-koru": "rm -rf assets/koru-base",
+    "copy-koru": "cp -r ./node_modules/@ncar/koru-base assets/",
+    "build": "npm run clean-koru && npm run copy-koru",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
