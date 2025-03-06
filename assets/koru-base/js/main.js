@@ -60,11 +60,3 @@ jQuery(document).ready(function($) {
 
 // initialize Foundation
 jQuery(document).foundation();
-
-// Hide YouTube information panel
-const divs = document.querySelectorAll('.ytp-info-panel-preview');
-
-// Loop through each div and delete the text
-divs.forEach(div => {
-  div.textContent = '';
-});
