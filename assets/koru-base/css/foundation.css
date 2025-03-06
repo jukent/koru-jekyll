@@ -9340,6 +9340,7 @@ header .sticky {
   display: inline-block;
   font: normal normal normal 14px/1 "Font Awesome 6 Free";
   font-size: inherit;
+  font-weight: 900;
   text-rendering: auto;
   transform: translate(0, 0);
   color: #fff;
@@ -10375,6 +10376,12 @@ form.general-styles {
   color: #bfd600;
 }
 .sidebar-breadcrumb li a:hover i::before {
+  display: inline-block;
+  font: normal normal normal 14px/1 "Font Awesome 6 Free";
+  font-size: inherit;
+  font-weight: 900;
+  text-rendering: auto;
+  transform: translate(0, 0);
   content: "\f140";
 }
 .sidebar-breadcrumb li a i {
@@ -10433,6 +10440,12 @@ form.general-styles {
   color: #bfd600;
 }
 .sidebar-breadcrumb .home:hover i::before {
+  display: inline-block;
+  font: normal normal normal 14px/1 "Font Awesome 6 Free";
+  font-size: inherit;
+  font-weight: 900;
+  text-rendering: auto;
+  transform: translate(0, 0);
   content: "\f140";
 }
 
