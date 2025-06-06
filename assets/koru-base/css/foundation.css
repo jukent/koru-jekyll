@@ -10088,7 +10088,7 @@ form.general-styles {
   display: none;
 }
 .home-hero.banner.with-image a {
-  color: #fff;
+  color: #332f21;
 }
 .home-hero.banner.with-image a:hover, .home-hero.banner.with-image a:active {
   color: #000;
@@ -10124,9 +10124,8 @@ form.general-styles {
   text-transform: uppercase;
   align-items: center;
   align-self: stretch;
-  border: 3px solid #bfd600;
+  background: #bfd600;
   border-right: 0;
-  color: #fff;
   display: flex;
   font-size: 0.8125rem;
   line-height: 1rem;
@@ -10462,6 +10461,16 @@ form.general-styles {
 }
 .featured-section:hover h4 {
   color: #fff;
+}
+.featured-section.cell {
+  padding: 0;
+}
+.featured-section a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
 }
 .featured-section h4 {
   color: #bfd600;

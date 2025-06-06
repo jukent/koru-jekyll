@@ -30,7 +30,7 @@
       }
 
       a {
-        color: map-get($base-colors, 'white');
+        color: map-get($base-colors, 'darkest-gray');
 
         &:hover,
         &:active {
@@ -76,9 +76,8 @@
           @include uppercase;
           align-items: center;
           align-self: stretch;
-          border: 3px solid map-get($base-colors, 'lime-green');
+          background: map-get($base-colors, 'lime-green');
           border-right: 0;
-          color: map-get($base-colors, 'white');
           display: flex;
           font-size: map-get($font-sizes, 'xxsmall');
           line-height: 1rem;
