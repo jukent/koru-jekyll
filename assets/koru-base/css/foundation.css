@@ -10084,9 +10084,6 @@ form.general-styles {
 .home-hero.banner.with-image.open .inner {
   display: block;
 }
-.home-hero.banner.with-image.open .more .description {
-  display: none;
-}
 .home-hero.banner.with-image a {
   color: #332f21;
 }
@@ -10119,17 +10116,11 @@ form.general-styles {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
-.home-hero.banner.with-image .more .description {
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  align-items: center;
-  align-self: stretch;
-  background: #bfd600;
-  border-right: 0;
-  display: flex;
-  font-size: 0.8125rem;
-  line-height: 1rem;
-  padding: 0.3rem 0.7rem;
+.home-hero.banner.with-image .more a {
+  color: #000;
+}
+.home-hero.banner.with-image .more a:hover {
+  color: #fff;
 }
 .home-hero.banner.with-image .more .expand {
   background: #bfd600;
