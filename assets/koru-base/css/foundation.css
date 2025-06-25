@@ -10081,9 +10081,6 @@ form.general-styles {
   padding: 60px 15px;
   transition: opacity 100ms ease-in;
 }
-.home-hero.banner.with-image.open .inner {
-  display: block;
-}
 .home-hero.banner.with-image a {
   color: #332f21;
 }
@@ -10095,21 +10092,6 @@ form.general-styles {
 }
 .home-hero.banner.with-image .grid-x:nth-child(2) {
   width: 94%;
-}
-.home-hero.banner.with-image .inner {
-  display: none;
-}
-.home-hero.banner.with-image .inner p {
-  color: #fff;
-}
-.home-hero.banner.with-image .inner a {
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #bfd600;
-  font-weight: 600;
-}
-.home-hero.banner.with-image .inner a:hover, .home-hero.banner.with-image .inner a:active {
-  color: #fff;
 }
 .home-hero.banner.with-image .more {
   font-size: 1.75rem;

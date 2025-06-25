@@ -17,10 +17,6 @@
           padding: 60px 15px;
           transition: opacity 100ms ease-in;
         }
-
-        .inner {
-          display: block;
-        }
       }
 
       a {
@@ -39,25 +35,6 @@
       .grid-x {
         &:nth-child(2) {
           width: 94%;
-        }
-      }
-
-      .inner {
-        display: none;
-
-        p {
-          color: map-get($base-colors, 'white');
-        }
-
-        a {
-          @include uppercase;
-          color: map-get($base-colors, 'lime-green');
-          font-weight: map-get($font-weights, 'semi-bold');
-
-          &:hover,
-          &:active {
-            color: map-get($base-colors, 'white');
-          }
         }
       }
 
