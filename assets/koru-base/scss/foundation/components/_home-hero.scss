@@ -45,6 +45,8 @@
 
         a {
           color: map-get($base-colors, 'black');
+          line-height: 1rem;
+          text-transform: uppercase;
 
           &:hover {
             color: map-get($base-colors, 'white');
