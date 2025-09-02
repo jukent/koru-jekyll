@@ -10100,7 +10100,7 @@ form.general-styles {
 }
 .home-hero.banner.with-image .more a {
   color: #000;
-  line-height: 1rem;
+  line-height: 1.25rem;
   text-transform: uppercase;
 }
 .home-hero.banner.with-image .more a:hover {

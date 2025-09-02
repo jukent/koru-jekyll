@@ -348,7 +348,7 @@ pre code {
   text-shadow: 0 0 1.875rem rgba(0, 0, 0, 0.5);
 }
 .banner.with-image .banner-gradient {
-  background: linear-gradient(0deg, rgba(38, 37, 38, 0.2), rgba(38, 37, 38, 0.2));
+  background: linear-gradient(0deg, rgba(38, 37, 38, 0.5) 50%, rgba(38, 37, 38, 0) 100%);
 }
 .banner > div {
   height: 100%;
