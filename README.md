@@ -74,6 +74,7 @@ menu:
 ## New Release for downstream sites
 
 * Commit and push your changes to GitHub
+* If making changes directly in this repository, bump the version in package.json using 'npm version patch/minor/major' as appropriate.
 * Create a new version on GitHub
 * Pull in the new release at https://github.com/NCAR/jekyll-koru-test in the _config.yml file.
 
