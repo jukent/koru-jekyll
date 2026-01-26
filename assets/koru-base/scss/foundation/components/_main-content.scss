@@ -1,17 +1,19 @@
+@use "sass:map";
+
 .with-sidebar {
   .sidebar {
     margin-top: 1rem;
     padding-left: 1.875rem;
 
     .article-details {
-      @include radial-gradient(map-get($base-colors, 'gray'), map-get($base-colors, 'dark-gray'));
-      box-shadow: -5px -5px 24px -4px rgba(map-get($base-colors, 'gray'), .56);
+      background-color: map.get($shared-colors, 'space-blue');
+      box-shadow: -5px -5px 24px -4px rgba(map.get($shared-colors, 'light-gray'), .56);
       padding: 1.5rem;
 
       h5,
       h6,
       p {
-        color: map-get($base-colors, 'white');
+        color: map.get($shared-colors, 'light-gray');
       }
     }
   }
@@ -31,7 +33,7 @@
   }
 }
 
-@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
+@media only screen and (min-width: map.get($custom-breakpoints, 'mlarge')) {
   .with-sidebar {
     .sidebar {
       margin-top: -5rem;
@@ -39,18 +41,18 @@
   }
 }
 
-@media only screen and (min-width: map-get($custom-breakpoints, 'xlarge')) {
+@media only screen and (min-width: map.get($custom-breakpoints, 'xlarge')) {
   .primary-content {
     article {
       ul,
       ol {
-        font-size: map-get($font-sizes, 'medium');
+        font-size: map.get($font-sizes, 'medium');
       }
     }
   }
 }
 
-@media only screen and (min-width: map-get($custom-breakpoints, 'xxlarge')) {
+@media only screen and (min-width: map.get($custom-breakpoints, 'xxlarge')) {
   .primary-content {
     @include xy-grid-container(85rem, 1.875rem);
 

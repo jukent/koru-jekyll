@@ -4,9 +4,11 @@
   "description": "Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.",
   "main": "index.js",
   "scripts": {
-    "clean-koru": "rm -rf assets/koru-base",
-    "copy-koru": "cp -r ./node_modules/@ncar/koru-base assets/",
-    "build": "npm run clean-koru && npm run copy-koru",
+    "css:clean": "del-cli assets/css/styles.css",
+    "css:sass": "sass --no-source-map --load-path=node_modules assets/css/styles.scss:assets/css/styles.css",
+    "koru:clean": "rm -rf assets/koru-base",
+    "koru:copy": "cp -r ./node_modules/@ncar/koru-base assets/",
+    "build": "npm run koru:clean && npm run koru:copy && npm run css:clean && npm run css:sass",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,10 +22,10 @@
   },
   "homepage": "https://github.com/NCAR/jekyll-koru#readme",
   "devDependencies": {
-    "backstopjs": "^6.3.23",
     "patch-package": "^8.0.0"
   },
   "dependencies": {
-    "@ncar/koru-base": "^2.1.116"
+    "del-cli": "^7.0.0",
+    "@ncar/koru-base": "^3.0"
   }
 }

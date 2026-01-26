@@ -19,15 +19,6 @@
         }
       }
 
-      a {
-        color: map-get($base-colors, 'darkest-gray');
-
-        &:hover,
-        &:active {
-          color: map-get($base-colors, 'black');
-        }
-      }
-
       p {
         text-align: left;
       }
@@ -39,23 +30,12 @@
       }
 
       .more {
-        font-size: map-get($font-sizes, 'xxlarge');
         margin-bottom: 1rem;
         margin-top: 1rem;
 
-        a {
-          color: map-get($base-colors, 'black');
-          line-height: 1.25rem;
-          text-transform: uppercase;
-
-          &:hover {
-            color: map-get($base-colors, 'white');
-          }
-        }
-
         .expand {
-          background: map-get($base-colors, 'lime-green');
-          border: 3px solid map-get($base-colors, 'lime-green');
+          background: map-get($shared-colors, 'yellow');
+          border: 3px solid map-get($shared-colors, 'yellow');
           line-height: 2.65rem;
           max-width: 3rem;
         }

@@ -1,3 +1,5 @@
+@use "sass:map";
+
 .members-details-list {
   dl {
     &.date {
@@ -11,27 +13,30 @@
   }
 
   dt {
-    font-size: map-get($font-sizes, 'xxxxsmall');
-    font-weight: map-get($font-weights, 'semi-bold');
+    font-size: map.get($font-sizes, 'xxxxsmall');
+    font-weight: map.get($font-weights, 'semi-bold');
     margin-bottom: .25rem;
   }
 
+  h2,
   h3 {
-    color: map-get($base-colors, 'darkest-gray');
+    color: map-get($shared-colors, 'blue');
   }
 
   h4 {
-    font-size: map-get($font-sizes, 'default');
+    color: map.get($shared-colors, 'blue');
+    font-size: map.get($font-sizes, 'default');
     margin-bottom: .5rem;
     margin-top: .35rem;
   }
 
   .item-details {
+    border-left-color: map.get($shared-colors, 'yellow');
     border-left-style: solid;
     border-left-width: .125rem;
 
     p {
-      font-size: map-get($font-sizes, 'xsmall');
+      font-size: map.get($font-sizes, 'xsmall');
       margin: 0;
     }
   }
@@ -47,7 +52,7 @@
       margin-top: 0;
 
       a {
-        color: map-get($base-colors, 'gray');
+        color: map.get($shared-colors, 'light-gray');
       }
     }
   }
@@ -59,10 +64,10 @@
   }
 }
 
-@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
+@media only screen and (min-width: map.get($custom-breakpoints, 'mlarge')) {
   .members-details-list {
     dt {
-      font-size: map-get($font-sizes, 'xxsmall');
+      font-size: map.get($font-sizes, 'xxsmall');
     }
   }
 }

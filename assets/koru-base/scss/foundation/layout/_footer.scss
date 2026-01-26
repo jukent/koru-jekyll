@@ -1,9 +1,16 @@
+@use "sass:map";
+
 footer {
-  background: map-get($base-colors, 'darkest-gray');
+  background: map-get($shared-colors, 'space-blue');
   flex-shrink: 0;
   font-size: map-get($font-sizes, 'xsmall');
 
+  a {
+    font-size: map.get($font-sizes, 'xsmall');
+  }
+
   h4 {
+    color: map-get($shared-colors, 'yellow');
     font-size: map-get($font-sizes, 'large');
   }
 
@@ -15,17 +22,17 @@ footer {
   }
 
   p {
-    color: map-get($base-colors, 'lightest-gray');
+    color: map-get($shared-colors, 'light-gray');
   }
 }
 
 .footer-sponsor {
-  background: map-get($base-colors, 'gray');
+  background: map-get($shared-colors, 'space-blue-33');
   padding-bottom: 30px;
   padding-top: 30px;
 
   p {
-    color: map-get($base-colors, 'white');
+    color: map-get($shared-colors, 'white');
     margin: 0;
   }
 
@@ -50,20 +57,12 @@ footer {
     margin-bottom: 5px;
 
     a {
-      color: map-get($base-colors, 'lightest-gray');
+      @include uppercase;
+      font-weight: map.get($font-weights, 'semi-bold');
+      letter-spacing: .06rem;
 
       i {
         padding-right: 5px;
-      }
-
-      &:link,
-      &:visited {
-        color: map-get($base-colors, 'lightest-gray');
-      }
-
-      &:hover,
-      &:active {
-        color: map-get($base-colors, 'lime-green');
       }
     }
   }
@@ -75,16 +74,14 @@ footer {
   li {
     a {
       @include uppercase;
-      color: map-get($base-colors, 'lightest-gray');
+      color: map-get($shared-colors, 'light-gray');
+      font-size: map.get($font-sizes, 'xsmall');
+      font-weight: map.get($font-weights, 'semi-bold');
+      letter-spacing: .06em;
 
       &:link,
       &:visited {
-        color: map-get($base-colors, 'lightest-gray');
-      }
-
-      &:hover,
-      &:active {
-        color: map-get($base-colors, 'lime-green');
+        color: map-get($shared-colors, 'light-gray');
       }
     }
 
@@ -94,14 +91,14 @@ footer {
   }
 
   small {
-    font-size: inherit;
+    font-size: map-get($font-sizes, 'medium');
     padding-left: .7rem;
   }
 
   small,
   li,
   ul {
-    color: map-get($base-colors, 'lightest-gray');
+    color: map-get($shared-colors, 'light-gray');
   }
 
   .menu {
@@ -114,21 +111,11 @@ footer {
 
   form {
     position: relative;
-
-    &::after {
-      @include pseudo-element;
-      border-style: solid;
-      border-width: 15px 0 15px 15px;
-      height: 0;
-      right: -15px;
-      top: 0;
-      width: 0;
-    }
   }
 
   input {
     &[type='email'] {
-      background: map-get($base-colors, 'white');
+      background: map-get($shared-colors, 'white');
       border: 0;
       height: 30px;
       margin: 0;
@@ -139,19 +126,19 @@ footer {
     &[type='submit'] {
       @include uppercase;
       border: 0;
-      color: map-get($base-colors, 'white');
+      color: map-get($shared-colors, 'white');
       cursor: pointer;
       font-size: map-get($font-sizes, 'xxxsmall');
       font-weight: 700;
       height: 30px;
-      line-height: 2.7;
+      line-height: 1;
       outline: 0;
-      padding: 0 0 0 .3rem;
+      padding: 0 .3rem;
       position: absolute;
       right: 0;
       text-align: center;
       top: 0;
-      width: 30%;
+      width: 32%;
     }
   }
 

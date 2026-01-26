@@ -1,10 +1,5 @@
----
----
-
-  // start content
+// start content
 header {
-  color: #012169;
-
   button {
     &.fa-solid {
       padding-left: .2rem;
@@ -44,34 +39,14 @@ header {
 
 .main-nav {
   .grid-x {
-    background-color: #012169;
     justify-content: center;
   }
 
   .menu {
-    background-color: #012169;
     justify-content: center;
 
     li:not(.is-submenu-item) {
       padding: .5em;
-
-      a {
-        color: #fff;
-
-        &:hover {
-          color: #bfd600;
-        }
-      }
-    }
-  }
-
-  .submenu {
-    li {
-      &:first-child {
-        a::after {
-          border-color: transparent #012169;
-        }
-      }
     }
   }
 
@@ -83,7 +58,6 @@ header {
 }
 
 .mobile-nav {
-  background-color: #012169;
   color: #fff;
   padding: .5rem 0;
 }
@@ -121,7 +95,6 @@ header {
 
 @media only screen and (min-width: 900px) {
   li:hover.is-dropdown-submenu-parent > a::after {
-    border-color: #012169 transparent;
     top: 135%;
   }
 
@@ -133,9 +106,5 @@ header {
 
   .ncar-title {
     font-size: 1rem;
-  }
-
-  .top-bar {
-    padding: 2rem 0;
   }
 }

@@ -74,41 +74,47 @@ $header-styles: (
 
 // Colors
 $theme-colors: (
-  'base': (
-    'base': #007fa3,
-    'dark': #1a658f,
-    'light': #00c1d5,
+  'ncar': (
+    'base': #0057c2,
+    'base-33': #6b8cce,
+    'base-66': #adc2e6,
+    'light': #42c0ff,
+    'light-33': #86d3fc,
+    'light-66': #bfe5f9
   ),
   'ucar': (
-    'base': #28938d,
-    'dark': #00797c,
-    'light': #40c1ac
+    'base': #00818f,
+    'base-33': #00a2b4,
+    'base-66': #71c0cb,
+    'light': #34e1f4,
+    'light-33': #86e8f5,
+    'light-66': #c0f0f5
   ),
   'news': (
-    'base': #0092cb,
-    'dark': #0085ca,
-    'light': #5bc2e7
+    'base': #00357a,
+    'base-33': #5a77a6,
+    'base-66': #a8b7ce,
+    'light': #011837,
+    'light-33': #556379,
+    'light-66': #a5adb7
   )
 );
 
-$base-colors: (
+$shared-colors: (
+  'space-blue': #011837,
+  'space-blue-33': #556379,
+  'space-blue-66': #a5adb7,
+  'blue': #00357a,
+  'blue-33': #5a77a6,
+  'blue-66': #a8b7ce,
+  'orange': #faa119,
+  'orange-33': #fabe72,
+  'orange-66': #f8dbB5,
+  'yellow': #fdd509,
+  'yellow-33': #fbe174,
+  'yellow-66': #f8ebb7,
+  'red': #FF1F1F,
+  'light-gray': #f6f7f6,
   'white': #fff,
-  'dark-white': #d9d9d6,
-  'lightest-gray': #dbe2e9,
-  'light-gray': #63666a,
-  'gray': #414143,
-  'dark-gray': #323133,
-  'darkest-gray': #332f21,
-  'black': #000,
-  'cool-blue': #0779bf, // used for GDPR Compliance
-  'dark-blue': #012169,
-  'lime-green': #bfd600,
-);
-
-$notification-colors: (
-  'primary': #d8e8ff,
-  'secondary': #767676,
-  'success': #3adb76,
-  'warning': #ffff32,
-  'alert': #e50000,
+  'black': #0a0a0a,
 );

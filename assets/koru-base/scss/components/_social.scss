@@ -9,13 +9,7 @@
 
     &:link,
     &:visited {
-      color: map-get($base-colors, 'white');
-    }
-
-    &:hover {
-      i {
-        color: map-get($base-colors, 'lime-green');
-      }
+      color: map-get($shared-colors, 'white');
     }
   }
 }

@@ -1,4 +1,7 @@
+@use "sass:map";
+
 .stay-connected {
+  background: map.get($shared-colors, 'space-blue');
   padding: 20px;
 
   > div {
@@ -8,31 +11,21 @@
   a {
     &:hover {
       i {
-        color: map-get($base-colors, 'dark-blue');
+        color: map-get($shared-colors, 'space-blue');
       }
     }
   }
 
   h5 {
-    color: map-get($base-colors, 'white');
+    color: map-get($shared-colors, 'yellow');
   }
 
   .newsletter-signup {
     margin: auto;
-    width: 75%;
+    width: 80%;
 
     form {
       margin: 0;
-
-      &::after {
-        border-color: transparent map-get($base-colors, 'dark-blue');
-      }
-    }
-
-    input {
-      &.button {
-        background: map-get($base-colors, 'dark-blue');
-      }
     }
   }
 
@@ -48,7 +41,7 @@
 
   @media only screen and (min-width: map-get($custom-breakpoints, 'xlarge')) {
     .newsletter-signup {
-      width: 75%;
+      width: 80%;
     }
   }
 }

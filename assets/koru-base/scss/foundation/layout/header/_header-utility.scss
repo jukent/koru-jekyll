@@ -5,7 +5,7 @@ li {
         &::after {
           border: inset 12px;
           border-bottom-width: 0;
-          border-color: map-get($base-colors, 'white') transparent transparent;
+          border-color: map-get($shared-colors, 'white') transparent transparent;
           border-top-style: solid;
           content: '';
           display: block;
@@ -25,7 +25,7 @@ li {
 }
 
 .utility-menu {
-  background: map-get($base-colors, 'dark-gray');
+  background: map-get($shared-colors, 'black');
   padding: 15px 20px;
 
   li {
@@ -52,12 +52,7 @@ li {
 
     &:link,
     &:visited {
-      color: map-get($base-colors, 'white');
-    }
-
-    &:hover,
-    &:active {
-      color: map-get($base-colors, 'darkest-gray');
+      color: map-get($shared-colors, 'white');
     }
   }
 
@@ -76,13 +71,13 @@ li {
 .utility-wrapper {
   li {
     a {
-      color: map-get($base-colors, 'white');
+      color: map-get($shared-colors, 'white');
       font-weight: map-get($font-weights, 'semi-bold');
       padding: 5px 0;
 
       &:hover,
       &:active {
-        color: map-get($base-colors, 'white');
+        color: map-get($shared-colors, 'white');
       }
     }
   }
@@ -106,14 +101,14 @@ li {
   }
 
   .top-bar {
-    background-color: map-get($base-colors, 'white');
+    background-color: map-get($shared-colors, 'white');
   }
 
   .top-bar-menus {
-    background-color: map-get($base-colors, 'dark-white');
+    background-color: map-get($shared-colors, 'dark-white');
 
     ul {
-      background-color: map-get($base-colors, 'dark-white');
+      background-color: map-get($shared-colors, 'dark-white');
     }
   }
 
@@ -131,8 +126,12 @@ li {
 
     .input-group-button {
       button {
+        font-size: map-get($font-sizes, 'xsmall');
+        font-weight: map-get($font-weights, 'semi-bold');
+        letter-spacing: .06rem;
         padding-bottom: .5rem;
         padding-top: .5rem;
+        text-transform: uppercase;
       }
     }
   }
@@ -156,13 +155,12 @@ li {
       line-height: 1.6rem;
 
       a {
-        color: map-get($base-colors, 'gray');
-        font-weight: map-get($font-weights, 'regular');
+        color: map-get($shared-colors, 'blue');
         padding: 0 10px;
 
         &:active,
         &:hover {
-          color: map-get($base-colors, 'light-gray');
+          color: map-get($shared-colors, 'blue-33');
         }
       }
     }
@@ -189,7 +187,7 @@ li {
       &.is-dropdown-submenu-parent {
         > a {
           &::after {
-            top: 125%;
+            top: 116%;
           }
         }
       }

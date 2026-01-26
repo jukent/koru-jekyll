@@ -1,15 +1,21 @@
+@use "sass:map";
+
 .sidebar-breadcrumb {
-  @include radial-gradient(map-get($base-colors, 'gray'), map-get($base-colors, 'dark-gray'));
-  box-shadow: -5px -5px 24px -4px rgba(map-get($base-colors, 'gray'), .56);
+  @include uppercase;
+
+  background-color: map.get($shared-colors, 'space-blue');
+  font-size: map.get($font-sizes, 'xsmall');
+  font-weight: map.get($font-weights, 'semi-bold');
+  letter-spacing: .06rem;
   padding: 40px 0;
 
   a {
-    color: map-get($base-colors, 'lightest-gray');
+    color: map.get($shared-colors, 'light-gray');
 
     &:link,
     &:visited,
     &:active {
-      color: map-get($base-colors, 'lightest-gray');
+      color: map.get($shared-colors, 'light-gray');
     }
   }
 
@@ -22,22 +28,7 @@
       padding: 5px 20px 5px 45px;
       position: relative;
 
-      &::before {
-        @include pseudo-element;
-        border-bottom: 16px solid transparent;
-        border-right-style: solid;
-        border-right-width: 15px;
-        border-top: 16px solid transparent;
-        display: none;
-        height: 0;
-        left: -15px;
-        top: 0;
-        width: 0;
-      }
-
       &:hover {
-        color: map-get($base-colors, 'lime-green');
-
         i {
           &::before {
             @include font-awesome;
@@ -59,27 +50,25 @@
       @include uppercase;
 
       > a {
-        color: map-get($base-colors, 'white');
+        color: map.get($shared-colors, 'space-blue');
       }
     }
 
     &:not(:first-child) {
       ul {
         li {
-          @include sentence-case;
-
           a {
             padding-left: 70px;
 
             i {
-              font-size: map-get($font-sizes, 'xxxxsmall');
+              font-size: map.get($font-sizes, 'xxxxsmall');
               left: 45px;
               padding-top: 10px;
             }
 
             &:hover {
               i {
-                font-size: map-get($font-sizes, 'default');
+                font-size: map.get($font-sizes, 'default');
                 left: 42px;
                 padding-top: 6px;
               }
@@ -103,7 +92,6 @@
   }
 
   .home {
-    @include uppercase;
     padding: 5px 20px 5px 45px;
     position: relative;
 
@@ -116,8 +104,6 @@
     }
 
     &:hover {
-      color: map-get($base-colors, 'lime-green');
-
       i {
         &::before {
           @include font-awesome;
@@ -128,7 +114,7 @@
   }
 }
 
-@media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
+@media only screen and (min-width: map.get($custom-breakpoints, 'medium')) {
   .sidebar-breadcrumb {
     li {
       &.active {
