@@ -22,10 +22,12 @@
   },
   "homepage": "https://github.com/NCAR/jekyll-koru#readme",
   "devDependencies": {
+    "@nightwatch/vrt": "^3.5.2",
+    "del-cli": "^7.0.0",
+    "nightwatch": "^3.6.3",
     "patch-package": "^8.0.0"
   },
   "dependencies": {
-    "del-cli": "^7.0.0",
     "@ncar/koru-base": "^3.0"
   }
 }
