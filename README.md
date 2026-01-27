@@ -10,6 +10,7 @@ This is a theme based on UCAR/NCAR's custom 'koru' design. It is built on top th
 ## Update Koru base to Latest Version
 
 * Run `npm update koru-base` (pulls in latest version from GitHub Registry)
+* Run `npm run build` (builds latest assets)
 * Commit changes
     > Note: when in doubt, delete node_modules and re-run the previous steps
 
