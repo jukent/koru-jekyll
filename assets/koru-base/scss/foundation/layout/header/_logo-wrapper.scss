@@ -36,18 +36,13 @@
 
 .logo-wrapper {
   a {
-    color: map-get($base-colors, 'dark-blue');
+    color: map-get($shared-colors, 'blue');
     display: block;
     outline: none;
 
-    &:link,
-    &:visited {
-      color: map-get($base-colors, 'dark-blue');
-    }
-
     &:hover,
     &:active {
-      color: map-get($base-colors, 'dark-blue');
+      color: map-get($shared-colors, 'space-blue');
     }
   }
 
@@ -60,13 +55,13 @@
     h1,
     p {
       @include sentence-case;
-      color: map-get($base-colors, 'dark-blue');
+      color: map-get($shared-colors, 'space-blue');
       font-weight: map-get($font-weights, 'semi-bold');
     }
   }
 
   .nsf-logo {
-    border-right: solid 2px map-get($base-colors, 'dark-blue');
+    border-right: solid 2px map-get($shared-colors, 'space-blue');
     margin-right: 5px;
     padding-right: 5px;
 
@@ -78,7 +73,7 @@
 
         &::after {
           @include pseudo-element;
-          @include button-arrow(transparent map-get($base-colors, 'dark-blue'), 9px 0 9px 9px);
+          @include button-arrow(transparent map-get($shared-colors, 'space-blue'), 9px 0 9px 9px);
           display: none;
           height: 0;
           right: -12px;
@@ -95,20 +90,19 @@
 }
 
 .mobile-logo {
-  background-color: map-get($base-colors, 'white');
+  background-color: map-get($shared-colors, 'white');
   width: 100%;
 
   .acronym {
-    border-right: solid 2px map-get($base-colors, 'dark-blue');
+    border-right: solid 2px map-get($shared-colors, 'space-blue');
     position: relative;
     width: 14%;
   }
 
   .description {
     @include sentence-case;
-    color: map-get($base-colors, 'dark-blue');
+    color: map-get($shared-colors, 'space-blue');
     font-size: map-get($font-sizes, 'xxxsmall');
-    width: 23%;
   }
 }
 
@@ -122,7 +116,7 @@
   &.top-bar {
     ul {
       &:first-child {
-        background-color: map-get($base-colors, 'dark-white');
+        background-color: map-get($shared-colors, 'dark-white');
       }
     }
   }

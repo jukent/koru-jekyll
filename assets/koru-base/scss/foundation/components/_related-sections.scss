@@ -1,27 +1,36 @@
+@use "sass:map";
+
 .related-sections {
   a {
     height: 190px;
   }
 
+  h3 {
+    color: map.get($shared-colors, 'blue');
+  }
+
   h4 {
-    color: map-get($base-colors, 'lime-green');
-    font-size: map-get($font-sizes, 'xxxxsmall');
+    color: map.get($shared-colors, 'light-gray');
+    font-size: map.get($font-sizes, 'xxxxsmall');
     margin-bottom: 0;
     margin-top: 0;
   }
 
   i {
-    color: map-get($base-colors, 'white');
     display: block;
-    font-size: map-get($font-sizes, 'xxxxxxlarge');
+    font-size: map.get($font-sizes, 'xxxxxxlarge');
     margin-bottom: 20px;
   }
 
   .figure {
-    @include radial-gradient(map-get($base-colors, 'gray'), map-get($base-colors, 'dark-gray'));
     @include flex;
+    background-color: map.get($shared-colors, 'blue');
     justify-content: center;
     padding: 20px;
+
+    &:hover {
+      background-color: map.get($shared-colors, 'space-blue');
+    }
   }
 
   .figcaption {
@@ -29,29 +38,26 @@
   }
 }
 
-@media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
+@media only screen and (min-width: map.get($custom-breakpoints, 'medium')) {
   .related-sections {
     h4 {
-      font-size: map-get($font-sizes, 'default');
+      font-size: map.get($font-sizes, 'default');
     }
 
     i {
-      font-size: map-get($font-sizes, 'xxxxxxxlarge');
+      font-size: map.get($font-sizes, 'xxxxxxxlarge');
     }
   }
 }
 
-@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
+@media only screen and (min-width: map.get($custom-breakpoints, 'mlarge')) {
   .related-sections {
     .figcaption {
       @include flex;
-      background: map-get($base-colors, 'white');
+      background: map.get($shared-colors, 'white');
+      color: map.get($shared-colors, 'black');
       justify-content: center;
       padding: 10px;
-
-      .excerpt {
-        color: map-get($base-colors, 'darkest-gray');
-      }
 
       p {
         margin: 0;
@@ -66,7 +72,7 @@
   }
 }
 
-@media only screen and (min-width: map-get($custom-breakpoints, 'large')) {
+@media only screen and (min-width: map.get($custom-breakpoints, 'large')) {
   .related-sections {
     a {
       height: 225px;

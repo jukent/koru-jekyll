@@ -6,7 +6,7 @@
   &.with-image {
     h1,
     h2 {
-      @include text-shadow(rgba(map-get($base-colors, 'black'), .5));
+      @include text-shadow(rgba(map-get($shared-colors, 'black'), .5));
     }
 
     .banner-gradient {
@@ -19,16 +19,15 @@
   }
 
   h1 {
-    color: map-get($base-colors, 'lime-green');
+    color: map-get($shared-colors, 'yellow');
     font-size: map-get($font-sizes, 'large');
     font-weight: map-get($font-weights, 'semi-bold');
     margin-bottom: .25rem;
   }
 
   h2 {
-    color: map-get($base-colors, 'white');
+    color: map-get($shared-colors, 'light-gray');
     font-weight: map-get($font-weights, 'bold');
-    line-height: 1;
   }
 
   h1,

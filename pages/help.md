@@ -3,4 +3,5 @@ layout: default
 title: Help
 ---
 
-This is a test
+# Help
+If you need assistance, please submit a help request at [https://ithelp.ucar.edu/plugins/servlet/desk/site/global](https://ithelp.ucar.edu/plugins/servlet/desk/site/global).

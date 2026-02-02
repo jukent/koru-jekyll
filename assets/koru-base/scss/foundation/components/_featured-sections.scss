@@ -1,13 +1,20 @@
+@use "sass:map";
+
+.featured-sections {
+  h2,
+  h3 {
+    color: map-get($shared-colors, 'blue');
+  }
+}
+
 .featured-section {
   @include flex;
-  @include radial-gradient(map-get($base-colors, 'gray'), map-get($base-colors, 'dark-gray'));
+  background-color: map.get($shared-colors, 'blue');
   justify-content: center;
   min-height: 10.3125rem;
 
   &:hover {
-    h4 {
-      color: map-get($base-colors, 'white');
-    }
+    background-color: map.get($shared-colors, 'space-blue');
   }
 
   &.cell {
@@ -24,27 +31,26 @@
   }
 
   h4 {
-    color: map-get($base-colors, 'lime-green');
-    font-size: map-get($font-sizes, 'xxxxsmall');
+    color: map.get($shared-colors, 'light-gray');
+    font-size: map.get($font-sizes, 'xxxxsmall');
     margin-bottom: 0;
   }
 
   i {
-    color: map-get($base-colors, 'white');
-    font-size: map-get($font-sizes, 'xxxxlarge');
+    font-size: map.get($font-sizes, 'xxxxlarge');
   }
 }
 
-@media only screen and (min-width: map-get($custom-breakpoints, 'medium')) {
+@media only screen and (min-width: map.get($custom-breakpoints, 'medium')) {
   .featured-section {
     min-height: 13.4375rem;
 
     h4 {
-      font-size: map-get($font-sizes, 'default');
+      font-size: map.get($font-sizes, 'default');
     }
 
     i {
-      font-size: map-get($font-sizes, 'xxxxxxxlarge');
+      font-size: map.get($font-sizes, 'xxxxxxxlarge');
     }
   }
 }

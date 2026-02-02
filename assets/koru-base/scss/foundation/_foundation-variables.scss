@@ -13,20 +13,18 @@ $breakpoint-classes: (small medium mlarge large xlarge xxlarge);
 $grid-container: 85rem;
 
 $foundation-palette: (
-  'primary': map-get($notification-colors, 'primary'),
-  'secondary': map-get($notification-colors, 'secondary'),
-  'success': map-get($notification-colors, 'success'),
-  'warning': map-get($notification-colors, 'warning'),
-  'alert': map-get($notification-colors, 'alert')
+  'primary': map-get($shared-colors, 'yellow'),
+  'warning': map-get($shared-colors, 'orange'),
+  'alert': map-get($shared-colors, 'red')
 );
 
-$closebutton-color: map-get($base-colors, 'black');
+$closebutton-color: map-get($shared-colors, 'black');
 
 $callout-border: none;
 $callout-margin: none;
 $callout-background-fade: 1%;
 
-$accordionmenu-arrow-color: map-get($base-colors, 'white');
+$accordionmenu-arrow-color: map-get($shared-colors, 'white');
 $dropdownmenu-arrows: false;
 $dropdownmenu-background: none;
 
@@ -46,5 +44,7 @@ $print-hrefs: false;
 $print-transparent-backgrounds: false;
 
 $responsive-embed-margin-bottom: 0;
+
+$topbar-background: none;
 
 @include foundation-everything;

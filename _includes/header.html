@@ -1,4 +1,4 @@
-<header>
+<header role="banner">
     <div data-sticky-container="" class="sticky-container">
         <div data-sticky="" data-options="marginTop:0;stickyOn:small;" data-top-anchor="main-content"
              class="sticky is-anchored is-at-top">
@@ -7,28 +7,28 @@
                     <div class="cell large-9">
                         <div class="grid-x align-middle">
                             <div class="cell small-3">
-                              <h2 class="acronym-wrapper">
+                              <div class="acronym-wrapper">
                                 <a href="https://ncar.ucar.edu" title="NCAR Home">
-                                  <img src="{{ site.github.baseurl }}{{ 'assets/koru-base/img/NSF-NCAR_Lockup-UCAR-Dark_102523.png' | relative_url }}"
-                                       alt="NCAR">
+                                  <img src="{{ site.github.baseurl }}{{ 'assets/koru-base/img/logo-ncar.png' | relative_url }}"
+                                       alt="NCAR logo">
                                   <span class="show-for-sr">NCAR</span>
                                 </a>
-                              </h2>
+                              </div>
                             </div>
-                            <div class="cell small-6 top-bar-title logo-wrapper align-center align-middle text-center">
-                                <h1><a href="{{ site.github.baseurl }}/">{{ site.title }}</a></h1>
+                            <div class="cell small-6 top-bar-title align-center align-middle text-center">
+                                <div class="site-name"><a href="{{ site.github.baseurl }}/">{{ site.title }}</a></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="mobile-nav hide-for-print text-center" data-responsive-toggle="main-nav" data-hide-for="mlarge">
+            <div class="mobile-nav hide-for-print text-center bg-blue" data-responsive-toggle="main-nav" data-hide-for="mlarge">
                 <div class="title-bar-title">Menu</div>
                 <button class="fa-solid fa-chevron-down" type="button" data-toggle="main-nav"></button>
             </div>
             <div class="main-nav hide-for-print" id="main-nav">
-                <div class="grid-x">
-                <nav class="cell center mlarge-10 large-7">
+                <div class="grid-x align-center bg-blue">
+                <nav class="cell center mlarge-10 large-9">
                     <ul class="menu icons icon-left" data-responsive-menu="accordion mlarge-dropdown">
                         {% for link in site.data.mainmenu.menu %}
                         <li aria-label="{{ link.title }}">

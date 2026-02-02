@@ -1,4 +1,4 @@
-@each $shade, $hex in $base-colors {
+@each $shade, $hex in $shared-colors {
   .bg-#{$shade} {
     background-color: $hex;
   }

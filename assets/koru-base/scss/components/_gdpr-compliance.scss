@@ -8,9 +8,9 @@
 
 .eu-cookie-compliance-default-button {
   background: none;
-  border: 3px solid map-get($base-colors, 'white');
+  border: 3px solid map-get($shared-colors, 'white');
   box-shadow: none;
-  color: map-get($base-colors, 'white');
+  color: map-get($shared-colors, 'white');
   font-family: map-get($font-families, 'default');
   font-size: map-get($font-sizes, 'small');
   margin-top: 10px;
@@ -19,7 +19,7 @@
   text-transform: uppercase;
 
   &:hover {
-    background-color: map-get($base-colors, 'white');
-    color: map-get($base-colors, 'cool-blue');
+    background-color: map-get($shared-colors, 'white');
+    color: map-get($shared-colors, 'cool-blue');
   }
 }

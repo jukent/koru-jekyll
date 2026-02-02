@@ -1,0 +1,23 @@
+describe('Unity visual regression tests', function() {
+  it('Test the Unity header component.', function(browser) {
+    browser
+      .navigateTo('/')
+      .pause(2000)
+      .assert.screenshotIdenticalToBaseline('.sticky-container',  /* Optional */ 'koru-style-guide-small')
+      .windowSize('current', 640, 1500)
+      .pause(2000)
+      .assert.screenshotIdenticalToBaseline('.sticky-container',  /* Optional */ 'koru-style-guide-medium')
+      .windowSize('current', 900, 1500)
+      .pause(2000)
+      .assert.screenshotIdenticalToBaseline('.sticky-container',  /* Optional */ 'koru-style-guide-mlarge')
+      .windowSize('current', 1024, 1500)
+      .pause(2000)
+      .assert.screenshotIdenticalToBaseline('.sticky-container',  /* Optional */ 'koru-style-guide-large')
+      .windowSize('current', 1260, 1500)
+      .pause(2000)
+      .assert.screenshotIdenticalToBaseline('.sticky-container',  /* Optional */ 'koru-style-guide-xlarge')
+      .windowSize('current', 1440, 1500)
+      .pause(2000)
+      .assert.screenshotIdenticalToBaseline('.sticky-container',  /* Optional */ 'koru-style-guide-xxlarge')
+  })
+})

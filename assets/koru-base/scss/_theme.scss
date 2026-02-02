@@ -15,7 +15,7 @@ a {
 }
 
 body {
-  background-color: map-get($base-colors, 'lightest-gray');
+  background-color: map-get($shared-colors, 'light-gray');
   font-family: map-get($font-families, 'default');
   font-size: map-get($font-sizes, 'default');
   overflow-x: hidden;
@@ -23,7 +23,7 @@ body {
 
 body,
 html {
-  color: map-get($base-colors, 'darkest-gray');
+  color: map-get($shared-colors, 'black');
   height: 100%;
 }
 
@@ -34,7 +34,7 @@ figure {
 }
 
 cite {
-  color: map-get($base-colors, 'white');
+  color: map-get($shared-colors, 'white');
 
   &::before {
     display: none;
@@ -42,9 +42,9 @@ cite {
 }
 
 hr {
-  background: map-get($base-colors, 'darkest-gray');
+  background: map-get($shared-colors, 'black');
   border: 0;
-  color: map-get($base-colors, 'darkest-gray');
+  color: map-get($shared-colors, 'black');
   height: 1px;
 }
 
@@ -64,11 +64,6 @@ pre {
   }
 }
 
-::selection {
-  background: map-get($base-colors, 'lime-green');
-  color: map-get($base-colors, 'darkest-gray');
-}
-
 .body-content {
   flex: 1 0 auto;
 }
@@ -79,24 +74,24 @@ pre {
   }
 
   figure {
-    @include button-arrow(map-get($base-colors, 'darkest-gray'), 10px);
+    @include button-arrow(map-get($shared-colors, 'black'), 10px);
     margin: 1.5rem;
 
     figcaption {
-      background: map-get($base-colors, 'darkest-gray');
-      color: map-get($base-colors, 'white');
+      background: map-get($shared-colors, 'black');
+      color: map-get($shared-colors, 'light-gray');
       padding: 10px 10px 1px;
       right: 0;
 
       &.image-download {
         a {
-          color: map-get($base-colors, 'lime-green');
+          color: map-get($shared-colors, 'yellow');
           font-size: map-get($font-sizes, 'xxsmall');
           text-decoration: none;
 
           &:hover,
           &:active {
-            color: map-get($base-colors, 'lime-green');
+            color: map-get($shared-colors, 'yellow');
             text-decoration: underline;
           }
         }
@@ -111,16 +106,16 @@ pre {
         margin: 0;
 
         a {
-          color: map-get($base-colors, 'lime-green');
+          color: map-get($shared-colors, 'yellow');
 
           &:link,
           &:visited {
-            color: map-get($base-colors, 'lime-green');
+            color: map-get($shared-colors, 'yellow');
           }
 
           &:hover,
           &:active {
-            color: map-get($base-colors, 'lime-green');
+            color: map-get($shared-colors, 'yellow');
             text-decoration: underline;
           }
         }
@@ -131,6 +126,13 @@ pre {
       margin-bottom: 0;
       width: 100%;
     }
+  }
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: map-get($shared-colors, 'blue');
   }
 
   img {

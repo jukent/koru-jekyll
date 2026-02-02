@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Software
+title: Style Guide
 ---
 
 This is a test paragraph.

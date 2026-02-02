@@ -1,7 +1,17 @@
+@use "sass:map";
+
 .home-happenings {
   .related-links {
     background: transparent;
     box-shadow: unset;
+
+    a {
+      &:not(.cta-link) {
+        font-size: map.get($font-sizes, 'default');
+        font-weight: map.get($font-weights, 'regular');
+        text-transform: none;
+      }
+    }
 
     ul {
       margin-bottom: 1.5rem;
@@ -12,15 +22,6 @@
   .panel {
     &.related-page-section {
       padding-bottom: 0;
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        color: map-get($base-colors, 'darkest-gray');
-      }
     }
   }
 
@@ -35,13 +36,12 @@
 
   .publications,
   .front-news {
-    @include linear-gradient(right, map-get($base-colors, 'dark-gray'), map-get($base-colors, 'gray'));
-    box-shadow: -.3125rem -.3125rem .75rem -.25rem rgba(map-get($base-colors, 'gray'), .56);
+    background-color: map.get($shared-colors, 'space-blue');
     padding: 1.25rem;
   }
 }
 
-@media only screen and (min-width: map-get($custom-breakpoints, 'mlarge')) {
+@media only screen and (min-width: map.get($custom-breakpoints, 'mlarge')) {
   .home-happenings {
     .figure {
       height: 25rem;
@@ -60,7 +60,7 @@
   }
 }
 
-@media only screen and (min-width: map-get($custom-breakpoints, 'large')) {
+@media only screen and (min-width: map.get($custom-breakpoints, 'large')) {
   .home-happenings {
     .front-news,
     .publications {

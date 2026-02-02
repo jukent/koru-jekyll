@@ -1,5 +1,6 @@
+@use "sass:map";
+
 .related-links {
-  box-shadow: -5px -5px 24px -4px rgba(map-get($base-colors, 'gray'), .56);
   padding: 1.5rem;
 
   h1,
@@ -8,7 +9,7 @@
   h4,
   h5,
   h6 {
-    color: map-get($base-colors, 'lime-green');
+    color: map-get($shared-colors, 'yellow');
     font-size: map-get($font-sizes, 'large');
     font-weight: map-get($font-weights, 'semi-bold');
     margin-bottom: .75rem;
@@ -16,7 +17,7 @@
   }
 
   li {
-    border-bottom: solid 1px map-get($base-colors, 'darkest-gray');
+    border-bottom: solid 1px map-get($shared-colors, 'space-blue');
     font-family: map-get($font-families, 'default'); //icomoon override
 
     &:last-child {
@@ -29,18 +30,17 @@
     }
 
     a {
-      color: map-get($base-colors, 'white');
+      color: map-get($shared-colors, 'white');
+      font-size: map-get($font-sizes, 'xsmall');
+      font-weight: map.get($font-weights, 'semi-bold');
+      letter-spacing: .06rem;
       padding-left: 0;
       padding-right: 0;
+      text-transform: uppercase;
 
       &:link,
       &:visited {
-        color: map-get($base-colors, 'white');
-      }
-
-      &:hover,
-      &:active {
-        color: map-get($base-colors, 'lime-green');
+        color: map-get($shared-colors, 'white');
       }
     }
 

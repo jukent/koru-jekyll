@@ -1,6 +1,6 @@
 menu:
-  - title: Software
-    url: /pages/software.html
+  - title: Style Guide
+    url: /pages/style-guide.html
     submenu:
       - title: Submenu Item
         url: https://www.google.com

@@ -64,7 +64,7 @@
 }
 
 @mixin themes($theme) {
-  @if $theme != 'base' {
+  @if $theme != 'ncar' {
     .#{$theme} {
       @content;
     }
